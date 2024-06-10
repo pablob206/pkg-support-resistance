@@ -11,7 +11,7 @@ Collection of algorithms to calculate supports and resistances in financial mark
 
 ## Installation
 ```js
-pip install pkg_support_resistance
+pip install pkg-support-resistance
 ```
 
 ## Quick usage
