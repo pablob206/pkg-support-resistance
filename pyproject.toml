@@ -1,0 +1,72 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "pkg-support-resistance"
+dynamic = ["version"]
+description = "Library collection of algorithms to calculate supports and resistance of financial markets."
+authors = [
+    {name = "pablo brocal", email = "pablomb206@gmail.com"},
+]
+dependencies = [
+    "numpy>=1.26.4",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.urls]
+Repository = "https://github.com/pablob206/pkg-support-resistance"
+Homepage = "https://github.com/pablob206/pkg-support-resistance"
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.pylint.MASTER]
+ignore-paths = [ "^.venv/.*$" ]
+
+[tool.mypy]
+ignore_errors = true
+
+# Bandit
+[tool.bandit]
+# Find and process files in subdirectories
+recursive=true
+
+# Dirs to exclude from analysis
+exclude_dirs = ["tests", "test"]
+
+# List of test IDs to skip
+# https://bandit.readthedocs.io/en/latest/config.html#skipping-tests
+# https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing
+skips=[]
+
+# Specify output format {csv,custom,html,json,screen,txt,xml,yaml}
+# https://bandit.readthedocs.io/en/latest/formatters/index.html#complete-formatter-listing
+format="txt"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = '''
+missing-module-docstring,
+missing-class-docstring,
+missing-function-docstring,
+import-error,
+line-too-long,
+no-name-in-module,
+no-member,
+unnecessary-pass,
+assigning-non-slot,
+too-few-public-methods,
+relative-beyond-top-level,
+'''
+
+[tool.pdm]
+distribution = true
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=24.4.2",
+    "pre-commit>=3.7.1",
+    "flake8>=7.0.0",
+    "pylint>=3.2.3",
+]
