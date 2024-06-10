@@ -1,8 +1,8 @@
 """ML Models Exploration Test"""
 
 from src.pkg_support_resistance import VanillaSupportResistance
+from src.pkg_support_resistance.data_set import sr_input_example
 from .expected_output_test import vanilla_sr_exec_pipeline_expected_output_test
-from .expected_input_test import sr_input_test
 
 
 def test_vanilla_support_resistance_exec_pipeline():
@@ -13,6 +13,6 @@ def test_vanilla_support_resistance_exec_pipeline():
     """
 
     result: list[dict] = VanillaSupportResistance.exec_pipeline(
-        input_data=sr_input_test, cluster_threshold=1
+        input_data=sr_input_example, cluster_threshold=1
     )
     assert result == vanilla_sr_exec_pipeline_expected_output_test
