@@ -39,6 +39,6 @@ pdm self update
 
 ### Tag push
 ```bash
-git tag v0.1.2
+git tag 0.1.2
 git push --tags
 ```

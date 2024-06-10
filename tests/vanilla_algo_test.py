@@ -5,7 +5,7 @@ from src.pkg_support_resistance.data_set import sr_input_example
 from .expected_output_test import vanilla_sr_exec_pipeline_expected_output_test
 
 
-def test_vanilla_algorithms_exec_pipeline():
+def vanilla_algorithms_exec_pipeline_test():
     """
     Test the calculation of support/resistance process.
     This test verifies that the function exec_pipeline,
