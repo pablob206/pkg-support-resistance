@@ -29,6 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install pdm
         python -m pdm install
+        python -m pdm install --dev
     - name: Activate virtualenv
       run: |
         source .venv/bin/activate
