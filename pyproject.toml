@@ -21,7 +21,8 @@ Repository = "https://github.com/pablob206/pkg-support-resistance"
 Homepage = "https://github.com/pablob206/pkg-support-resistance"
 
 [tool.pdm.version]
-source = "scm"
+source = "file"
+path = "src/pkg_support_resistance/__init__.py"
 
 [tool.pylint.MASTER]
 ignore-paths = [ "^.venv/.*$" ]
