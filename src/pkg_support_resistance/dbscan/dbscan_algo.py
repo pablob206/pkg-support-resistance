@@ -3,7 +3,6 @@
 from typing import Any, Dict, List, Union
 
 from sklearn.cluster import DBSCAN
-import pandas as pd
 import numpy as np
 
 
