@@ -9,6 +9,19 @@
 ## Description
 Collection of algorithms to calculate supports and resistances in financial markets.
 
+
+> [!IMPORTANT]
+> ## Supported Algorithms
+> | Supported Algorithms   | `Operational`   |
+> |:-----------------------|:------------------|
+> | `Vanilla Clustering`             | ✅                |
+> | `KMeans ML Clustering`               | ✅                |
+> | `DBSCAN ML Clustering`               | ✅                |
+> | `KNN (DK-Nearest Neighbors) ML`               | ❌                |
+> | `RandomForest ML`               | ❌                |
+----
+
+
 ## Installation
 ```js
 pip install pkg-support-resistance
@@ -19,58 +32,34 @@ Here's an example to get the gist of using the package.
 
 ### VanillaSupportResistance algorithms:
 ```python
-from pkg_support_resistance import VanillaSupportResistance
+from pkg_support_resistance import VanillaSupportResistance, KMeansSupportResistance, DBSCANSupportResistance
 from pkg_support_resistance.data_set.data_extraction import sr_input_example
 
+# Example input type
+# sr_input_example = {
+#     "open": [42780, 42834.94, ...],
+#     "close": [42834.94, 42961.84, ...],
+#     "high": [42901.1, 42986.06, ...],
+#     "low": [42730.03, 42795.41, ...],
+#     "volume": [173.63661, 169.47648, ...]
+# }
+
+
+# Vanilla algorithms:
 sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(input_data=sr_input_example, cluster_threshold=1)
+print(sr_result, len(sr_result))
 
-print(sr_result)
-```
 
-### KMeansSupportResistance algorithms (data ingestion by dict):
-```python
-input_data = {
-    "open": [
-        42780, 42834.94, 42961.83, 43070.3, 43139.4, 43303.82, 43115.57,
-        43163.67, 43065.25, 42680.34, 42232.62, 42147.35, 42142.36, 42254.69,
-        42369.76, 42333, 42178.39, 42203.58, 42443.2, 42459.92, 42546.45
-    ],
-    "close": [
-        42834.94, 42961.84, 43069.98, 43139.4, 43303.82, 43115.58, 43163.66,
-        43065.25, 42680.34, 42232.61, 42147.35, 42142.37, 42254.69, 42369.76,
-        42333, 42178.39, 42203.58, 42443.19, 42459.91, 42546.46, 42559.31
-    ],
-    "high": [
-        42901.1, 42986.06, 43160.86, 43159.74, 43333, 43400, 43170.7,
-        43234.16, 43092.28, 42802.13, 42393.9, 42303, 42387.46, 42434.54,
-        42396.01, 42344.24, 42308.54, 42479.99, 42548.69, 42670.17, 42590.9
-    ],
-    "low": [
-        42730.03, 42795.41, 42914.13, 42988, 43115, 43100.73, 42983.61,
-        43000.99, 42641.17, 42156.94, 42098, 41942, 42051.99, 42156.49,
-        42203, 42078.63, 42173.02, 42145.3, 42370, 42459.91, 42460.87
-    ],
-    "volume": [
-        173.63661, 169.47648, 298.77136, 221.9715, 398.10382, 277.8895,
-        249.64196, 229.9978, 478.65775, 1188.13786, 793.69658, 955.58978,
-        428.43125, 378.42146, 260.78176, 396.55715, 245.59294, 357.44034,
-        478.28118, 477.66581, 280.79704
-    ]
-}
-
+# KMeans ML algorithms:
 sr_result: list[dict] = KMeansSupportResistance.exec_pipeline(input_data=input_data, n_clusters=9)
+print(sr_result, len(sr_result))
 
-print(sr_result)
+
+# DBSCAN  ML algorithms:
+sr_result: list[dict] = DBSCANSupportResistance.exec_pipeline(input_data=sr_input_example, eps=1000, min_samples=1)
+print(sr_result, len(sr_result))
+
 ```
-
-> [!IMPORTANT]
-> ## Supported Algorithms
-> | Supported Algorithms   | `Operational`   |
-> |:-----------------------|:------------------|
-> | `Vanilla`             | ✅                |
-> | `Kmeans Clustering`               | ✅                |
-
-----
 
 ## Input example:
 ```javascript

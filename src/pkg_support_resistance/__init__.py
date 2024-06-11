@@ -4,6 +4,6 @@ from .vanilla.vanilla_algo import VanillaSupportResistance  # noqa: F401
 from .kmeans.kmeans_algo import KMeansSupportResistance  # noqa: F401
 
 # Exports Data-Set
-from .data_set.data_extraction import sr_input_example
+from .data_set.data_extraction import sr_input_example, open_json_file
 
-__version__ = "0.3.3"
+__version__ = "0.3.4"
