@@ -132,3 +132,56 @@ kmeans_sr_exec_pipeline_expected_output_test = [
         "accumulatedVolume": 39565.819639999994,
     },
 ]
+
+
+dbscan_sr_exec_pipeline_expected_output_test = [
+    {
+        "pivotPrice": 42476.84449999999,
+        "limitsDown": 40841.94,
+        "limitsUp": 43995.1,
+        "score": 320,
+        "accumulatedVolume": 137561.19903999998,
+    },
+    {
+        "pivotPrice": 44007.53,
+        "limitsDown": 44007.53,
+        "limitsUp": 44007.53,
+        "score": 1,
+        "accumulatedVolume": 2203.5378,
+    },
+    {
+        "pivotPrice": 44833.46181818182,
+        "limitsDown": 44623.46,
+        "limitsUp": 44945.81,
+        "score": 11,
+        "accumulatedVolume": 7232.53705,
+    },
+    {
+        "pivotPrice": 44855.63,
+        "limitsDown": 44855.63,
+        "limitsUp": 44855.63,
+        "score": 1,
+        "accumulatedVolume": 3013.23613,
+    },
+    {
+        "pivotPrice": 46449.22,
+        "limitsDown": 46449.22,
+        "limitsUp": 46449.22,
+        "score": 1,
+        "accumulatedVolume": 6171.46155,
+    },
+    {
+        "pivotPrice": 47332.14,
+        "limitsDown": 47332.14,
+        "limitsUp": 47332.14,
+        "score": 1,
+        "accumulatedVolume": 2715.50006,
+    },
+    {
+        "pivotPrice": 47731.84621951219,
+        "limitsDown": 46783.89,
+        "limitsUp": 48353.34,
+        "score": 164,
+        "accumulatedVolume": 70829.60243999999,
+    },
+]
