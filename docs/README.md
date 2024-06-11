@@ -30,6 +30,7 @@ pdm run pytest
 
 # example: pdm add, update and remove dependencies
 pdm add scipy
+pdm add -dG dev mplfinance # add into dev
 pdm update scipy
 pdm remove scipy
 
