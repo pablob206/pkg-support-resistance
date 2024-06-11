@@ -20,8 +20,15 @@ Here's an example to get the gist of using the package.
 ### VanillaSupportResistance algorithms:
 ```python
 from pkg_support_resistance import VanillaSupportResistance
+from pkg_support_resistance.data_set.data_extraction import sr_input_example
 
+sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(input_data=sr_input_example, cluster_threshold=1)
 
+print(sr_result)
+```
+
+### KMeansSupportResistance algorithms (data ingestion by json file):
+```python
 input_data = {
     "open": [
         42780, 42834.94, 42961.83, 43070.3, 43139.4, 43303.82, 43115.57,
@@ -51,21 +58,6 @@ input_data = {
     ]
 }
 
-sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(input_data=input_data, cluster_threshold=1)
-
-print(sr_result)
-```
-
-### KMeansSupportResistance algorithms (data ingestion by json file):
-```python
-from pkg_support_resistance import KMeansSupportResistance
-
-
-input_file_path = "/src/pkg_support_resistance/data_set/example.json"
-# Open json file
-with open(input_file_path, "r") as file:
-    input_data = json.load(file)
-
 sr_result: list[dict] = KMeansSupportResistance.exec_pipeline(input_data=input_data, n_clusters=9)
 
 print(sr_result)
@@ -76,7 +68,7 @@ print(sr_result)
 > | Supported Algorithms   | `Operational`   |
 > |:-----------------------|:------------------|
 > | `Vanilla`             | ✅                |
-> | `Kmeans Clustering`               | ❌                |
+> | `Kmeans Clustering`               | ✅                |
 
 ----
 
@@ -167,4 +159,4 @@ If the score is high it means that many candles have been traded in that area wi
 Accumulated volume traded in the consolidated zone between limitsUp/limitsDown.
 
 ## Graph of the 'pivotPrice' S/R (Using VanillaSupportResistance algorithm and dataset from '/dataset/example.json'):
-<img src="assets/plot_sr_output.png">
+<img src="src/pkg_support_resistance/vanilla/plot/vanilla_algo_plot.png">
