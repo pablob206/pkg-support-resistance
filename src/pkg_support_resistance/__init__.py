@@ -6,4 +6,4 @@ from .kmeans.kmeans_algo import KMeansSupportResistance  # noqa: F401
 # Exports Data-Set
 from .data_set.data_extraction import sr_input_example
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
