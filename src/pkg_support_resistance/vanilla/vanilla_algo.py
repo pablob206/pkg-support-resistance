@@ -6,7 +6,7 @@ import numpy as np
 
 
 class VanillaSupportResistance:
-    """Vanilla Support Resistance class"""
+    """Vanilla Clustering Support Resistance class"""
 
     @classmethod
     def __calc_points(cls, data: np.ndarray, extreme: str) -> np.ndarray[np.ndarray]:
@@ -357,7 +357,7 @@ class VanillaSupportResistance:
             total_lines=previous_sr,
         )
 
-        s_r_calculated_dict = [
+        s_r_calculated_list = [
             {
                 "pivotPrice": row["pivotPrice"],
                 "limitsUp": row["limitsUp"],
@@ -367,4 +367,4 @@ class VanillaSupportResistance:
             }
             for row in s_r_calculated
         ]
-        return s_r_calculated_dict
+        return s_r_calculated_list

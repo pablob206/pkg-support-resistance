@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 
 
 class KMeansSupportResistance:
-    """KMeans Support Resistance class"""
+    """KMeans Clustering Support Resistance (unsupervised algorithms) class"""
 
     @classmethod
     def __preprocess_data(
@@ -52,11 +52,11 @@ class KMeansSupportResistance:
         return df
 
     @classmethod
-    def __calculate_cluster_info(
+    def __calculate_cluster(
         cls, df: pd.DataFrame, n_clusters: int
     ) -> List[Dict[str, Any]]:
         """
-        Calculate cluster info.
+        Calculate cluster.
         Return: List[Dict[str, Any]].
         I.e.: [
             {'pivotPrice': 41247.07, 'limitsDown': 40965.2125, 'limitsUp': 41334.82750000001, 'accumulatedVolume': 11484.42265, 'score': 25},
@@ -120,7 +120,7 @@ class KMeansSupportResistance:
 
         df: pd.DataFrame = cls.__preprocess_data(input_data=input_data)
         df: pd.DataFrame = cls.__apply_kmeans(df=df, n_clusters=n_clusters)
-        cluster_info: list[dict] = cls.__calculate_cluster_info(
+        cluster_model: list[dict] = cls.__calculate_cluster(
             df=df, n_clusters=n_clusters
         )
-        return cluster_info
+        return cluster_model

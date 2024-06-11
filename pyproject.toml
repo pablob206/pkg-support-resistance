@@ -74,4 +74,5 @@ dev = [
     "pylint>=3.2.3",
     "pytest>=8.2.2",
     "mplfinance>=0.12.10b0",
+    "ipykernel>=6.29.4",
 ]

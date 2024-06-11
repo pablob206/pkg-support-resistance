@@ -4,7 +4,7 @@ from typing import Dict, Any, List
 import json
 
 
-def open_json_file(input_file_path: str, mode: str = "r") -> Dict[str, Any]:
+def open_json_file(input_file_path: str, mode: str = "r") -> List[Any] | Dict[str, Any]:
     """Open json file"""
 
     with open(file=input_file_path, mode=mode) as file:
