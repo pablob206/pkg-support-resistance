@@ -27,7 +27,7 @@ sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(input_data=sr_inp
 print(sr_result)
 ```
 
-### KMeansSupportResistance algorithms (data ingestion by json file):
+### KMeansSupportResistance algorithms (data ingestion by dict):
 ```python
 input_data = {
     "open": [
