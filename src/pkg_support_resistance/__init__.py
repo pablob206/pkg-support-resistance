@@ -7,4 +7,4 @@ from .dbscan.dbscan_algo import DBSCANSupportResistance  # noqa: F401
 # Exports Data-Set
 from .data_set.data_extraction import sr_input_example, open_json_file
 
-__version__ = "0.3.6"
+__version__ = "0.3.7"
