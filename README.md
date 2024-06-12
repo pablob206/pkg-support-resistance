@@ -30,7 +30,6 @@ pip install pkg-support-resistance
 ## Quick usage
 Here's an example to get the gist of using the package.
 
-### VanillaSupportResistance algorithms:
 ```python
 from pkg_support_resistance import VanillaSupportResistance, KMeansSupportResistance, DBSCANSupportResistance
 from pkg_support_resistance.data_set.data_extraction import sr_input_example
@@ -51,7 +50,7 @@ print(sr_result, len(sr_result))
 
 
 # KMeans ML algorithms:
-sr_result: list[dict] = KMeansSupportResistance.exec_pipeline(input_data=input_data, n_clusters=9)
+sr_result: list[dict] = KMeansSupportResistance.exec_pipeline(input_data=sr_input_example, n_clusters=9)
 print(sr_result, len(sr_result))
 
 

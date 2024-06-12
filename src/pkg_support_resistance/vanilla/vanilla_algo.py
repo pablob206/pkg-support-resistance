@@ -1,6 +1,6 @@
 """Vanilla algorithms module"""
 
-from typing import Any, Dict, List, Union
+from typing import Dict, List, Union
 
 import numpy as np
 
@@ -213,7 +213,7 @@ class VanillaSupportResistance:
         src_s: np.ndarray,
         threshold: float,
         total_lines: np.ndarray | None = np.ndarray,
-    ) -> List[Dict[str, Any]]:
+    ) -> np.ndarray:
         """
         Unify.
         Return: numpy.ndarray. dtype: [
@@ -319,7 +319,6 @@ class VanillaSupportResistance:
         ]
         """
 
-        # Convert to numpy array
         data_np = np.array(list(input_data.values())).T
 
         # Previous lines (empty)
@@ -350,14 +349,14 @@ class VanillaSupportResistance:
         recovery_line_s: np.ndarray = cls.__recovery_line(
             clusters=clusters_s, direction="support"
         )
-        s_r_calculated = cls.__unify(
+        s_r_calculated: np.ndarray = cls.__unify(
             src_r=recovery_line_r,
             src_s=recovery_line_s,
             threshold=cluster_threshold,
             total_lines=previous_sr,
         )
 
-        s_r_calculated_list = [
+        s_r_calculated_list: list = [
             {
                 "pivotPrice": row["pivotPrice"],
                 "limitsUp": row["limitsUp"],
