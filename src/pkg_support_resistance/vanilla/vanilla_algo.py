@@ -367,3 +367,12 @@ class VanillaSupportResistance:
             for row in s_r_calculated
         ]
         return s_r_calculated_list
+
+
+from pkg_support_resistance.data_set.data_extraction import sr_input_example
+
+# Vanilla algorithms:
+sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(
+    input_data=sr_input_example, cluster_threshold=1
+)
+print(sr_result, len(sr_result))
