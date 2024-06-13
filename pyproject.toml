@@ -75,4 +75,5 @@ dev = [
     "pytest>=8.2.2",
     "mplfinance>=0.12.10b0",
     "ipykernel>=6.29.4",
+    "cython>=3.0.10",
 ]

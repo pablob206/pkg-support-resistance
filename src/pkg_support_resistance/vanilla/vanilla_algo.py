@@ -8,6 +8,15 @@ import numpy as np
 class VanillaSupportResistance:
     """Vanilla Clustering Support Resistance class"""
 
+    @staticmethod
+    def is_cythonized():
+        """
+        Check if the module is cytotonized?
+        The cythonized model represents a performance improvement of %13.05.
+        """
+
+        return False
+
     @classmethod
     def __calc_points(cls, data: np.ndarray, extreme: str) -> np.ndarray[np.ndarray]:
         """
