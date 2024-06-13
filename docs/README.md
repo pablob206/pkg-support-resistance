@@ -39,10 +39,9 @@ pdm self update
 
 # Cython
 cythonize --inplace vanilla_algo.py
-cd pkg_support_resistance
 python setup.py build_ext --inplace
-```
 
+```
 
 ### Tag push
 ```bash

@@ -149,3 +149,30 @@ Accumulated volume traded in the consolidated zone between limitsUp/limitsDown.
 
 ## Graph of the 'pivotPrice' S/R (Using VanillaSupportResistance algorithm and dataset from '/dataset/example.json'):
 <img src="src/pkg_support_resistance/vanilla/plot/vanilla_algo_plot.png">
+
+
+## Cythonize this package [OPTIONAL].
+Cythonizing the package will improve the performance of the algorithms, but keep in mind that the algorithms are already highly efficient and optimal, so the improvement with Cythonization will be minimal and imperceptible.
+
+Right click on the root of pkg_support_resistance (in the virtual environment), and open in the integrated terminal.
+
+```bash
+# Root, I.e.: venv/lib/python3.12/site-packages/pkg_support_resistance/setup.py
+# In the integrated terminal run:
+
+pip install cython
+python setup.py build_ext --inplace
+```
+
+
+```python
+from pkg_support_resistance import VanillaSupportResistance
+
+
+# Vanilla algorithms is cythonized?
+module_is_cythonized: bool = VanillaSupportResistance.is_cythonized()
+print(module_is_cythonized)
+
+> True # This algorithm is cythonized
+
+```
