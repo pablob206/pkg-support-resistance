@@ -19,6 +19,7 @@ Collection of algorithms to calculate supports and resistances in financial mark
 > | `DBSCAN ML Clustering`               | ✅                |
 > | `KNN (DK-Nearest Neighbors) ML`               | ❌                |
 > | `RandomForest ML`               | ❌                |
+> | `...`               | ❌                |
 ----
 
 
@@ -32,7 +33,7 @@ Here's an example to get the gist of using the package.
 
 ```python
 from pkg_support_resistance import VanillaSupportResistance, KMeansSupportResistance, DBSCANSupportResistance
-from pkg_support_resistance.data_set.data_extraction import sr_input_example
+from pkg_support_resistance.data_set import sr_input_example
 
 # Example input type
 # sr_input_example = {
