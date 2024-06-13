@@ -5,6 +5,6 @@ from .kmeans.kmeans_algo import KMeansSupportResistance  # noqa: F401
 from .dbscan.dbscan_algo import DBSCANSupportResistance  # noqa: F401
 
 # Exports Data-Set
-from .data_set.data_extraction import sr_input_example, open_json_file
+from .data_set import sr_input_example
 
-__version__ = "0.4.0"
+__version__ = "0.4.1"
