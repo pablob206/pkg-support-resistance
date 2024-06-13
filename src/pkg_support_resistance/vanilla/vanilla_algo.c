@@ -5,7 +5,7 @@
     "distutils": {
         "name": "pkg_support_resistance.vanilla.vanilla_algo",
         "sources": [
-            "vanilla_algo.py"
+            "/media/user17/3CD8E33ED8E2F554/dev/abechennon/pkg-support-resistance/src/pkg_support_resistance/vanilla/vanilla_algo.py"
         ]
     },
     "module_name": "pkg_support_resistance.vanilla.vanilla_algo"
@@ -2013,10 +2013,6 @@ static PyObject *__Pyx_ImportDottedModule(PyObject *name, PyObject *parts_tuple)
 static PyObject *__Pyx_ImportDottedModule_WalkParts(PyObject *module, PyObject *name, PyObject *parts_tuple);
 #endif
 
-/* ClassMethod.proto */
-#include "descrobject.h"
-CYTHON_UNUSED static PyObject* __Pyx_Method_ClassMethod(PyObject *method);
-
 /* IncludeStructmemberH.proto */
 #include <structmember.h>
 
@@ -2176,6 +2172,10 @@ static PyObject *__Pyx_CyFunction_New(PyMethodDef *ml,
 #define __Pyx_SetNameInClass(ns, name, value)  PyObject_SetItem(ns, name, value)
 #endif
 
+/* ClassMethod.proto */
+#include "descrobject.h"
+CYTHON_UNUSED static PyObject* __Pyx_Method_ClassMethod(PyObject *method);
+
 /* CalculateMetaclass.proto */
 static PyObject *__Pyx_CalculateMetaclass(PyTypeObject *metaclass, PyObject *bases);
 
@@ -2285,7 +2285,7 @@ int __pyx_module_is_main_pkg_support_resistance__vanilla__vanilla_algo = 0;
 
 /* Implementation of "pkg_support_resistance.vanilla.vanilla_algo" */
 /* #### Code section: global_var ### */
-static PyObject *__pyx_builtin_print;
+static PyObject *__pyx_builtin_staticmethod;
 static PyObject *__pyx_builtin_enumerate;
 static PyObject *__pyx_builtin_range;
 /* #### Code section: string_decls ### */
@@ -2296,7 +2296,7 @@ static const char __pyx_k_i4[] = "i4";
 static const char __pyx_k_np[] = "np";
 static const char __pyx_k__13[] = ".";
 static const char __pyx_k__14[] = "*";
-static const char __pyx_k__25[] = "?";
+static const char __pyx_k__26[] = "?";
 static const char __pyx_k_cls[] = "cls";
 static const char __pyx_k_dif[] = "dif";
 static const char __pyx_k_doc[] = "__doc__";
@@ -2330,7 +2330,6 @@ static const char __pyx_k_float[] = "float";
 static const char __pyx_k_lines[] = "lines";
 static const char __pyx_k_numpy[] = "numpy";
 static const char __pyx_k_order[] = "order";
-static const char __pyx_k_print[] = "print";
 static const char __pyx_k_range[] = "range";
 static const char __pyx_k_right[] = "right";
 static const char __pyx_k_score[] = "score";
@@ -2373,7 +2372,6 @@ static const char __pyx_k_low_index[] = "low_index";
 static const char __pyx_k_max_point[] = "max_point";
 static const char __pyx_k_metaclass[] = "__metaclass__";
 static const char __pyx_k_min_point[] = "min_point";
-static const char __pyx_k_sr_result[] = "sr_result";
 static const char __pyx_k_threshold[] = "threshold";
 static const char __pyx_k_clustering[] = "__clustering";
 static const char __pyx_k_clusters_r[] = "clusters_r";
@@ -2398,10 +2396,12 @@ static const char __pyx_k_total_lines[] = "total_lines";
 static const char __pyx_k_curr_cluster[] = "curr_cluster";
 static const char __pyx_k_initializing[] = "_initializing";
 static const char __pyx_k_is_coroutine[] = "_is_coroutine";
+static const char __pyx_k_staticmethod[] = "staticmethod";
 static const char __pyx_k_class_getitem[] = "__class_getitem__";
 static const char __pyx_k_exec_pipeline[] = "exec_pipeline";
 static const char __pyx_k_extreme_value[] = "extreme_value";
 static const char __pyx_k_init_subclass[] = "__init_subclass__";
+static const char __pyx_k_is_cythonized[] = "is_cythonized";
 static const char __pyx_k_max_condition[] = "max_condition";
 static const char __pyx_k_min_condition[] = "min_condition";
 static const char __pyx_k_recovery_line[] = "__recovery_line";
@@ -2411,7 +2411,6 @@ static const char __pyx_k_np_ndarray_None[] = "np.ndarray | None";
 static const char __pyx_k_recovery_line_r[] = "recovery_line_r";
 static const char __pyx_k_recovery_line_s[] = "recovery_line_s";
 static const char __pyx_k_vanilla_algo_py[] = "vanilla_algo.py";
-static const char __pyx_k_sr_input_example[] = "sr_input_example";
 static const char __pyx_k_accumulatedVolume[] = "accumulatedVolume";
 static const char __pyx_k_cluster_threshold[] = "cluster_threshold";
 static const char __pyx_k_existing_line_idx[] = "existing_line_idx";
@@ -2431,21 +2430,22 @@ static const char __pyx_k_VanillaSupportResistance___calc[] = "VanillaSupportRes
 static const char __pyx_k_VanillaSupportResistance__clust[] = "_VanillaSupportResistance__clustering";
 static const char __pyx_k_VanillaSupportResistance__recov[] = "_VanillaSupportResistance__recovery_line";
 static const char __pyx_k_VanillaSupportResistance__unify[] = "_VanillaSupportResistance__unify";
-static const char __pyx_k_pkg_support_resistance_data_set[] = "pkg_support_resistance.data_set.data_extraction";
 static const char __pyx_k_VanillaSupportResistance___clust[] = "VanillaSupportResistance.__clustering";
 static const char __pyx_k_VanillaSupportResistance___recov[] = "VanillaSupportResistance.__recovery_line";
 static const char __pyx_k_VanillaSupportResistance___unify[] = "VanillaSupportResistance.__unify";
 static const char __pyx_k_VanillaSupportResistance_exec_pi[] = "VanillaSupportResistance.exec_pipeline";
+static const char __pyx_k_VanillaSupportResistance_is_cyth[] = "VanillaSupportResistance.is_cythonized";
 static const char __pyx_k_Vanilla_Clustering_Support_Resis[] = "Vanilla Clustering Support Resistance class";
 static const char __pyx_k_pkg_support_resistance_vanilla_v[] = "pkg_support_resistance.vanilla.vanilla_algo";
 /* #### Code section: decls ### */
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance___calc_points(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, PyObject *__pyx_v_extreme); /* proto */
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__clustering(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, double __pyx_v_threshold, PyObject *__pyx_v_direction); /* proto */
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__recovery_line(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_clusters, PyObject *__pyx_v_direction); /* proto */
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_is_cythonized(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__calc_points(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, PyObject *__pyx_v_extreme); /* proto */
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__clustering(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, double __pyx_v_threshold, PyObject *__pyx_v_direction); /* proto */
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__recovery_line(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_clusters, PyObject *__pyx_v_direction); /* proto */
 static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo___defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__unify(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_src_r, PyObject *__pyx_v_src_s, double __pyx_v_threshold, PyObject *__pyx_v_total_lines); /* proto */
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8__unify(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_src_r, PyObject *__pyx_v_src_s, double __pyx_v_threshold, PyObject *__pyx_v_total_lines); /* proto */
 static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8exec_pipeline(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls, PyObject *__pyx_v_input_data, PyObject *__pyx_v_cluster_threshold, PyObject *__pyx_v_previous_sr); /* proto */
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_10exec_pipeline(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls, PyObject *__pyx_v_input_data, PyObject *__pyx_v_cluster_threshold, PyObject *__pyx_v_previous_sr); /* proto */
 static __Pyx_CachedCFunction __pyx_umethod_PyDict_Type_values = {0, 0, 0, 0, 0};
 /* #### Code section: late_includes ### */
 /* #### Code section: module_state ### */
@@ -2493,10 +2493,11 @@ typedef struct {
   PyObject *__pyx_n_s_VanillaSupportResistance__recov;
   PyObject *__pyx_n_s_VanillaSupportResistance__unify;
   PyObject *__pyx_n_s_VanillaSupportResistance_exec_pi;
+  PyObject *__pyx_n_s_VanillaSupportResistance_is_cyth;
   PyObject *__pyx_kp_s_Vanilla_Clustering_Support_Resis;
   PyObject *__pyx_kp_u__13;
   PyObject *__pyx_n_s__14;
-  PyObject *__pyx_n_s__25;
+  PyObject *__pyx_n_s__26;
   PyObject *__pyx_n_s_accumulatedVolume;
   PyObject *__pyx_n_s_accumulated_volume;
   PyObject *__pyx_n_s_append;
@@ -2555,6 +2556,7 @@ typedef struct {
   PyObject *__pyx_n_s_initializing;
   PyObject *__pyx_n_s_input_data;
   PyObject *__pyx_n_s_is_coroutine;
+  PyObject *__pyx_n_s_is_cythonized;
   PyObject *__pyx_n_s_left;
   PyObject *__pyx_n_s_limitsDown;
   PyObject *__pyx_n_s_limitsUp;
@@ -2585,12 +2587,10 @@ typedef struct {
   PyObject *__pyx_n_s_order;
   PyObject *__pyx_n_s_pivotPrice;
   PyObject *__pyx_n_s_pivot_price;
-  PyObject *__pyx_n_s_pkg_support_resistance_data_set;
   PyObject *__pyx_n_s_pkg_support_resistance_vanilla_v;
   PyObject *__pyx_n_s_points;
   PyObject *__pyx_n_s_prepare;
   PyObject *__pyx_n_s_previous_sr;
-  PyObject *__pyx_n_s_print;
   PyObject *__pyx_n_s_push;
   PyObject *__pyx_n_s_qualname;
   PyObject *__pyx_n_s_range;
@@ -2608,11 +2608,10 @@ typedef struct {
   PyObject *__pyx_n_s_size;
   PyObject *__pyx_n_s_sort;
   PyObject *__pyx_n_s_spec;
-  PyObject *__pyx_n_s_sr_input_example;
-  PyObject *__pyx_n_s_sr_result;
   PyObject *__pyx_n_s_src;
   PyObject *__pyx_n_s_src_r;
   PyObject *__pyx_n_s_src_s;
+  PyObject *__pyx_n_s_staticmethod;
   PyObject *__pyx_n_s_str;
   PyObject *__pyx_n_s_super;
   PyObject *__pyx_n_s_support;
@@ -2647,16 +2646,17 @@ typedef struct {
   PyObject *__pyx_slice__12;
   PyObject *__pyx_tuple__10;
   PyObject *__pyx_tuple__11;
-  PyObject *__pyx_tuple__15;
-  PyObject *__pyx_tuple__17;
-  PyObject *__pyx_tuple__19;
-  PyObject *__pyx_tuple__21;
-  PyObject *__pyx_tuple__23;
-  PyObject *__pyx_codeobj__16;
-  PyObject *__pyx_codeobj__18;
-  PyObject *__pyx_codeobj__20;
-  PyObject *__pyx_codeobj__22;
-  PyObject *__pyx_codeobj__24;
+  PyObject *__pyx_tuple__16;
+  PyObject *__pyx_tuple__18;
+  PyObject *__pyx_tuple__20;
+  PyObject *__pyx_tuple__22;
+  PyObject *__pyx_tuple__24;
+  PyObject *__pyx_codeobj__15;
+  PyObject *__pyx_codeobj__17;
+  PyObject *__pyx_codeobj__19;
+  PyObject *__pyx_codeobj__21;
+  PyObject *__pyx_codeobj__23;
+  PyObject *__pyx_codeobj__25;
 } __pyx_mstate;
 
 #if CYTHON_USE_MODULE_STATE
@@ -2716,10 +2716,11 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_VanillaSupportResistance__recov);
   Py_CLEAR(clear_module_state->__pyx_n_s_VanillaSupportResistance__unify);
   Py_CLEAR(clear_module_state->__pyx_n_s_VanillaSupportResistance_exec_pi);
+  Py_CLEAR(clear_module_state->__pyx_n_s_VanillaSupportResistance_is_cyth);
   Py_CLEAR(clear_module_state->__pyx_kp_s_Vanilla_Clustering_Support_Resis);
   Py_CLEAR(clear_module_state->__pyx_kp_u__13);
   Py_CLEAR(clear_module_state->__pyx_n_s__14);
-  Py_CLEAR(clear_module_state->__pyx_n_s__25);
+  Py_CLEAR(clear_module_state->__pyx_n_s__26);
   Py_CLEAR(clear_module_state->__pyx_n_s_accumulatedVolume);
   Py_CLEAR(clear_module_state->__pyx_n_s_accumulated_volume);
   Py_CLEAR(clear_module_state->__pyx_n_s_append);
@@ -2778,6 +2779,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_initializing);
   Py_CLEAR(clear_module_state->__pyx_n_s_input_data);
   Py_CLEAR(clear_module_state->__pyx_n_s_is_coroutine);
+  Py_CLEAR(clear_module_state->__pyx_n_s_is_cythonized);
   Py_CLEAR(clear_module_state->__pyx_n_s_left);
   Py_CLEAR(clear_module_state->__pyx_n_s_limitsDown);
   Py_CLEAR(clear_module_state->__pyx_n_s_limitsUp);
@@ -2808,12 +2810,10 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_order);
   Py_CLEAR(clear_module_state->__pyx_n_s_pivotPrice);
   Py_CLEAR(clear_module_state->__pyx_n_s_pivot_price);
-  Py_CLEAR(clear_module_state->__pyx_n_s_pkg_support_resistance_data_set);
   Py_CLEAR(clear_module_state->__pyx_n_s_pkg_support_resistance_vanilla_v);
   Py_CLEAR(clear_module_state->__pyx_n_s_points);
   Py_CLEAR(clear_module_state->__pyx_n_s_prepare);
   Py_CLEAR(clear_module_state->__pyx_n_s_previous_sr);
-  Py_CLEAR(clear_module_state->__pyx_n_s_print);
   Py_CLEAR(clear_module_state->__pyx_n_s_push);
   Py_CLEAR(clear_module_state->__pyx_n_s_qualname);
   Py_CLEAR(clear_module_state->__pyx_n_s_range);
@@ -2831,11 +2831,10 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_size);
   Py_CLEAR(clear_module_state->__pyx_n_s_sort);
   Py_CLEAR(clear_module_state->__pyx_n_s_spec);
-  Py_CLEAR(clear_module_state->__pyx_n_s_sr_input_example);
-  Py_CLEAR(clear_module_state->__pyx_n_s_sr_result);
   Py_CLEAR(clear_module_state->__pyx_n_s_src);
   Py_CLEAR(clear_module_state->__pyx_n_s_src_r);
   Py_CLEAR(clear_module_state->__pyx_n_s_src_s);
+  Py_CLEAR(clear_module_state->__pyx_n_s_staticmethod);
   Py_CLEAR(clear_module_state->__pyx_n_s_str);
   Py_CLEAR(clear_module_state->__pyx_n_s_super);
   Py_CLEAR(clear_module_state->__pyx_n_s_support);
@@ -2870,16 +2869,17 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_slice__12);
   Py_CLEAR(clear_module_state->__pyx_tuple__10);
   Py_CLEAR(clear_module_state->__pyx_tuple__11);
-  Py_CLEAR(clear_module_state->__pyx_tuple__15);
-  Py_CLEAR(clear_module_state->__pyx_tuple__17);
-  Py_CLEAR(clear_module_state->__pyx_tuple__19);
-  Py_CLEAR(clear_module_state->__pyx_tuple__21);
-  Py_CLEAR(clear_module_state->__pyx_tuple__23);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__16);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__18);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__20);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__22);
-  Py_CLEAR(clear_module_state->__pyx_codeobj__24);
+  Py_CLEAR(clear_module_state->__pyx_tuple__16);
+  Py_CLEAR(clear_module_state->__pyx_tuple__18);
+  Py_CLEAR(clear_module_state->__pyx_tuple__20);
+  Py_CLEAR(clear_module_state->__pyx_tuple__22);
+  Py_CLEAR(clear_module_state->__pyx_tuple__24);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__15);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__17);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__19);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__21);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__23);
+  Py_CLEAR(clear_module_state->__pyx_codeobj__25);
   return 0;
 }
 #endif
@@ -2917,10 +2917,11 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_VanillaSupportResistance__recov);
   Py_VISIT(traverse_module_state->__pyx_n_s_VanillaSupportResistance__unify);
   Py_VISIT(traverse_module_state->__pyx_n_s_VanillaSupportResistance_exec_pi);
+  Py_VISIT(traverse_module_state->__pyx_n_s_VanillaSupportResistance_is_cyth);
   Py_VISIT(traverse_module_state->__pyx_kp_s_Vanilla_Clustering_Support_Resis);
   Py_VISIT(traverse_module_state->__pyx_kp_u__13);
   Py_VISIT(traverse_module_state->__pyx_n_s__14);
-  Py_VISIT(traverse_module_state->__pyx_n_s__25);
+  Py_VISIT(traverse_module_state->__pyx_n_s__26);
   Py_VISIT(traverse_module_state->__pyx_n_s_accumulatedVolume);
   Py_VISIT(traverse_module_state->__pyx_n_s_accumulated_volume);
   Py_VISIT(traverse_module_state->__pyx_n_s_append);
@@ -2979,6 +2980,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_initializing);
   Py_VISIT(traverse_module_state->__pyx_n_s_input_data);
   Py_VISIT(traverse_module_state->__pyx_n_s_is_coroutine);
+  Py_VISIT(traverse_module_state->__pyx_n_s_is_cythonized);
   Py_VISIT(traverse_module_state->__pyx_n_s_left);
   Py_VISIT(traverse_module_state->__pyx_n_s_limitsDown);
   Py_VISIT(traverse_module_state->__pyx_n_s_limitsUp);
@@ -3009,12 +3011,10 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_order);
   Py_VISIT(traverse_module_state->__pyx_n_s_pivotPrice);
   Py_VISIT(traverse_module_state->__pyx_n_s_pivot_price);
-  Py_VISIT(traverse_module_state->__pyx_n_s_pkg_support_resistance_data_set);
   Py_VISIT(traverse_module_state->__pyx_n_s_pkg_support_resistance_vanilla_v);
   Py_VISIT(traverse_module_state->__pyx_n_s_points);
   Py_VISIT(traverse_module_state->__pyx_n_s_prepare);
   Py_VISIT(traverse_module_state->__pyx_n_s_previous_sr);
-  Py_VISIT(traverse_module_state->__pyx_n_s_print);
   Py_VISIT(traverse_module_state->__pyx_n_s_push);
   Py_VISIT(traverse_module_state->__pyx_n_s_qualname);
   Py_VISIT(traverse_module_state->__pyx_n_s_range);
@@ -3032,11 +3032,10 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_size);
   Py_VISIT(traverse_module_state->__pyx_n_s_sort);
   Py_VISIT(traverse_module_state->__pyx_n_s_spec);
-  Py_VISIT(traverse_module_state->__pyx_n_s_sr_input_example);
-  Py_VISIT(traverse_module_state->__pyx_n_s_sr_result);
   Py_VISIT(traverse_module_state->__pyx_n_s_src);
   Py_VISIT(traverse_module_state->__pyx_n_s_src_r);
   Py_VISIT(traverse_module_state->__pyx_n_s_src_s);
+  Py_VISIT(traverse_module_state->__pyx_n_s_staticmethod);
   Py_VISIT(traverse_module_state->__pyx_n_s_str);
   Py_VISIT(traverse_module_state->__pyx_n_s_super);
   Py_VISIT(traverse_module_state->__pyx_n_s_support);
@@ -3071,16 +3070,17 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_slice__12);
   Py_VISIT(traverse_module_state->__pyx_tuple__10);
   Py_VISIT(traverse_module_state->__pyx_tuple__11);
-  Py_VISIT(traverse_module_state->__pyx_tuple__15);
-  Py_VISIT(traverse_module_state->__pyx_tuple__17);
-  Py_VISIT(traverse_module_state->__pyx_tuple__19);
-  Py_VISIT(traverse_module_state->__pyx_tuple__21);
-  Py_VISIT(traverse_module_state->__pyx_tuple__23);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__16);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__18);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__20);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__22);
-  Py_VISIT(traverse_module_state->__pyx_codeobj__24);
+  Py_VISIT(traverse_module_state->__pyx_tuple__16);
+  Py_VISIT(traverse_module_state->__pyx_tuple__18);
+  Py_VISIT(traverse_module_state->__pyx_tuple__20);
+  Py_VISIT(traverse_module_state->__pyx_tuple__22);
+  Py_VISIT(traverse_module_state->__pyx_tuple__24);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__15);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__17);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__19);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__21);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__23);
+  Py_VISIT(traverse_module_state->__pyx_codeobj__25);
   return 0;
 }
 #endif
@@ -3128,10 +3128,11 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_VanillaSupportResistance__recov __pyx_mstate_global->__pyx_n_s_VanillaSupportResistance__recov
 #define __pyx_n_s_VanillaSupportResistance__unify __pyx_mstate_global->__pyx_n_s_VanillaSupportResistance__unify
 #define __pyx_n_s_VanillaSupportResistance_exec_pi __pyx_mstate_global->__pyx_n_s_VanillaSupportResistance_exec_pi
+#define __pyx_n_s_VanillaSupportResistance_is_cyth __pyx_mstate_global->__pyx_n_s_VanillaSupportResistance_is_cyth
 #define __pyx_kp_s_Vanilla_Clustering_Support_Resis __pyx_mstate_global->__pyx_kp_s_Vanilla_Clustering_Support_Resis
 #define __pyx_kp_u__13 __pyx_mstate_global->__pyx_kp_u__13
 #define __pyx_n_s__14 __pyx_mstate_global->__pyx_n_s__14
-#define __pyx_n_s__25 __pyx_mstate_global->__pyx_n_s__25
+#define __pyx_n_s__26 __pyx_mstate_global->__pyx_n_s__26
 #define __pyx_n_s_accumulatedVolume __pyx_mstate_global->__pyx_n_s_accumulatedVolume
 #define __pyx_n_s_accumulated_volume __pyx_mstate_global->__pyx_n_s_accumulated_volume
 #define __pyx_n_s_append __pyx_mstate_global->__pyx_n_s_append
@@ -3190,6 +3191,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_initializing __pyx_mstate_global->__pyx_n_s_initializing
 #define __pyx_n_s_input_data __pyx_mstate_global->__pyx_n_s_input_data
 #define __pyx_n_s_is_coroutine __pyx_mstate_global->__pyx_n_s_is_coroutine
+#define __pyx_n_s_is_cythonized __pyx_mstate_global->__pyx_n_s_is_cythonized
 #define __pyx_n_s_left __pyx_mstate_global->__pyx_n_s_left
 #define __pyx_n_s_limitsDown __pyx_mstate_global->__pyx_n_s_limitsDown
 #define __pyx_n_s_limitsUp __pyx_mstate_global->__pyx_n_s_limitsUp
@@ -3220,12 +3222,10 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_order __pyx_mstate_global->__pyx_n_s_order
 #define __pyx_n_s_pivotPrice __pyx_mstate_global->__pyx_n_s_pivotPrice
 #define __pyx_n_s_pivot_price __pyx_mstate_global->__pyx_n_s_pivot_price
-#define __pyx_n_s_pkg_support_resistance_data_set __pyx_mstate_global->__pyx_n_s_pkg_support_resistance_data_set
 #define __pyx_n_s_pkg_support_resistance_vanilla_v __pyx_mstate_global->__pyx_n_s_pkg_support_resistance_vanilla_v
 #define __pyx_n_s_points __pyx_mstate_global->__pyx_n_s_points
 #define __pyx_n_s_prepare __pyx_mstate_global->__pyx_n_s_prepare
 #define __pyx_n_s_previous_sr __pyx_mstate_global->__pyx_n_s_previous_sr
-#define __pyx_n_s_print __pyx_mstate_global->__pyx_n_s_print
 #define __pyx_n_s_push __pyx_mstate_global->__pyx_n_s_push
 #define __pyx_n_s_qualname __pyx_mstate_global->__pyx_n_s_qualname
 #define __pyx_n_s_range __pyx_mstate_global->__pyx_n_s_range
@@ -3243,11 +3243,10 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_size __pyx_mstate_global->__pyx_n_s_size
 #define __pyx_n_s_sort __pyx_mstate_global->__pyx_n_s_sort
 #define __pyx_n_s_spec __pyx_mstate_global->__pyx_n_s_spec
-#define __pyx_n_s_sr_input_example __pyx_mstate_global->__pyx_n_s_sr_input_example
-#define __pyx_n_s_sr_result __pyx_mstate_global->__pyx_n_s_sr_result
 #define __pyx_n_s_src __pyx_mstate_global->__pyx_n_s_src
 #define __pyx_n_s_src_r __pyx_mstate_global->__pyx_n_s_src_r
 #define __pyx_n_s_src_s __pyx_mstate_global->__pyx_n_s_src_s
+#define __pyx_n_s_staticmethod __pyx_mstate_global->__pyx_n_s_staticmethod
 #define __pyx_n_s_str __pyx_mstate_global->__pyx_n_s_str
 #define __pyx_n_s_super __pyx_mstate_global->__pyx_n_s_super
 #define __pyx_n_s_support __pyx_mstate_global->__pyx_n_s_support
@@ -3282,37 +3281,95 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_slice__12 __pyx_mstate_global->__pyx_slice__12
 #define __pyx_tuple__10 __pyx_mstate_global->__pyx_tuple__10
 #define __pyx_tuple__11 __pyx_mstate_global->__pyx_tuple__11
-#define __pyx_tuple__15 __pyx_mstate_global->__pyx_tuple__15
-#define __pyx_tuple__17 __pyx_mstate_global->__pyx_tuple__17
-#define __pyx_tuple__19 __pyx_mstate_global->__pyx_tuple__19
-#define __pyx_tuple__21 __pyx_mstate_global->__pyx_tuple__21
-#define __pyx_tuple__23 __pyx_mstate_global->__pyx_tuple__23
-#define __pyx_codeobj__16 __pyx_mstate_global->__pyx_codeobj__16
-#define __pyx_codeobj__18 __pyx_mstate_global->__pyx_codeobj__18
-#define __pyx_codeobj__20 __pyx_mstate_global->__pyx_codeobj__20
-#define __pyx_codeobj__22 __pyx_mstate_global->__pyx_codeobj__22
-#define __pyx_codeobj__24 __pyx_mstate_global->__pyx_codeobj__24
+#define __pyx_tuple__16 __pyx_mstate_global->__pyx_tuple__16
+#define __pyx_tuple__18 __pyx_mstate_global->__pyx_tuple__18
+#define __pyx_tuple__20 __pyx_mstate_global->__pyx_tuple__20
+#define __pyx_tuple__22 __pyx_mstate_global->__pyx_tuple__22
+#define __pyx_tuple__24 __pyx_mstate_global->__pyx_tuple__24
+#define __pyx_codeobj__15 __pyx_mstate_global->__pyx_codeobj__15
+#define __pyx_codeobj__17 __pyx_mstate_global->__pyx_codeobj__17
+#define __pyx_codeobj__19 __pyx_mstate_global->__pyx_codeobj__19
+#define __pyx_codeobj__21 __pyx_mstate_global->__pyx_codeobj__21
+#define __pyx_codeobj__23 __pyx_mstate_global->__pyx_codeobj__23
+#define __pyx_codeobj__25 __pyx_mstate_global->__pyx_codeobj__25
 /* #### Code section: module_code ### */
 
 /* "pkg_support_resistance/vanilla/vanilla_algo.py":11
  *     """Vanilla Clustering Support Resistance class"""
- *
+ * 
+ *     @staticmethod             # <<<<<<<<<<<<<<
+ *     def is_cythonized():
+ *         """
+ */
+
+/* Python wrapper */
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1is_cythonized(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_is_cythonized, "\n        Check if the module is cytotonized?\n        The cythonized model represents a performance improvement of %13.05.\n        ");
+static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1is_cythonized = {"is_cythonized", (PyCFunction)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1is_cythonized, METH_NOARGS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_is_cythonized};
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1is_cythonized(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
+  CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
+  PyObject *__pyx_r = 0;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("is_cythonized (wrapper)", 0);
+  __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
+  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_is_cythonized(__pyx_self);
+
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_is_cythonized(CYTHON_UNUSED PyObject *__pyx_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("is_cythonized", 1);
+
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":18
+ *         """
+ * 
+ *         return True             # <<<<<<<<<<<<<<
+ * 
+ *     @classmethod
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __Pyx_INCREF(Py_True);
+  __pyx_r = Py_True;
+  goto __pyx_L0;
+
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":11
+ *     """Vanilla Clustering Support Resistance class"""
+ * 
+ *     @staticmethod             # <<<<<<<<<<<<<<
+ *     def is_cythonized():
+ *         """
+ */
+
+  /* function exit code */
+  __pyx_L0:;
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "pkg_support_resistance/vanilla/vanilla_algo.py":20
+ *         return True
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __calc_points(cls, data: np.ndarray, extreme: str) -> np.ndarray[np.ndarray]:
  *         """
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1__calc_points(PyObject *__pyx_self,
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__calc_points(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance___calc_points, "\n        Calculate points (max o min).\n        Return: numpy.ndarray. Dtype = [('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')]\n        I.e.: [[4.93000000e+02 4.77248100e+04 4.75912400e+04 4.77299900e+04 4.75580000e+04 1.92358790e+02], ...]\n        ");
-static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1__calc_points = {"__calc_points", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1__calc_points, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance___calc_points};
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1__calc_points(PyObject *__pyx_self,
+PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__calc_points, "\n        Calculate points (max o min).\n        Return: numpy.ndarray. Dtype = [('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')]\n        I.e.: [[4.93000000e+02 4.77248100e+04 4.75912400e+04 4.77299900e+04 4.75580000e+04 1.92358790e+02], ...]\n        ");
+static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__calc_points = {"__calc_points", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__calc_points, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__calc_points};
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__calc_points(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -3362,7 +3419,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 11, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -3370,9 +3427,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 11, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__calc_points", 1, 3, 3, 1); __PYX_ERR(0, 11, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__calc_points", 1, 3, 3, 1); __PYX_ERR(0, 20, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -3380,14 +3437,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 11, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__calc_points", 1, 3, 3, 2); __PYX_ERR(0, 11, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__calc_points", 1, 3, 3, 2); __PYX_ERR(0, 20, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__calc_points") < 0)) __PYX_ERR(0, 11, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__calc_points") < 0)) __PYX_ERR(0, 20, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -3402,7 +3459,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__calc_points", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 11, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__calc_points", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 20, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3416,8 +3473,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_extreme), (&PyString_Type), 0, "extreme", 1))) __PYX_ERR(0, 12, __pyx_L1_error)
-  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance___calc_points(__pyx_self, __pyx_v_cls, __pyx_v_data, __pyx_v_extreme);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_extreme), (&PyString_Type), 0, "extreme", 1))) __PYX_ERR(0, 21, __pyx_L1_error)
+  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__calc_points(__pyx_self, __pyx_v_cls, __pyx_v_data, __pyx_v_extreme);
 
   /* function exit code */
   goto __pyx_L0;
@@ -3434,7 +3491,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance___calc_points(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, PyObject *__pyx_v_extreme) {
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__calc_points(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, PyObject *__pyx_v_extreme) {
   PyObject *__pyx_v_points = NULL;
   PyObject *__pyx_v_extreme_value = NULL;
   PyObject *__pyx_v_center = NULL;
@@ -3463,33 +3520,33 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__calc_points", 1);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":19
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":28
  *         """
- *
+ * 
  *         points = []             # <<<<<<<<<<<<<<
  *         extreme_value = data[:, 2] if extreme == "max" else data[:, 3]
- *
+ * 
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_points = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":20
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":29
+ * 
  *         points = []
  *         extreme_value = data[:, 2] if extreme == "max" else data[:, 3]             # <<<<<<<<<<<<<<
- *
+ * 
  *         center = extreme_value[1:-1]
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_extreme, __pyx_n_s_max, Py_EQ)); if (unlikely((__pyx_t_2 < 0))) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_extreme, __pyx_n_s_max, Py_EQ)); if (unlikely((__pyx_t_2 < 0))) __PYX_ERR(0, 29, __pyx_L1_error)
   if (__pyx_t_2) {
-    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_tuple__2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_tuple__2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 29, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_1 = __pyx_t_3;
     __pyx_t_3 = 0;
   } else {
-    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_tuple__3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_tuple__3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 29, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_1 = __pyx_t_3;
     __pyx_t_3 = 0;
@@ -3497,84 +3554,84 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __pyx_v_extreme_value = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":22
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":31
  *         extreme_value = data[:, 2] if extreme == "max" else data[:, 3]
- *
+ * 
  *         center = extreme_value[1:-1]             # <<<<<<<<<<<<<<
  *         left = extreme_value[:-2]
  *         right = extreme_value[2:]
  */
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_extreme_value, 1, -1L, NULL, NULL, &__pyx_slice__4, 1, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_extreme_value, 1, -1L, NULL, NULL, &__pyx_slice__4, 1, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_center = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":23
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":32
+ * 
  *         center = extreme_value[1:-1]
  *         left = extreme_value[:-2]             # <<<<<<<<<<<<<<
  *         right = extreme_value[2:]
- *
+ * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_extreme_value, 0, -2L, NULL, NULL, &__pyx_slice__5, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_extreme_value, 0, -2L, NULL, NULL, &__pyx_slice__5, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_left = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":24
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":33
  *         center = extreme_value[1:-1]
  *         left = extreme_value[:-2]
  *         right = extreme_value[2:]             # <<<<<<<<<<<<<<
- *
+ * 
  *         max_condition = (center > left) & (center > right)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_extreme_value, 2, 0, NULL, NULL, &__pyx_slice__6, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_extreme_value, 2, 0, NULL, NULL, &__pyx_slice__6, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_right = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":26
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":35
  *         right = extreme_value[2:]
- *
+ * 
  *         max_condition = (center > left) & (center > right)             # <<<<<<<<<<<<<<
  *         min_condition = (center < left) & (center < right)
- *
+ * 
  */
-  __pyx_t_1 = PyObject_RichCompare(__pyx_v_center, __pyx_v_left, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_center, __pyx_v_right, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
-  __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_center, __pyx_v_left, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_center, __pyx_v_right, Py_GT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_And(__pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_max_condition = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":27
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":36
+ * 
  *         max_condition = (center > left) & (center > right)
  *         min_condition = (center < left) & (center < right)             # <<<<<<<<<<<<<<
- *
+ * 
  *         np.where(max_condition)[0] + 1  # Index adjustment
  */
-  __pyx_t_4 = PyObject_RichCompare(__pyx_v_center, __pyx_v_left, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 27, __pyx_L1_error)
-  __pyx_t_3 = PyObject_RichCompare(__pyx_v_center, __pyx_v_right, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
-  __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_v_center, __pyx_v_left, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_v_center, __pyx_v_right, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_And(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_min_condition = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":29
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":38
  *         min_condition = (center < left) & (center < right)
- *
+ * 
  *         np.where(max_condition)[0] + 1  # Index adjustment             # <<<<<<<<<<<<<<
  *         np.where(min_condition)[0] + 1  # Index adjustment
- *
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_where); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_where); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -3595,28 +3652,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_v_max_condition};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":30
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":39
+ * 
  *         np.where(max_condition)[0] + 1  # Index adjustment
  *         np.where(min_condition)[0] + 1  # Index adjustment             # <<<<<<<<<<<<<<
- *
+ * 
  *         idx = None
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_where); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_where); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -3637,21 +3694,21 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_v_min_condition};
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_3, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_3, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":32
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":41
  *         np.where(min_condition)[0] + 1  # Index adjustment
- *
+ * 
  *         idx = None             # <<<<<<<<<<<<<<
  *         if extreme == "max":
  *             idx = np.where(max_condition)[0] + 1
@@ -3659,26 +3716,26 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __Pyx_INCREF(Py_None);
   __pyx_v_idx = Py_None;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":33
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":42
+ * 
  *         idx = None
  *         if extreme == "max":             # <<<<<<<<<<<<<<
  *             idx = np.where(max_condition)[0] + 1
  *         elif extreme == "min":
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_extreme, __pyx_n_s_max, Py_EQ)); if (unlikely((__pyx_t_2 < 0))) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_extreme, __pyx_n_s_max, Py_EQ)); if (unlikely((__pyx_t_2 < 0))) __PYX_ERR(0, 42, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":34
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":43
  *         idx = None
  *         if extreme == "max":
  *             idx = np.where(max_condition)[0] + 1             # <<<<<<<<<<<<<<
  *         elif extreme == "min":
  *             idx = np.where(min_condition)[0] + 1
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_where); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_where); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -3699,21 +3756,21 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       PyObject *__pyx_callargs[2] = {__pyx_t_3, __pyx_v_max_condition};
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 43, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF_SET(__pyx_v_idx, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":33
- *
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":42
+ * 
  *         idx = None
  *         if extreme == "max":             # <<<<<<<<<<<<<<
  *             idx = np.where(max_condition)[0] + 1
@@ -3722,26 +3779,26 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     goto __pyx_L3;
   }
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":35
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":44
  *         if extreme == "max":
  *             idx = np.where(max_condition)[0] + 1
  *         elif extreme == "min":             # <<<<<<<<<<<<<<
  *             idx = np.where(min_condition)[0] + 1
- *
+ * 
  */
-  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_extreme, __pyx_n_s_min, Py_EQ)); if (unlikely((__pyx_t_2 < 0))) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyString_Equals(__pyx_v_extreme, __pyx_n_s_min, Py_EQ)); if (unlikely((__pyx_t_2 < 0))) __PYX_ERR(0, 44, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":36
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":45
  *             idx = np.where(max_condition)[0] + 1
  *         elif extreme == "min":
  *             idx = np.where(min_condition)[0] + 1             # <<<<<<<<<<<<<<
- *
+ * 
  *         points = np.empty((len(idx), 6))
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 36, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_where); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_where); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -3762,51 +3819,51 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       PyObject *__pyx_callargs[2] = {__pyx_t_4, __pyx_v_min_condition};
       __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
-    __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt(__pyx_t_1, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_3, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyInt_AddObjC(__pyx_t_3, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_idx, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":35
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":44
  *         if extreme == "max":
  *             idx = np.where(max_condition)[0] + 1
  *         elif extreme == "min":             # <<<<<<<<<<<<<<
  *             idx = np.where(min_condition)[0] + 1
- *
+ * 
  */
   }
   __pyx_L3:;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":38
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":47
  *             idx = np.where(min_condition)[0] + 1
- *
+ * 
  *         points = np.empty((len(idx), 6))             # <<<<<<<<<<<<<<
  *         for i, idx in enumerate(idx):
  *             points[i] = [
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_6 = PyObject_Length(__pyx_v_idx); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 38, __pyx_L1_error)
-  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_6 = PyObject_Length(__pyx_v_idx); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_3);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error);
   __Pyx_INCREF(__pyx_int_6);
   __Pyx_GIVEREF(__pyx_int_6);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_6)) __PYX_ERR(0, 38, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_6)) __PYX_ERR(0, 47, __pyx_L1_error);
   __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
   __pyx_t_5 = 0;
@@ -3827,15 +3884,15 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __Pyx_DECREF_SET(__pyx_v_points, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":39
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":48
+ * 
  *         points = np.empty((len(idx), 6))
  *         for i, idx in enumerate(idx):             # <<<<<<<<<<<<<<
  *             points[i] = [
@@ -3848,9 +3905,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_6 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_idx); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_idx); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 48, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_8)) {
@@ -3858,28 +3915,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_4);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
           #endif
           if (__pyx_t_6 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_7 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
         #else
-        __pyx_t_7 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 48, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_4);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
           #endif
           if (__pyx_t_6 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_7); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 48, __pyx_L1_error)
         #else
-        __pyx_t_7 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 48, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
       }
@@ -3889,7 +3946,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 39, __pyx_L1_error)
+          else __PYX_ERR(0, 48, __pyx_L1_error)
         }
         break;
       }
@@ -3899,139 +3956,139 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_7 = 0;
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_1);
-    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 48, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_1);
     __pyx_t_1 = __pyx_t_7;
     __pyx_t_7 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":42
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":51
  *             points[i] = [
  *                 idx,
  *                 data[idx, 0],             # <<<<<<<<<<<<<<
  *                 data[idx, 1],
  *                 data[idx, 2],
  */
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 51, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_idx);
     __Pyx_GIVEREF(__pyx_v_idx);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 42, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 51, __pyx_L1_error);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_0)) __PYX_ERR(0, 42, __pyx_L1_error);
-    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_0)) __PYX_ERR(0, 51, __pyx_L1_error);
+    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":43
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":52
  *                 idx,
  *                 data[idx, 0],
  *                 data[idx, 1],             # <<<<<<<<<<<<<<
  *                 data[idx, 2],
  *                 data[idx, 3],
  */
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 52, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_idx);
     __Pyx_GIVEREF(__pyx_v_idx);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 43, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 52, __pyx_L1_error);
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_1)) __PYX_ERR(0, 43, __pyx_L1_error);
-    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 43, __pyx_L1_error)
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_1)) __PYX_ERR(0, 52, __pyx_L1_error);
+    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 52, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":44
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":53
  *                 data[idx, 0],
  *                 data[idx, 1],
  *                 data[idx, 2],             # <<<<<<<<<<<<<<
  *                 data[idx, 3],
  *                 data[idx, 4],
  */
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_idx);
     __Pyx_GIVEREF(__pyx_v_idx);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 44, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 53, __pyx_L1_error);
     __Pyx_INCREF(__pyx_int_2);
     __Pyx_GIVEREF(__pyx_int_2);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_2)) __PYX_ERR(0, 44, __pyx_L1_error);
-    __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 44, __pyx_L1_error)
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_2)) __PYX_ERR(0, 53, __pyx_L1_error);
+    __pyx_t_10 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":45
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":54
  *                 data[idx, 1],
  *                 data[idx, 2],
  *                 data[idx, 3],             # <<<<<<<<<<<<<<
  *                 data[idx, 4],
  *             ]
  */
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 45, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 54, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_idx);
     __Pyx_GIVEREF(__pyx_v_idx);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 45, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 54, __pyx_L1_error);
     __Pyx_INCREF(__pyx_int_3);
     __Pyx_GIVEREF(__pyx_int_3);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_3)) __PYX_ERR(0, 45, __pyx_L1_error);
-    __pyx_t_11 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 45, __pyx_L1_error)
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_3)) __PYX_ERR(0, 54, __pyx_L1_error);
+    __pyx_t_11 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 54, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":46
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":55
  *                 data[idx, 2],
  *                 data[idx, 3],
  *                 data[idx, 4],             # <<<<<<<<<<<<<<
  *             ]
- *
+ * 
  */
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 46, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_idx);
     __Pyx_GIVEREF(__pyx_v_idx);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 46, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 55, __pyx_L1_error);
     __Pyx_INCREF(__pyx_int_4);
     __Pyx_GIVEREF(__pyx_int_4);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_4)) __PYX_ERR(0, 46, __pyx_L1_error);
-    __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 46, __pyx_L1_error)
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_int_4)) __PYX_ERR(0, 55, __pyx_L1_error);
+    __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_data, __pyx_t_7); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":40
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":49
  *         points = np.empty((len(idx), 6))
  *         for i, idx in enumerate(idx):
  *             points[i] = [             # <<<<<<<<<<<<<<
  *                 idx,
  *                 data[idx, 0],
  */
-    __pyx_t_7 = PyList_New(6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 49, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_idx);
     __Pyx_GIVEREF(__pyx_v_idx);
-    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 40, __pyx_L1_error);
+    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_idx)) __PYX_ERR(0, 49, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_3);
-    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error);
+    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 1, __pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_9);
-    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 2, __pyx_t_9)) __PYX_ERR(0, 40, __pyx_L1_error);
+    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 2, __pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_10);
-    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 3, __pyx_t_10)) __PYX_ERR(0, 40, __pyx_L1_error);
+    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 3, __pyx_t_10)) __PYX_ERR(0, 49, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_11);
-    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 4, __pyx_t_11)) __PYX_ERR(0, 40, __pyx_L1_error);
+    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 4, __pyx_t_11)) __PYX_ERR(0, 49, __pyx_L1_error);
     __Pyx_GIVEREF(__pyx_t_12);
-    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 5, __pyx_t_12)) __PYX_ERR(0, 40, __pyx_L1_error);
+    if (__Pyx_PyList_SET_ITEM(__pyx_t_7, 5, __pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error);
     __pyx_t_3 = 0;
     __pyx_t_9 = 0;
     __pyx_t_10 = 0;
     __pyx_t_11 = 0;
     __pyx_t_12 = 0;
-    if (unlikely((PyObject_SetItem(__pyx_v_points, __pyx_v_i, __pyx_t_7) < 0))) __PYX_ERR(0, 40, __pyx_L1_error)
+    if (unlikely((PyObject_SetItem(__pyx_v_points, __pyx_v_i, __pyx_t_7) < 0))) __PYX_ERR(0, 49, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":39
- *
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":48
+ * 
  *         points = np.empty((len(idx), 6))
  *         for i, idx in enumerate(idx):             # <<<<<<<<<<<<<<
  *             points[i] = [
@@ -4041,11 +4098,11 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":49
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":58
  *             ]
- *
+ * 
  *         return points             # <<<<<<<<<<<<<<
- *
+ * 
  *     @classmethod
  */
   __Pyx_XDECREF(__pyx_r);
@@ -4053,9 +4110,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __pyx_r = __pyx_v_points;
   goto __pyx_L0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":11
- *     """Vanilla Clustering Support Resistance class"""
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":20
+ *         return True
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __calc_points(cls, data: np.ndarray, extreme: str) -> np.ndarray[np.ndarray]:
  *         """
@@ -4088,25 +4145,25 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   return __pyx_r;
 }
 
-/* "pkg_support_resistance/vanilla/vanilla_algo.py":51
+/* "pkg_support_resistance/vanilla/vanilla_algo.py":60
  *         return points
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __clustering(  # pylint: disable=too-many-locals, too-many-branches
  *         cls, data: np.ndarray, threshold: float, direction: str
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__clustering(PyObject *__pyx_self,
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__clustering(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__clustering, "\n        Clustering.\n        Return: numpy.ndarray[numpy.ndarray[numpy.ndarray]].\n        dtype: [('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')]\n        I.e.: [[[493., 47724.81, 47591.24, 47729.99, 47558., 192.35879], ...], ...]\n        ");
-static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__clustering = {"__clustering", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__clustering, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__clustering};
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__clustering(PyObject *__pyx_self,
+PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__clustering, "\n        Clustering.\n        Return: numpy.ndarray[numpy.ndarray[numpy.ndarray]].\n        dtype: [('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')]\n        I.e.: [[[493., 47724.81, 47591.24, 47729.99, 47558., 192.35879], ...], ...]\n        ");
+static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__clustering = {"__clustering", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__clustering, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__clustering};
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__clustering(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -4159,7 +4216,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 51, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -4167,9 +4224,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 51, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, 1); __PYX_ERR(0, 51, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, 1); __PYX_ERR(0, 60, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -4177,9 +4234,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 51, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, 2); __PYX_ERR(0, 51, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, 2); __PYX_ERR(0, 60, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -4187,14 +4244,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 51, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 60, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, 3); __PYX_ERR(0, 51, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, 3); __PYX_ERR(0, 60, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__clustering") < 0)) __PYX_ERR(0, 51, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__clustering") < 0)) __PYX_ERR(0, 60, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 4)) {
       goto __pyx_L5_argtuple_error;
@@ -4206,12 +4263,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
     __pyx_v_cls = values[0];
     __pyx_v_data = values[1];
-    __pyx_v_threshold = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_threshold == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 53, __pyx_L3_error)
+    __pyx_v_threshold = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_threshold == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 62, __pyx_L3_error)
     __pyx_v_direction = ((PyObject*)values[3]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 51, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__clustering", 1, 4, 4, __pyx_nargs); __PYX_ERR(0, 60, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -4225,8 +4282,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction), (&PyString_Type), 0, "direction", 1))) __PYX_ERR(0, 53, __pyx_L1_error)
-  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__clustering(__pyx_self, __pyx_v_cls, __pyx_v_data, __pyx_v_threshold, __pyx_v_direction);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction), (&PyString_Type), 0, "direction", 1))) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__clustering(__pyx_self, __pyx_v_cls, __pyx_v_data, __pyx_v_threshold, __pyx_v_direction);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4243,7 +4300,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_2__clustering(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, double __pyx_v_threshold, PyObject *__pyx_v_direction) {
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__clustering(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_data, double __pyx_v_threshold, PyObject *__pyx_v_direction) {
   PyObject *__pyx_v_clusters = NULL;
   long __pyx_v_high_index;
   long __pyx_v_low_index;
@@ -4279,39 +4336,39 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__clustering", 1);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":62
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":71
  *         """
- *
+ * 
  *         clusters = []             # <<<<<<<<<<<<<<
  *         high_index = 3  # Index of the 'high' column in the data array
  *         low_index = 4  # Index of the 'low' column in the data array
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_clusters = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":63
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":72
+ * 
  *         clusters = []
  *         high_index = 3  # Index of the 'high' column in the data array             # <<<<<<<<<<<<<<
  *         low_index = 4  # Index of the 'low' column in the data array
- *
+ * 
  */
   __pyx_v_high_index = 3;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":64
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":73
  *         clusters = []
  *         high_index = 3  # Index of the 'high' column in the data array
  *         low_index = 4  # Index of the 'low' column in the data array             # <<<<<<<<<<<<<<
- *
+ * 
  *         for curr_first in data:  # pylint: disable=too-many-nested-blocks
  */
   __pyx_v_low_index = 4;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":66
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":75
  *         low_index = 4  # Index of the 'low' column in the data array
- *
+ * 
  *         for curr_first in data:  # pylint: disable=too-many-nested-blocks             # <<<<<<<<<<<<<<
  *             cluster = []
  *             if direction == "resistance":
@@ -4321,9 +4378,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 75, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
@@ -4331,28 +4388,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_1);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 66, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 75, __pyx_L1_error)
           #endif
           if (__pyx_t_2 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 66, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 75, __pyx_L1_error)
         #else
-        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_1);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 66, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 75, __pyx_L1_error)
           #endif
           if (__pyx_t_2 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 66, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely((0 < 0))) __PYX_ERR(0, 75, __pyx_L1_error)
         #else
-        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -4362,7 +4419,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 66, __pyx_L1_error)
+          else __PYX_ERR(0, 75, __pyx_L1_error)
         }
         break;
       }
@@ -4371,41 +4428,41 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_XDECREF_SET(__pyx_v_curr_first, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":67
- *
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":76
+ * 
  *         for curr_first in data:  # pylint: disable=too-many-nested-blocks
  *             cluster = []             # <<<<<<<<<<<<<<
  *             if direction == "resistance":
  *                 h0_first = curr_first[high_index]
  */
-    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_cluster, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":68
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":77
  *         for curr_first in data:  # pylint: disable=too-many-nested-blocks
  *             cluster = []
  *             if direction == "resistance":             # <<<<<<<<<<<<<<
  *                 h0_first = curr_first[high_index]
  *             elif direction == "support":
  */
-    __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 68, __pyx_L1_error)
+    __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 77, __pyx_L1_error)
     if (__pyx_t_5) {
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":69
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":78
  *             cluster = []
  *             if direction == "resistance":
  *                 h0_first = curr_first[high_index]             # <<<<<<<<<<<<<<
  *             elif direction == "support":
  *                 h0_first = curr_first[low_index]
  */
-      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_curr_first, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_curr_first, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_XDECREF_SET(__pyx_v_h0_first, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":68
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":77
  *         for curr_first in data:  # pylint: disable=too-many-nested-blocks
  *             cluster = []
  *             if direction == "resistance":             # <<<<<<<<<<<<<<
@@ -4415,29 +4472,29 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       goto __pyx_L5;
     }
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":70
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":79
  *             if direction == "resistance":
  *                 h0_first = curr_first[high_index]
  *             elif direction == "support":             # <<<<<<<<<<<<<<
  *                 h0_first = curr_first[low_index]
  *             else:
  */
-    __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_support, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 70, __pyx_L1_error)
+    __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_support, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 79, __pyx_L1_error)
     if (__pyx_t_5) {
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":71
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":80
  *                 h0_first = curr_first[high_index]
  *             elif direction == "support":
  *                 h0_first = curr_first[low_index]             # <<<<<<<<<<<<<<
  *             else:
  *                 h0_first = None
  */
-      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_curr_first, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_curr_first, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_XDECREF_SET(__pyx_v_h0_first, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":70
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":79
  *             if direction == "resistance":
  *                 h0_first = curr_first[high_index]
  *             elif direction == "support":             # <<<<<<<<<<<<<<
@@ -4447,11 +4504,11 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       goto __pyx_L5;
     }
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":73
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":82
  *                 h0_first = curr_first[low_index]
  *             else:
  *                 h0_first = None             # <<<<<<<<<<<<<<
- *
+ * 
  *             cluster.append(curr_first)
  */
     /*else*/ {
@@ -4460,17 +4517,17 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     }
     __pyx_L5:;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":75
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":84
  *                 h0_first = None
- *
+ * 
  *             cluster.append(curr_first)             # <<<<<<<<<<<<<<
  *             for curr_second in data:
  *                 if direction == "resistance":
  */
-    __pyx_t_6 = __Pyx_PyObject_Append(__pyx_v_cluster, __pyx_v_curr_first); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 75, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Append(__pyx_v_cluster, __pyx_v_curr_first); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 84, __pyx_L1_error)
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":76
- *
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":85
+ * 
  *             cluster.append(curr_first)
  *             for curr_second in data:             # <<<<<<<<<<<<<<
  *                 if direction == "resistance":
@@ -4481,9 +4538,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
     } else {
-      __pyx_t_7 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_data); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+      __pyx_t_7 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_data); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_8 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 76, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 85, __pyx_L1_error)
     }
     for (;;) {
       if (likely(!__pyx_t_8)) {
@@ -4491,28 +4548,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           {
             Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_4);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 76, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 85, __pyx_L1_error)
             #endif
             if (__pyx_t_7 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_9 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_9); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 76, __pyx_L1_error)
+          __pyx_t_9 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_9); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 85, __pyx_L1_error)
           #else
-          __pyx_t_9 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 76, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 85, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           #endif
         } else {
           {
             Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_4);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 76, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 85, __pyx_L1_error)
             #endif
             if (__pyx_t_7 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_9); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 76, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_9); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 85, __pyx_L1_error)
           #else
-          __pyx_t_9 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 76, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 85, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           #endif
         }
@@ -4522,7 +4579,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 76, __pyx_L1_error)
+            else __PYX_ERR(0, 85, __pyx_L1_error)
           }
           break;
         }
@@ -4531,29 +4588,29 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __Pyx_XDECREF_SET(__pyx_v_curr_second, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":77
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":86
  *             cluster.append(curr_first)
  *             for curr_second in data:
  *                 if direction == "resistance":             # <<<<<<<<<<<<<<
  *                     h0_second = curr_second[high_index]
  *                 elif direction == "support":
  */
-      __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 77, __pyx_L1_error)
+      __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 86, __pyx_L1_error)
       if (__pyx_t_5) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":78
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":87
  *             for curr_second in data:
  *                 if direction == "resistance":
  *                     h0_second = curr_second[high_index]             # <<<<<<<<<<<<<<
  *                 elif direction == "support":
  *                     h0_second = curr_second[low_index]
  */
-        __pyx_t_9 = __Pyx_GetItemInt(__pyx_v_curr_second, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 78, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_GetItemInt(__pyx_v_curr_second, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 87, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_XDECREF_SET(__pyx_v_h0_second, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":77
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":86
  *             cluster.append(curr_first)
  *             for curr_second in data:
  *                 if direction == "resistance":             # <<<<<<<<<<<<<<
@@ -4563,29 +4620,29 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         goto __pyx_L8;
       }
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":79
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":88
  *                 if direction == "resistance":
  *                     h0_second = curr_second[high_index]
  *                 elif direction == "support":             # <<<<<<<<<<<<<<
  *                     h0_second = curr_second[low_index]
  *                 else:
  */
-      __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_support, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_5 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_support, Py_EQ)); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 88, __pyx_L1_error)
       if (__pyx_t_5) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":80
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":89
  *                     h0_second = curr_second[high_index]
  *                 elif direction == "support":
  *                     h0_second = curr_second[low_index]             # <<<<<<<<<<<<<<
  *                 else:
  *                     h0_second = None
  */
-        __pyx_t_9 = __Pyx_GetItemInt(__pyx_v_curr_second, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_GetItemInt(__pyx_v_curr_second, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 89, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_XDECREF_SET(__pyx_v_h0_second, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":79
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":88
  *                 if direction == "resistance":
  *                     h0_second = curr_second[high_index]
  *                 elif direction == "support":             # <<<<<<<<<<<<<<
@@ -4595,11 +4652,11 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         goto __pyx_L8;
       }
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":82
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":91
  *                     h0_second = curr_second[low_index]
  *                 else:
  *                     h0_second = None             # <<<<<<<<<<<<<<
- *
+ * 
  *                 dif = abs(((h0_first - h0_second) / h0_first) * 100)
  */
       /*else*/ {
@@ -4608,62 +4665,62 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       }
       __pyx_L8:;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":84
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":93
  *                     h0_second = None
- *
+ * 
  *                 dif = abs(((h0_first - h0_second) / h0_first) * 100)             # <<<<<<<<<<<<<<
- *
+ * 
  *                 if dif <= threshold:
  */
-      __pyx_t_9 = PyNumber_Subtract(__pyx_v_h0_first, __pyx_v_h0_second); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 84, __pyx_L1_error)
+      __pyx_t_9 = PyNumber_Subtract(__pyx_v_h0_first, __pyx_v_h0_second); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 93, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_10 = __Pyx_PyNumber_Divide(__pyx_t_9, __pyx_v_h0_first); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 84, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyNumber_Divide(__pyx_t_9, __pyx_v_h0_first); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 93, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyInt_MultiplyObjC(__pyx_t_10, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 84, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyInt_MultiplyObjC(__pyx_t_10, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 93, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_10 = __Pyx_PyNumber_Absolute(__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 84, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyNumber_Absolute(__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 93, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_XDECREF_SET(__pyx_v_dif, __pyx_t_10);
       __pyx_t_10 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":86
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":95
  *                 dif = abs(((h0_first - h0_second) / h0_first) * 100)
- *
+ * 
  *                 if dif <= threshold:             # <<<<<<<<<<<<<<
  *                     cluster.append(curr_second)
- *
+ * 
  */
-      __pyx_t_10 = PyFloat_FromDouble(__pyx_v_threshold); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_10 = PyFloat_FromDouble(__pyx_v_threshold); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_9 = PyObject_RichCompare(__pyx_v_dif, __pyx_t_10, Py_LE); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_9 = PyObject_RichCompare(__pyx_v_dif, __pyx_t_10, Py_LE); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 86, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       if (__pyx_t_5) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":87
- *
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":96
+ * 
  *                 if dif <= threshold:
  *                     cluster.append(curr_second)             # <<<<<<<<<<<<<<
- *
+ * 
  *             if cluster:
  */
-        __pyx_t_6 = __Pyx_PyObject_Append(__pyx_v_cluster, __pyx_v_curr_second); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 87, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_Append(__pyx_v_cluster, __pyx_v_curr_second); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 96, __pyx_L1_error)
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":86
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":95
  *                 dif = abs(((h0_first - h0_second) / h0_first) * 100)
- *
+ * 
  *                 if dif <= threshold:             # <<<<<<<<<<<<<<
  *                     cluster.append(curr_second)
- *
+ * 
  */
       }
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":76
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":85
+ * 
  *             cluster.append(curr_first)
  *             for curr_second in data:             # <<<<<<<<<<<<<<
  *                 if direction == "resistance":
@@ -4672,18 +4729,18 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     }
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":89
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":98
  *                     cluster.append(curr_second)
- *
+ * 
  *             if cluster:             # <<<<<<<<<<<<<<
  *                 if not clusters:
  *                     clusters.append(np.array(cluster))
  */
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_cluster); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_v_cluster); if (unlikely((__pyx_t_5 < 0))) __PYX_ERR(0, 98, __pyx_L1_error)
     if (__pyx_t_5) {
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":90
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":99
+ * 
  *             if cluster:
  *                 if not clusters:             # <<<<<<<<<<<<<<
  *                     clusters.append(np.array(cluster))
@@ -4693,16 +4750,16 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __pyx_t_11 = (!__pyx_t_5);
       if (__pyx_t_11) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":91
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":100
  *             if cluster:
  *                 if not clusters:
  *                     clusters.append(np.array(cluster))             # <<<<<<<<<<<<<<
  *                 else:
  *                     push = True
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 91, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 100, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 91, __pyx_L1_error)
+        __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __pyx_t_9 = NULL;
@@ -4723,15 +4780,15 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           PyObject *__pyx_callargs[2] = {__pyx_t_9, __pyx_v_cluster};
           __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_10, __pyx_callargs+1-__pyx_t_12, 1+__pyx_t_12);
           __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-          if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+          if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         }
-        __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_clusters, __pyx_t_4); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 91, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_clusters, __pyx_t_4); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 100, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":90
- *
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":99
+ * 
  *             if cluster:
  *                 if not clusters:             # <<<<<<<<<<<<<<
  *                     clusters.append(np.array(cluster))
@@ -4740,7 +4797,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         goto __pyx_L12;
       }
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":93
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":102
  *                     clusters.append(np.array(cluster))
  *                 else:
  *                     push = True             # <<<<<<<<<<<<<<
@@ -4750,42 +4807,42 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       /*else*/ {
         __pyx_v_push = 1;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":96
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":105
  *                     clust = (
  *                         cluster[0][high_index]
  *                         if direction == "resistance"             # <<<<<<<<<<<<<<
  *                         else cluster[0][low_index]
  *                     )
  */
-        __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_11 < 0))) __PYX_ERR(0, 96, __pyx_L1_error)
+        __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_11 < 0))) __PYX_ERR(0, 105, __pyx_L1_error)
         if (__pyx_t_11) {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":95
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":104
  *                     push = True
  *                     clust = (
  *                         cluster[0][high_index]             # <<<<<<<<<<<<<<
  *                         if direction == "resistance"
  *                         else cluster[0][low_index]
  */
-          __pyx_t_10 = __Pyx_GetItemInt_List(__pyx_v_cluster, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 95, __pyx_L1_error)
+          __pyx_t_10 = __Pyx_GetItemInt_List(__pyx_v_cluster, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 104, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
-          __pyx_t_9 = __Pyx_GetItemInt(__pyx_t_10, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 95, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_GetItemInt(__pyx_t_10, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 104, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           __pyx_t_4 = __pyx_t_9;
           __pyx_t_9 = 0;
         } else {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":97
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":106
  *                         cluster[0][high_index]
  *                         if direction == "resistance"
  *                         else cluster[0][low_index]             # <<<<<<<<<<<<<<
  *                     )
- *
+ * 
  */
-          __pyx_t_9 = __Pyx_GetItemInt_List(__pyx_v_cluster, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 97, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_GetItemInt_List(__pyx_v_cluster, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 106, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_10 = __Pyx_GetItemInt(__pyx_t_9, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 97, __pyx_L1_error)
+          __pyx_t_10 = __Pyx_GetItemInt(__pyx_t_9, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 106, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __pyx_t_4 = __pyx_t_10;
@@ -4794,9 +4851,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_XDECREF_SET(__pyx_v_clust, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":100
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":109
  *                     )
- *
+ * 
  *                     for curr in clusters:             # <<<<<<<<<<<<<<
  *                         curr_clust = (
  *                             curr[0][high_index]
@@ -4807,55 +4864,55 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           {
             Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_4);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 100, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 109, __pyx_L1_error)
             #endif
             if (__pyx_t_7 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_10 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_10); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 100, __pyx_L1_error)
+          __pyx_t_10 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_10); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 109, __pyx_L1_error)
           #else
-          __pyx_t_10 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
+          __pyx_t_10 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 109, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           #endif
           __Pyx_XDECREF_SET(__pyx_v_curr, __pyx_t_10);
           __pyx_t_10 = 0;
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":103
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":112
  *                         curr_clust = (
  *                             curr[0][high_index]
  *                             if direction == "resistance"             # <<<<<<<<<<<<<<
  *                             else curr[0][low_index]
  *                         )
  */
-          __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_11 < 0))) __PYX_ERR(0, 103, __pyx_L1_error)
+          __pyx_t_11 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_11 < 0))) __PYX_ERR(0, 112, __pyx_L1_error)
           if (__pyx_t_11) {
 
-            /* "pkg_support_resistance/vanilla/vanilla_algo.py":102
+            /* "pkg_support_resistance/vanilla/vanilla_algo.py":111
  *                     for curr in clusters:
  *                         curr_clust = (
  *                             curr[0][high_index]             # <<<<<<<<<<<<<<
  *                             if direction == "resistance"
  *                             else curr[0][low_index]
  */
-            __pyx_t_9 = __Pyx_GetItemInt(__pyx_v_curr, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 102, __pyx_L1_error)
+            __pyx_t_9 = __Pyx_GetItemInt(__pyx_v_curr, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 111, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_9);
-            __pyx_t_13 = __Pyx_GetItemInt(__pyx_t_9, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 102, __pyx_L1_error)
+            __pyx_t_13 = __Pyx_GetItemInt(__pyx_t_9, __pyx_v_high_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 111, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_13);
             __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
             __pyx_t_10 = __pyx_t_13;
             __pyx_t_13 = 0;
           } else {
 
-            /* "pkg_support_resistance/vanilla/vanilla_algo.py":104
+            /* "pkg_support_resistance/vanilla/vanilla_algo.py":113
  *                             curr[0][high_index]
  *                             if direction == "resistance"
  *                             else curr[0][low_index]             # <<<<<<<<<<<<<<
  *                         )
- *
+ * 
  */
-            __pyx_t_13 = __Pyx_GetItemInt(__pyx_v_curr, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 104, __pyx_L1_error)
+            __pyx_t_13 = __Pyx_GetItemInt(__pyx_v_curr, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 113, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_13);
-            __pyx_t_9 = __Pyx_GetItemInt(__pyx_t_13, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 104, __pyx_L1_error)
+            __pyx_t_9 = __Pyx_GetItemInt(__pyx_t_13, __pyx_v_low_index, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 113, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_9);
             __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
             __pyx_t_10 = __pyx_t_9;
@@ -4864,44 +4921,44 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           __Pyx_XDECREF_SET(__pyx_v_curr_clust, __pyx_t_10);
           __pyx_t_10 = 0;
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":107
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":116
  *                         )
- *
+ * 
  *                         dif = abs(((clust - curr_clust) / clust) * 100)             # <<<<<<<<<<<<<<
- *
+ * 
  *                         if dif <= threshold:
  */
-          __pyx_t_10 = PyNumber_Subtract(__pyx_v_clust, __pyx_v_curr_clust); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 107, __pyx_L1_error)
+          __pyx_t_10 = PyNumber_Subtract(__pyx_v_clust, __pyx_v_curr_clust); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
-          __pyx_t_9 = __Pyx_PyNumber_Divide(__pyx_t_10, __pyx_v_clust); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 107, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyNumber_Divide(__pyx_t_10, __pyx_v_clust); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-          __pyx_t_10 = __Pyx_PyInt_MultiplyObjC(__pyx_t_9, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 107, __pyx_L1_error)
+          __pyx_t_10 = __Pyx_PyInt_MultiplyObjC(__pyx_t_9, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = __Pyx_PyNumber_Absolute(__pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 107, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyNumber_Absolute(__pyx_t_10); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           __Pyx_XDECREF_SET(__pyx_v_dif, __pyx_t_9);
           __pyx_t_9 = 0;
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":109
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":118
  *                         dif = abs(((clust - curr_clust) / clust) * 100)
- *
+ * 
  *                         if dif <= threshold:             # <<<<<<<<<<<<<<
  *                             push = False
  *                             if len(curr) > len(cluster):
  */
-          __pyx_t_9 = PyFloat_FromDouble(__pyx_v_threshold); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 109, __pyx_L1_error)
+          __pyx_t_9 = PyFloat_FromDouble(__pyx_v_threshold); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 118, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_10 = PyObject_RichCompare(__pyx_v_dif, __pyx_t_9, Py_LE); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 109, __pyx_L1_error)
+          __pyx_t_10 = PyObject_RichCompare(__pyx_v_dif, __pyx_t_9, Py_LE); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 118, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely((__pyx_t_11 < 0))) __PYX_ERR(0, 109, __pyx_L1_error)
+          __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely((__pyx_t_11 < 0))) __PYX_ERR(0, 118, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           if (__pyx_t_11) {
 
-            /* "pkg_support_resistance/vanilla/vanilla_algo.py":110
- *
+            /* "pkg_support_resistance/vanilla/vanilla_algo.py":119
+ * 
  *                         if dif <= threshold:
  *                             push = False             # <<<<<<<<<<<<<<
  *                             if len(curr) > len(cluster):
@@ -4909,49 +4966,49 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
  */
             __pyx_v_push = 0;
 
-            /* "pkg_support_resistance/vanilla/vanilla_algo.py":111
+            /* "pkg_support_resistance/vanilla/vanilla_algo.py":120
  *                         if dif <= threshold:
  *                             push = False
  *                             if len(curr) > len(cluster):             # <<<<<<<<<<<<<<
  *                                 cluster = curr
- *
+ * 
  */
-            __pyx_t_14 = PyObject_Length(__pyx_v_curr); if (unlikely(__pyx_t_14 == ((Py_ssize_t)-1))) __PYX_ERR(0, 111, __pyx_L1_error)
-            __pyx_t_15 = PyObject_Length(__pyx_v_cluster); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 111, __pyx_L1_error)
+            __pyx_t_14 = PyObject_Length(__pyx_v_curr); if (unlikely(__pyx_t_14 == ((Py_ssize_t)-1))) __PYX_ERR(0, 120, __pyx_L1_error)
+            __pyx_t_15 = PyObject_Length(__pyx_v_cluster); if (unlikely(__pyx_t_15 == ((Py_ssize_t)-1))) __PYX_ERR(0, 120, __pyx_L1_error)
             __pyx_t_11 = (__pyx_t_14 > __pyx_t_15);
             if (__pyx_t_11) {
 
-              /* "pkg_support_resistance/vanilla/vanilla_algo.py":112
+              /* "pkg_support_resistance/vanilla/vanilla_algo.py":121
  *                             push = False
  *                             if len(curr) > len(cluster):
  *                                 cluster = curr             # <<<<<<<<<<<<<<
- *
+ * 
  *                     if push:
  */
               __Pyx_INCREF(__pyx_v_curr);
               __Pyx_DECREF_SET(__pyx_v_cluster, __pyx_v_curr);
 
-              /* "pkg_support_resistance/vanilla/vanilla_algo.py":111
+              /* "pkg_support_resistance/vanilla/vanilla_algo.py":120
  *                         if dif <= threshold:
  *                             push = False
  *                             if len(curr) > len(cluster):             # <<<<<<<<<<<<<<
  *                                 cluster = curr
- *
+ * 
  */
             }
 
-            /* "pkg_support_resistance/vanilla/vanilla_algo.py":109
+            /* "pkg_support_resistance/vanilla/vanilla_algo.py":118
  *                         dif = abs(((clust - curr_clust) / clust) * 100)
- *
+ * 
  *                         if dif <= threshold:             # <<<<<<<<<<<<<<
  *                             push = False
  *                             if len(curr) > len(cluster):
  */
           }
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":100
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":109
  *                     )
- *
+ * 
  *                     for curr in clusters:             # <<<<<<<<<<<<<<
  *                         curr_clust = (
  *                             curr[0][high_index]
@@ -4959,25 +5016,25 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         }
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":114
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":123
  *                                 cluster = curr
- *
+ * 
  *                     if push:             # <<<<<<<<<<<<<<
  *                         clusters.append(np.array(cluster))
- *
+ * 
  */
         if (__pyx_v_push) {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":115
- *
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":124
+ * 
  *                     if push:
  *                         clusters.append(np.array(cluster))             # <<<<<<<<<<<<<<
- *
+ * 
  *         return clusters
  */
-          __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 115, __pyx_L1_error)
+          __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 124, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 115, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 124, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
           __pyx_t_10 = NULL;
@@ -4998,36 +5055,36 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
             PyObject *__pyx_callargs[2] = {__pyx_t_10, __pyx_v_cluster};
             __pyx_t_4 = __Pyx_PyObject_FastCall(__pyx_t_9, __pyx_callargs+1-__pyx_t_12, 1+__pyx_t_12);
             __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-            if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
+            if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_4);
             __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           }
-          __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_clusters, __pyx_t_4); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 115, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_clusters, __pyx_t_4); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 124, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":114
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":123
  *                                 cluster = curr
- *
+ * 
  *                     if push:             # <<<<<<<<<<<<<<
  *                         clusters.append(np.array(cluster))
- *
+ * 
  */
         }
       }
       __pyx_L12:;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":89
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":98
  *                     cluster.append(curr_second)
- *
+ * 
  *             if cluster:             # <<<<<<<<<<<<<<
  *                 if not clusters:
  *                     clusters.append(np.array(cluster))
  */
     }
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":66
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":75
  *         low_index = 4  # Index of the 'low' column in the data array
- *
+ * 
  *         for curr_first in data:  # pylint: disable=too-many-nested-blocks             # <<<<<<<<<<<<<<
  *             cluster = []
  *             if direction == "resistance":
@@ -5035,11 +5092,11 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":117
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":126
  *                         clusters.append(np.array(cluster))
- *
+ * 
  *         return clusters             # <<<<<<<<<<<<<<
- *
+ * 
  *     @classmethod
  */
   __Pyx_XDECREF(__pyx_r);
@@ -5047,9 +5104,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __pyx_r = __pyx_v_clusters;
   goto __pyx_L0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":51
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":60
  *         return points
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __clustering(  # pylint: disable=too-many-locals, too-many-branches
  *         cls, data: np.ndarray, threshold: float, direction: str
@@ -5080,25 +5137,25 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   return __pyx_r;
 }
 
-/* "pkg_support_resistance/vanilla/vanilla_algo.py":119
+/* "pkg_support_resistance/vanilla/vanilla_algo.py":128
  *         return clusters
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __recovery_line(  # pylint: disable=too-many-locals
  *         cls, clusters: List[np.ndarray[np.ndarray]], direction: str
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__recovery_line(PyObject *__pyx_self,
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__recovery_line(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__recovery_line, "\n        Recovery line.\n        Return: numpy.ndarray. dtype: [\n            ('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')\n        ]\n        I.e.: [\n            (47729.99, 48495.  , 47716.9 , 32, 16145.34576)\n            (45000.  , 45000.  , 44990.  ,  4,  3689.66919)\n            (43996.5 , 44141.37, 43307.85, 25, 12609.72691)\n            (43473.45, 43777.  , 43127.97, 20, 10403.64128)\n            (42259.58, 42787.38, 42077.62, 21,  9709.83536)\n            (41465.  , 42593.69, 41450.  , 28, 13145.51234)\n        ]\n        ");
-static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__recovery_line = {"__recovery_line", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__recovery_line, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__recovery_line};
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__recovery_line(PyObject *__pyx_self,
+PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__recovery_line, "\n        Recovery line.\n        Return: numpy.ndarray. dtype: [\n            ('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')\n        ]\n        I.e.: [\n            (47729.99, 48495.  , 47716.9 , 32, 16145.34576)\n            (45000.  , 45000.  , 44990.  ,  4,  3689.66919)\n            (43996.5 , 44141.37, 43307.85, 25, 12609.72691)\n            (43473.45, 43777.  , 43127.97, 20, 10403.64128)\n            (42259.58, 42787.38, 42077.62, 21,  9709.83536)\n            (41465.  , 42593.69, 41450.  , 28, 13145.51234)\n        ]\n        ");
+static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__recovery_line = {"__recovery_line", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__recovery_line, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__recovery_line};
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__recovery_line(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -5148,7 +5205,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 119, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 128, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -5156,9 +5213,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 119, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 128, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__recovery_line", 1, 3, 3, 1); __PYX_ERR(0, 119, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__recovery_line", 1, 3, 3, 1); __PYX_ERR(0, 128, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -5166,14 +5223,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 119, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 128, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__recovery_line", 1, 3, 3, 2); __PYX_ERR(0, 119, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__recovery_line", 1, 3, 3, 2); __PYX_ERR(0, 128, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__recovery_line") < 0)) __PYX_ERR(0, 119, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__recovery_line") < 0)) __PYX_ERR(0, 128, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -5188,7 +5245,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__recovery_line", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 119, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__recovery_line", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 128, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -5202,9 +5259,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_clusters), (&PyList_Type), 0, "clusters", 1))) __PYX_ERR(0, 121, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction), (&PyString_Type), 0, "direction", 1))) __PYX_ERR(0, 121, __pyx_L1_error)
-  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__recovery_line(__pyx_self, __pyx_v_cls, __pyx_v_clusters, __pyx_v_direction);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_clusters), (&PyList_Type), 0, "clusters", 1))) __PYX_ERR(0, 130, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction), (&PyString_Type), 0, "direction", 1))) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__recovery_line(__pyx_self, __pyx_v_cls, __pyx_v_clusters, __pyx_v_direction);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5221,7 +5278,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_4__recovery_line(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_clusters, PyObject *__pyx_v_direction) {
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__recovery_line(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_clusters, PyObject *__pyx_v_direction) {
   PyObject *__pyx_v_dtype = NULL;
   PyObject *__pyx_v_lines = NULL;
   PyObject *__pyx_v_curr_cluster = NULL;
@@ -5257,43 +5314,43 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__recovery_line", 1);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":138
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":147
  *         """
- *
+ * 
  *         dtype = np.dtype(             # <<<<<<<<<<<<<<
  *             [
  *                 ("pivotPrice", "f8"),
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dtype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dtype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 147, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":139
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":148
+ * 
  *         dtype = np.dtype(
  *             [             # <<<<<<<<<<<<<<
  *                 ("pivotPrice", "f8"),
  *                 ("limitsUp", "f8"),
  */
-  __pyx_t_2 = PyList_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_tuple__7)) __PYX_ERR(0, 139, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 0, __pyx_tuple__7)) __PYX_ERR(0, 148, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 1, __pyx_tuple__8)) __PYX_ERR(0, 139, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 1, __pyx_tuple__8)) __PYX_ERR(0, 148, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 2, __pyx_tuple__9)) __PYX_ERR(0, 139, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 2, __pyx_tuple__9)) __PYX_ERR(0, 148, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 3, __pyx_tuple__10)) __PYX_ERR(0, 139, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 3, __pyx_tuple__10)) __PYX_ERR(0, 148, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 4, __pyx_tuple__11)) __PYX_ERR(0, 139, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_2, 4, __pyx_tuple__11)) __PYX_ERR(0, 148, __pyx_L1_error);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
   #if CYTHON_UNPACK_METHODS
@@ -5313,27 +5370,27 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __pyx_v_dtype = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":148
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":157
  *         )
- *
+ * 
  *         lines = []             # <<<<<<<<<<<<<<
  *         for curr_cluster in clusters:
  *             pivot_price = None
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_lines = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":149
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":158
+ * 
  *         lines = []
  *         for curr_cluster in clusters:             # <<<<<<<<<<<<<<
  *             pivot_price = None
@@ -5345,20 +5402,20 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     {
       Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_1);
       #if !CYTHON_ASSUME_SAFE_MACROS
-      if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 149, __pyx_L1_error)
+      if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 158, __pyx_L1_error)
       #endif
       if (__pyx_t_6 >= __pyx_temp) break;
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 158, __pyx_L1_error)
     #else
-    __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_XDECREF_SET(__pyx_v_curr_cluster, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":150
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":159
  *         lines = []
  *         for curr_cluster in clusters:
  *             pivot_price = None             # <<<<<<<<<<<<<<
@@ -5368,7 +5425,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_INCREF(Py_None);
     __Pyx_XDECREF_SET(__pyx_v_pivot_price, Py_None);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":151
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":160
  *         for curr_cluster in clusters:
  *             pivot_price = None
  *             approach = 0             # <<<<<<<<<<<<<<
@@ -5378,7 +5435,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_XDECREF_SET(__pyx_v_approach, __pyx_int_0);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":152
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":161
  *             pivot_price = None
  *             approach = 0
  *             limits_up = 0             # <<<<<<<<<<<<<<
@@ -5388,22 +5445,22 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_XDECREF_SET(__pyx_v_limits_up, __pyx_int_0);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":153
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":162
  *             approach = 0
  *             limits_up = 0
  *             limits_down = np.inf             # <<<<<<<<<<<<<<
  *             accumulated_volume = 0
  *             curr_data_price_line = None
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_inf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_inf); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF_SET(__pyx_v_limits_down, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":154
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":163
  *             limits_up = 0
  *             limits_down = np.inf
  *             accumulated_volume = 0             # <<<<<<<<<<<<<<
@@ -5413,37 +5470,37 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_XDECREF_SET(__pyx_v_accumulated_volume, __pyx_int_0);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":155
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":164
  *             limits_down = np.inf
  *             accumulated_volume = 0
  *             curr_data_price_line = None             # <<<<<<<<<<<<<<
  *             data_line = None
- *
+ * 
  */
     __Pyx_INCREF(Py_None);
     __Pyx_XDECREF_SET(__pyx_v_curr_data_price_line, Py_None);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":156
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":165
  *             accumulated_volume = 0
  *             curr_data_price_line = None
  *             data_line = None             # <<<<<<<<<<<<<<
- *
+ * 
  *             for idx in range(len(curr_cluster)):
  */
     __Pyx_INCREF(Py_None);
     __Pyx_XDECREF_SET(__pyx_v_data_line, Py_None);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":158
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":167
  *             data_line = None
- *
+ * 
  *             for idx in range(len(curr_cluster)):             # <<<<<<<<<<<<<<
  *                 if direction == "resistance":
  *                     curr_data_price_line = curr_cluster[idx, 3]
  */
-    __pyx_t_7 = PyObject_Length(__pyx_v_curr_cluster); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 158, __pyx_L1_error)
-    __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+    __pyx_t_7 = PyObject_Length(__pyx_v_curr_cluster); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 167, __pyx_L1_error)
+    __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
@@ -5451,9 +5508,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
     } else {
-      __pyx_t_7 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
+      __pyx_t_7 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 167, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_8 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 158, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 167, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     for (;;) {
@@ -5462,28 +5519,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           {
             Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_2);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 158, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 167, __pyx_L1_error)
             #endif
             if (__pyx_t_7 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 158, __pyx_L1_error)
+          __pyx_t_3 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 167, __pyx_L1_error)
           #else
-          __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           #endif
         } else {
           {
             Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_2);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 158, __pyx_L1_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 167, __pyx_L1_error)
             #endif
             if (__pyx_t_7 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 158, __pyx_L1_error)
+          __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_3); __pyx_t_7++; if (unlikely((0 < 0))) __PYX_ERR(0, 167, __pyx_L1_error)
           #else
-          __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           #endif
         }
@@ -5493,7 +5550,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 158, __pyx_L1_error)
+            else __PYX_ERR(0, 167, __pyx_L1_error)
           }
           break;
         }
@@ -5502,81 +5559,81 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __Pyx_XDECREF_SET(__pyx_v_idx, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":159
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":168
+ * 
  *             for idx in range(len(curr_cluster)):
  *                 if direction == "resistance":             # <<<<<<<<<<<<<<
  *                     curr_data_price_line = curr_cluster[idx, 3]
  *                     data_line = (
  */
-      __pyx_t_9 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 159, __pyx_L1_error)
+      __pyx_t_9 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_resistance, Py_EQ)); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 168, __pyx_L1_error)
       if (__pyx_t_9) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":160
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":169
  *             for idx in range(len(curr_cluster)):
  *                 if direction == "resistance":
  *                     curr_data_price_line = curr_cluster[idx, 3]             # <<<<<<<<<<<<<<
  *                     data_line = (
  *                         curr_cluster[idx + 1, 3]
  */
-        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 169, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_v_idx);
         __Pyx_GIVEREF(__pyx_v_idx);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_idx)) __PYX_ERR(0, 160, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_idx)) __PYX_ERR(0, 169, __pyx_L1_error);
         __Pyx_INCREF(__pyx_int_3);
         __Pyx_GIVEREF(__pyx_int_3);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_3)) __PYX_ERR(0, 160, __pyx_L1_error);
-        __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 160, __pyx_L1_error)
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_3)) __PYX_ERR(0, 169, __pyx_L1_error);
+        __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 169, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF_SET(__pyx_v_curr_data_price_line, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":163
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":172
  *                     data_line = (
  *                         curr_cluster[idx + 1, 3]
  *                         if idx + 1 < len(curr_cluster)             # <<<<<<<<<<<<<<
  *                         else None
  *                     )
  */
-        __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_10 = PyObject_Length(__pyx_v_curr_cluster); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 163, __pyx_L1_error)
-        __pyx_t_11 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 163, __pyx_L1_error)
+        __pyx_t_10 = PyObject_Length(__pyx_v_curr_cluster); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 172, __pyx_L1_error)
+        __pyx_t_11 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 172, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_12 = PyObject_RichCompare(__pyx_t_3, __pyx_t_11, Py_LT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 163, __pyx_L1_error)
+        __pyx_t_12 = PyObject_RichCompare(__pyx_t_3, __pyx_t_11, Py_LT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 172, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 163, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 172, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         if (__pyx_t_9) {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":162
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":171
  *                     curr_data_price_line = curr_cluster[idx, 3]
  *                     data_line = (
  *                         curr_cluster[idx + 1, 3]             # <<<<<<<<<<<<<<
  *                         if idx + 1 < len(curr_cluster)
  *                         else None
  */
-          __pyx_t_12 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 162, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 171, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
-          __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 162, __pyx_L1_error)
+          __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 171, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_GIVEREF(__pyx_t_12);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_12)) __PYX_ERR(0, 162, __pyx_L1_error);
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_12)) __PYX_ERR(0, 171, __pyx_L1_error);
           __Pyx_INCREF(__pyx_int_3);
           __Pyx_GIVEREF(__pyx_int_3);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 1, __pyx_int_3)) __PYX_ERR(0, 162, __pyx_L1_error);
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 1, __pyx_int_3)) __PYX_ERR(0, 171, __pyx_L1_error);
           __pyx_t_12 = 0;
-          __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 162, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 171, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           __pyx_t_4 = __pyx_t_12;
           __pyx_t_12 = 0;
         } else {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":164
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":173
  *                         curr_cluster[idx + 1, 3]
  *                         if idx + 1 < len(curr_cluster)
  *                         else None             # <<<<<<<<<<<<<<
@@ -5589,8 +5646,8 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_DECREF_SET(__pyx_v_data_line, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":159
- *
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":168
+ * 
  *             for idx in range(len(curr_cluster)):
  *                 if direction == "resistance":             # <<<<<<<<<<<<<<
  *                     curr_data_price_line = curr_cluster[idx, 3]
@@ -5599,86 +5656,86 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         goto __pyx_L7;
       }
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":166
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":175
  *                         else None
  *                     )
  *                 elif direction == "support":             # <<<<<<<<<<<<<<
  *                     curr_data_price_line = curr_cluster[idx, 4]
  *                     data_line = (
  */
-      __pyx_t_9 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_support, Py_EQ)); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 166, __pyx_L1_error)
+      __pyx_t_9 = (__Pyx_PyString_Equals(__pyx_v_direction, __pyx_n_s_support, Py_EQ)); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 175, __pyx_L1_error)
       if (__pyx_t_9) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":167
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":176
  *                     )
  *                 elif direction == "support":
  *                     curr_data_price_line = curr_cluster[idx, 4]             # <<<<<<<<<<<<<<
  *                     data_line = (
  *                         curr_cluster[idx + 1, 4]
  */
-        __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 167, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 176, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_v_idx);
         __Pyx_GIVEREF(__pyx_v_idx);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_idx)) __PYX_ERR(0, 167, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_idx)) __PYX_ERR(0, 176, __pyx_L1_error);
         __Pyx_INCREF(__pyx_int_4);
         __Pyx_GIVEREF(__pyx_int_4);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_int_4)) __PYX_ERR(0, 167, __pyx_L1_error);
-        __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 167, __pyx_L1_error)
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_int_4)) __PYX_ERR(0, 176, __pyx_L1_error);
+        __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 176, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF_SET(__pyx_v_curr_data_price_line, __pyx_t_12);
         __pyx_t_12 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":170
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":179
  *                     data_line = (
  *                         curr_cluster[idx + 1, 4]
  *                         if idx + 1 < len(curr_cluster)             # <<<<<<<<<<<<<<
  *                         else None
  *                     )
  */
-        __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 179, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_10 = PyObject_Length(__pyx_v_curr_cluster); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 170, __pyx_L1_error)
-        __pyx_t_11 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_10 = PyObject_Length(__pyx_v_curr_cluster); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 179, __pyx_L1_error)
+        __pyx_t_11 = PyInt_FromSsize_t(__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 179, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_3 = PyObject_RichCompare(__pyx_t_4, __pyx_t_11, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_3 = PyObject_RichCompare(__pyx_t_4, __pyx_t_11, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 179, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 179, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (__pyx_t_9) {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":169
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":178
  *                     curr_data_price_line = curr_cluster[idx, 4]
  *                     data_line = (
  *                         curr_cluster[idx + 1, 4]             # <<<<<<<<<<<<<<
  *                         if idx + 1 < len(curr_cluster)
  *                         else None
  */
-          __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 169, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_idx, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 169, __pyx_L1_error)
+          __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 178, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_GIVEREF(__pyx_t_3);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_3)) __PYX_ERR(0, 169, __pyx_L1_error);
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error);
           __Pyx_INCREF(__pyx_int_4);
           __Pyx_GIVEREF(__pyx_int_4);
-          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 1, __pyx_int_4)) __PYX_ERR(0, 169, __pyx_L1_error);
+          if (__Pyx_PyTuple_SET_ITEM(__pyx_t_11, 1, __pyx_int_4)) __PYX_ERR(0, 178, __pyx_L1_error);
           __pyx_t_3 = 0;
-          __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 169, __pyx_L1_error)
+          __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 178, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           __pyx_t_12 = __pyx_t_3;
           __pyx_t_3 = 0;
         } else {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":171
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":180
  *                         curr_cluster[idx + 1, 4]
  *                         if idx + 1 < len(curr_cluster)
  *                         else None             # <<<<<<<<<<<<<<
  *                     )
- *
+ * 
  */
           __Pyx_INCREF(Py_None);
           __pyx_t_12 = Py_None;
@@ -5686,7 +5743,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_DECREF_SET(__pyx_v_data_line, __pyx_t_12);
         __pyx_t_12 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":166
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":175
  *                         else None
  *                     )
  *                 elif direction == "support":             # <<<<<<<<<<<<<<
@@ -5696,19 +5753,19 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       }
       __pyx_L7:;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":174
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":183
  *                     )
- *
+ * 
  *                 limits_up = max(limits_up, curr_data_price_line)             # <<<<<<<<<<<<<<
  *                 limits_down = min(limits_down, curr_data_price_line)
- *
+ * 
  */
       __Pyx_INCREF(__pyx_v_curr_data_price_line);
       __pyx_t_12 = __pyx_v_curr_data_price_line;
       __Pyx_INCREF(__pyx_v_limits_up);
       __pyx_t_3 = __pyx_v_limits_up;
-      __pyx_t_4 = PyObject_RichCompare(__pyx_t_12, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
-      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 174, __pyx_L1_error)
+      __pyx_t_4 = PyObject_RichCompare(__pyx_t_12, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 183, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 183, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (__pyx_t_9) {
         __Pyx_INCREF(__pyx_t_12);
@@ -5725,19 +5782,19 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __Pyx_DECREF_SET(__pyx_v_limits_up, __pyx_t_12);
       __pyx_t_12 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":175
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":184
+ * 
  *                 limits_up = max(limits_up, curr_data_price_line)
  *                 limits_down = min(limits_down, curr_data_price_line)             # <<<<<<<<<<<<<<
- *
+ * 
  *                 if curr_data_price_line >= (data_line if data_line is not None else 0):
  */
       __Pyx_INCREF(__pyx_v_curr_data_price_line);
       __pyx_t_12 = __pyx_v_curr_data_price_line;
       __Pyx_INCREF(__pyx_v_limits_down);
       __pyx_t_11 = __pyx_v_limits_down;
-      __pyx_t_4 = PyObject_RichCompare(__pyx_t_12, __pyx_t_11, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 175, __pyx_L1_error)
-      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 175, __pyx_L1_error)
+      __pyx_t_4 = PyObject_RichCompare(__pyx_t_12, __pyx_t_11, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 184, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 184, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (__pyx_t_9) {
         __Pyx_INCREF(__pyx_t_12);
@@ -5754,9 +5811,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __Pyx_DECREF_SET(__pyx_v_limits_down, __pyx_t_12);
       __pyx_t_12 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":177
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":186
  *                 limits_down = min(limits_down, curr_data_price_line)
- *
+ * 
  *                 if curr_data_price_line >= (data_line if data_line is not None else 0):             # <<<<<<<<<<<<<<
  *                     pivot_price = curr_data_price_line
  *                 else:
@@ -5769,14 +5826,14 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_INCREF(__pyx_int_0);
         __pyx_t_12 = __pyx_int_0;
       }
-      __pyx_t_3 = PyObject_RichCompare(__pyx_v_curr_data_price_line, __pyx_t_12, Py_GE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 177, __pyx_L1_error)
+      __pyx_t_3 = PyObject_RichCompare(__pyx_v_curr_data_price_line, __pyx_t_12, Py_GE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 186, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 177, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 186, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       if (__pyx_t_9) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":178
- *
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":187
+ * 
  *                 if curr_data_price_line >= (data_line if data_line is not None else 0):
  *                     pivot_price = curr_data_price_line             # <<<<<<<<<<<<<<
  *                 else:
@@ -5785,9 +5842,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_INCREF(__pyx_v_curr_data_price_line);
         __Pyx_DECREF_SET(__pyx_v_pivot_price, __pyx_v_curr_data_price_line);
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":177
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":186
  *                 limits_down = min(limits_down, curr_data_price_line)
- *
+ * 
  *                 if curr_data_price_line >= (data_line if data_line is not None else 0):             # <<<<<<<<<<<<<<
  *                     pivot_price = curr_data_price_line
  *                 else:
@@ -5795,11 +5852,11 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         goto __pyx_L8;
       }
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":180
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":189
  *                     pivot_price = curr_data_price_line
  *                 else:
  *                     pivot_price = data_line             # <<<<<<<<<<<<<<
- *
+ * 
  *                 approach += 1
  */
       /*else*/ {
@@ -5808,45 +5865,45 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       }
       __pyx_L8:;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":182
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":191
  *                     pivot_price = data_line
- *
+ * 
  *                 approach += 1             # <<<<<<<<<<<<<<
  *                 accumulated_volume += curr_cluster[idx, 5]
- *
+ * 
  */
-      __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_approach, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 182, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_approach, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF_SET(__pyx_v_approach, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":183
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":192
+ * 
  *                 approach += 1
  *                 accumulated_volume += curr_cluster[idx, 5]             # <<<<<<<<<<<<<<
- *
+ * 
  *             line = (
  */
-      __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 183, __pyx_L1_error)
+      __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_INCREF(__pyx_v_idx);
       __Pyx_GIVEREF(__pyx_v_idx);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_idx)) __PYX_ERR(0, 183, __pyx_L1_error);
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_idx)) __PYX_ERR(0, 192, __pyx_L1_error);
       __Pyx_INCREF(__pyx_int_5);
       __Pyx_GIVEREF(__pyx_int_5);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_5)) __PYX_ERR(0, 183, __pyx_L1_error);
-      __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 183, __pyx_L1_error)
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_int_5)) __PYX_ERR(0, 192, __pyx_L1_error);
+      __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_curr_cluster, __pyx_t_3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 192, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_v_accumulated_volume, __pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 183, __pyx_L1_error)
+      __pyx_t_3 = PyNumber_InPlaceAdd(__pyx_v_accumulated_volume, __pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_DECREF_SET(__pyx_v_accumulated_volume, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":158
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":167
  *             data_line = None
- *
+ * 
  *             for idx in range(len(curr_cluster)):             # <<<<<<<<<<<<<<
  *                 if direction == "resistance":
  *                     curr_data_price_line = curr_cluster[idx, 3]
@@ -5854,7 +5911,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":187
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":196
  *             line = (
  *                 pivot_price,
  *                 max(limits_up, pivot_price),             # <<<<<<<<<<<<<<
@@ -5865,8 +5922,8 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_2 = __pyx_v_pivot_price;
     __Pyx_INCREF(__pyx_v_limits_up);
     __pyx_t_3 = __pyx_v_limits_up;
-    __pyx_t_11 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 187, __pyx_L1_error)
-    __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 187, __pyx_L1_error)
+    __pyx_t_11 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 196, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 196, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     if (__pyx_t_9) {
       __Pyx_INCREF(__pyx_t_2);
@@ -5878,7 +5935,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":188
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":197
  *                 pivot_price,
  *                 max(limits_up, pivot_price),
  *                 min(limits_down, pivot_price),             # <<<<<<<<<<<<<<
@@ -5889,8 +5946,8 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_2 = __pyx_v_pivot_price;
     __Pyx_INCREF(__pyx_v_limits_down);
     __pyx_t_3 = __pyx_v_limits_down;
-    __pyx_t_4 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
-    __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_4 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 197, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 197, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     if (__pyx_t_9) {
       __Pyx_INCREF(__pyx_t_2);
@@ -5902,67 +5959,67 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":186
- *
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":195
+ * 
  *             line = (
  *                 pivot_price,             # <<<<<<<<<<<<<<
  *                 max(limits_up, pivot_price),
  *                 min(limits_down, pivot_price),
  */
-    __pyx_t_2 = PyTuple_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 195, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_v_pivot_price);
     __Pyx_GIVEREF(__pyx_v_pivot_price);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_pivot_price)) __PYX_ERR(0, 186, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_pivot_price)) __PYX_ERR(0, 195, __pyx_L1_error);
     __Pyx_INCREF(__pyx_t_12);
     __Pyx_GIVEREF(__pyx_t_12);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_12)) __PYX_ERR(0, 186, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_12)) __PYX_ERR(0, 195, __pyx_L1_error);
     __Pyx_INCREF(__pyx_t_11);
     __Pyx_GIVEREF(__pyx_t_11);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_11)) __PYX_ERR(0, 186, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_11)) __PYX_ERR(0, 195, __pyx_L1_error);
     __Pyx_INCREF(__pyx_v_approach);
     __Pyx_GIVEREF(__pyx_v_approach);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_approach)) __PYX_ERR(0, 186, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_v_approach)) __PYX_ERR(0, 195, __pyx_L1_error);
     __Pyx_INCREF(__pyx_v_accumulated_volume);
     __Pyx_GIVEREF(__pyx_v_accumulated_volume);
-    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_accumulated_volume)) __PYX_ERR(0, 186, __pyx_L1_error);
+    if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_v_accumulated_volume)) __PYX_ERR(0, 195, __pyx_L1_error);
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __Pyx_XDECREF_SET(__pyx_v_line, ((PyObject*)__pyx_t_2));
     __pyx_t_2 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":193
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":202
  *             )
- *
+ * 
  *             if len(lines) > 0:             # <<<<<<<<<<<<<<
  *                 lines_np = np.array(lines, dtype=dtype)
  *                 existing_line_idx = np.where(lines_np["pivotPrice"] == pivot_price)[0]
  */
-    __pyx_t_7 = __Pyx_PyList_GET_SIZE(__pyx_v_lines); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 193, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyList_GET_SIZE(__pyx_v_lines); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 202, __pyx_L1_error)
     __pyx_t_9 = (__pyx_t_7 > 0);
     if (__pyx_t_9) {
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":194
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":203
+ * 
  *             if len(lines) > 0:
  *                 lines_np = np.array(lines, dtype=dtype)             # <<<<<<<<<<<<<<
  *                 existing_line_idx = np.where(lines_np["pivotPrice"] == pivot_price)[0]
  *             else:
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 194, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 194, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 203, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 194, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_v_lines);
       __Pyx_GIVEREF(__pyx_v_lines);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_lines)) __PYX_ERR(0, 194, __pyx_L1_error);
-      __pyx_t_12 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 194, __pyx_L1_error)
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_lines)) __PYX_ERR(0, 203, __pyx_L1_error);
+      __pyx_t_12 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 203, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_dtype, __pyx_v_dtype) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_2, __pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 194, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_dtype, __pyx_v_dtype) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_2, __pyx_t_12); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 203, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -5970,21 +6027,21 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __Pyx_XDECREF_SET(__pyx_v_lines_np, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":195
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":204
  *             if len(lines) > 0:
  *                 lines_np = np.array(lines, dtype=dtype)
  *                 existing_line_idx = np.where(lines_np["pivotPrice"] == pivot_price)[0]             # <<<<<<<<<<<<<<
  *             else:
  *                 existing_line_idx = np.array([])
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_np); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_np); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 204, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_where); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_where); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 204, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __pyx_t_12 = __Pyx_PyObject_Dict_GetItem(__pyx_v_lines_np, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_Dict_GetItem(__pyx_v_lines_np, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 204, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_11 = PyObject_RichCompare(__pyx_t_12, __pyx_v_pivot_price, Py_EQ); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_11 = PyObject_RichCompare(__pyx_t_12, __pyx_v_pivot_price, Py_EQ); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 204, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __pyx_t_12 = NULL;
       __pyx_t_5 = 0;
@@ -6005,19 +6062,19 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __pyx_t_3 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
         __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 195, __pyx_L1_error)
+        if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 204, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       }
-      __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_3, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_GetItemInt(__pyx_t_3, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 204, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_XDECREF_SET(__pyx_v_existing_line_idx, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":193
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":202
  *             )
- *
+ * 
  *             if len(lines) > 0:             # <<<<<<<<<<<<<<
  *                 lines_np = np.array(lines, dtype=dtype)
  *                 existing_line_idx = np.where(lines_np["pivotPrice"] == pivot_price)[0]
@@ -6025,20 +6082,20 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       goto __pyx_L10;
     }
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":197
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":206
  *                 existing_line_idx = np.where(lines_np["pivotPrice"] == pivot_price)[0]
  *             else:
  *                 existing_line_idx = np.array([])             # <<<<<<<<<<<<<<
- *
+ * 
  *             if len(existing_line_idx) == 0:
  */
     /*else*/ {
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 197, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 206, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 197, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 197, __pyx_L1_error)
+      __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 206, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_12 = NULL;
       __pyx_t_5 = 0;
@@ -6059,7 +6116,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_11, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
         __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 197, __pyx_L1_error)
+        if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 206, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       }
@@ -6068,29 +6125,29 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     }
     __pyx_L10:;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":199
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":208
  *                 existing_line_idx = np.array([])
- *
+ * 
  *             if len(existing_line_idx) == 0:             # <<<<<<<<<<<<<<
  *                 lines.append(line)
  *             else:
  */
-    __pyx_t_7 = PyObject_Length(__pyx_v_existing_line_idx); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 199, __pyx_L1_error)
+    __pyx_t_7 = PyObject_Length(__pyx_v_existing_line_idx); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 208, __pyx_L1_error)
     __pyx_t_9 = (__pyx_t_7 == 0);
     if (__pyx_t_9) {
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":200
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":209
+ * 
  *             if len(existing_line_idx) == 0:
  *                 lines.append(line)             # <<<<<<<<<<<<<<
  *             else:
  *                 idx_update = existing_line_idx[0]
  */
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_lines, __pyx_v_line); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 200, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_lines, __pyx_v_line); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 209, __pyx_L1_error)
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":199
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":208
  *                 existing_line_idx = np.array([])
- *
+ * 
  *             if len(existing_line_idx) == 0:             # <<<<<<<<<<<<<<
  *                 lines.append(line)
  *             else:
@@ -6098,7 +6155,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       goto __pyx_L11;
     }
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":202
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":211
  *                 lines.append(line)
  *             else:
  *                 idx_update = existing_line_idx[0]             # <<<<<<<<<<<<<<
@@ -6106,51 +6163,51 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
  *                     lines[idx_update] = line
  */
     /*else*/ {
-      __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_existing_line_idx, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 202, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_existing_line_idx, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 211, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_XDECREF_SET(__pyx_v_idx_update, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":203
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":212
  *             else:
  *                 idx_update = existing_line_idx[0]
  *                 if lines[idx_update][3] < approach:             # <<<<<<<<<<<<<<
  *                     lines[idx_update] = line
- *
+ * 
  */
-      __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 212, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_11 = __Pyx_GetItemInt(__pyx_t_2, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_GetItemInt(__pyx_t_2, 3, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 212, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = PyObject_RichCompare(__pyx_t_11, __pyx_v_approach, Py_LT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_2 = PyObject_RichCompare(__pyx_t_11, __pyx_v_approach, Py_LT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 212, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 203, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely((__pyx_t_9 < 0))) __PYX_ERR(0, 212, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (__pyx_t_9) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":204
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":213
  *                 idx_update = existing_line_idx[0]
  *                 if lines[idx_update][3] < approach:
  *                     lines[idx_update] = line             # <<<<<<<<<<<<<<
- *
+ * 
  *         lines_np = np.array(lines, dtype=dtype)
  */
-        if (unlikely((PyObject_SetItem(__pyx_v_lines, __pyx_v_idx_update, __pyx_v_line) < 0))) __PYX_ERR(0, 204, __pyx_L1_error)
+        if (unlikely((PyObject_SetItem(__pyx_v_lines, __pyx_v_idx_update, __pyx_v_line) < 0))) __PYX_ERR(0, 213, __pyx_L1_error)
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":203
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":212
  *             else:
  *                 idx_update = existing_line_idx[0]
  *                 if lines[idx_update][3] < approach:             # <<<<<<<<<<<<<<
  *                     lines[idx_update] = line
- *
+ * 
  */
       }
     }
     __pyx_L11:;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":149
- *
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":158
+ * 
  *         lines = []
  *         for curr_cluster in clusters:             # <<<<<<<<<<<<<<
  *             pivot_price = None
@@ -6159,27 +6216,27 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":206
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":215
  *                     lines[idx_update] = line
- *
+ * 
  *         lines_np = np.array(lines, dtype=dtype)             # <<<<<<<<<<<<<<
  *         return np.sort(lines_np, order="pivotPrice")[::-1]
- *
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_array); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_lines);
   __Pyx_GIVEREF(__pyx_v_lines);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_lines)) __PYX_ERR(0, 206, __pyx_L1_error);
-  __pyx_t_11 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 206, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_lines)) __PYX_ERR(0, 215, __pyx_L1_error);
+  __pyx_t_11 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_dtype, __pyx_v_dtype) < 0) __PYX_ERR(0, 206, __pyx_L1_error)
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 206, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_dtype, __pyx_v_dtype) < 0) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_11); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -6187,42 +6244,42 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __Pyx_XDECREF_SET(__pyx_v_lines_np, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":207
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":216
+ * 
  *         lines_np = np.array(lines, dtype=dtype)
  *         return np.sort(lines_np, order="pivotPrice")[::-1]             # <<<<<<<<<<<<<<
- *
+ * 
  *     @classmethod
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sort); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sort); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_lines_np);
   __Pyx_GIVEREF(__pyx_v_lines_np);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_lines_np)) __PYX_ERR(0, 207, __pyx_L1_error);
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_lines_np)) __PYX_ERR(0, 216, __pyx_L1_error);
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order, __pyx_n_s_pivotPrice) < 0) __PYX_ERR(0, 207, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_order, __pyx_n_s_pivotPrice) < 0) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_slice__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_slice__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":119
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":128
  *         return clusters
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __recovery_line(  # pylint: disable=too-many-locals
  *         cls, clusters: List[np.ndarray[np.ndarray]], direction: str
@@ -6259,9 +6316,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   return __pyx_r;
 }
 
-/* "pkg_support_resistance/vanilla/vanilla_algo.py":209
+/* "pkg_support_resistance/vanilla/vanilla_algo.py":218
  *         return np.sort(lines_np, order="pivotPrice")[::-1]
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __unify(
  *         cls,
@@ -6277,18 +6334,18 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo___def
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__defaults__", 1);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_total_lines);
   __Pyx_GIVEREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_total_lines);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_total_lines)) __PYX_ERR(0, 209, __pyx_L1_error);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_total_lines)) __PYX_ERR(0, 218, __pyx_L1_error);
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1)) __PYX_ERR(0, 218, __pyx_L1_error);
   __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(Py_None);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, Py_None)) __PYX_ERR(0, 209, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, Py_None)) __PYX_ERR(0, 218, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -6307,16 +6364,16 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo___def
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__unify(PyObject *__pyx_self,
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9__unify(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__unify, "\n        Unify.\n        Return: numpy.ndarray. dtype: [\n            ('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')\n        ]\n        I.e.: [\n            (47729.99, 48495.  , 47716.9 , 32, 16145.34576)\n            (45000.  , 45000.  , 44990.  ,  4,  3689.66919)\n            (43996.5 , 44141.37, 43307.85, 25, 12609.72691)\n            (43473.45, 43777.  , 43127.97, 20, 10403.64128)\n            (42259.58, 42787.38, 42077.62, 21,  9709.83536)\n            (41465.  , 42593.69, 41450.  , 28, 13145.51234)\n        ]\n        ");
-static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__unify = {"__unify", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__unify, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__unify};
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__unify(PyObject *__pyx_self,
+PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8__unify, "\n        Unify.\n        Return: numpy.ndarray. dtype: [\n            ('idx', 'i4'), ('open', 'f8'), ('close', 'f8'), ('high', 'f8'), ('low', 'f8'), ('volume', 'f8')\n        ]\n        I.e.: [\n            (47729.99, 48495.  , 47716.9 , 32, 16145.34576)\n            (45000.  , 45000.  , 44990.  ,  4,  3689.66919)\n            (43996.5 , 44141.37, 43307.85, 25, 12609.72691)\n            (43473.45, 43777.  , 43127.97, 20, 10403.64128)\n            (42259.58, 42787.38, 42077.62, 21,  9709.83536)\n            (41465.  , 42593.69, 41450.  , 28, 13145.51234)\n        ]\n        ");
+static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9__unify = {"__unify", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9__unify, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8__unify};
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9__unify(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -6374,7 +6431,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 218, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -6382,9 +6439,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 218, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, 1); __PYX_ERR(0, 209, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, 1); __PYX_ERR(0, 218, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -6392,9 +6449,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 218, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, 2); __PYX_ERR(0, 209, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, 2); __PYX_ERR(0, 218, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -6402,21 +6459,21 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[3]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 218, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, 3); __PYX_ERR(0, 209, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, 3); __PYX_ERR(0, 218, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_total_lines);
           if (value) { values[4] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 209, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 218, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__unify") < 0)) __PYX_ERR(0, 209, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__unify") < 0)) __PYX_ERR(0, 218, __pyx_L3_error)
       }
     } else {
       switch (__pyx_nargs) {
@@ -6433,12 +6490,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     __pyx_v_cls = values[0];
     __pyx_v_src_r = values[1];
     __pyx_v_src_s = values[2];
-    __pyx_v_threshold = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_threshold == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 214, __pyx_L3_error)
+    __pyx_v_threshold = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_threshold == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 223, __pyx_L3_error)
     __pyx_v_total_lines = values[4];
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, __pyx_nargs); __PYX_ERR(0, 209, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__unify", 0, 4, 5, __pyx_nargs); __PYX_ERR(0, 218, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -6452,7 +6509,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__unify(__pyx_self, __pyx_v_cls, __pyx_v_src_r, __pyx_v_src_s, __pyx_v_threshold, __pyx_v_total_lines);
+  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8__unify(__pyx_self, __pyx_v_cls, __pyx_v_src_r, __pyx_v_src_s, __pyx_v_threshold, __pyx_v_total_lines);
 
   /* function exit code */
   {
@@ -6465,7 +6522,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_6__unify(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_src_r, PyObject *__pyx_v_src_s, double __pyx_v_threshold, PyObject *__pyx_v_total_lines) {
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8__unify(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_cls, PyObject *__pyx_v_src_r, PyObject *__pyx_v_src_s, double __pyx_v_threshold, PyObject *__pyx_v_total_lines) {
   PyObject *__pyx_v_src = NULL;
   PyObject *__pyx_v_curr_src = NULL;
   int __pyx_v_push;
@@ -6497,26 +6554,26 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __Pyx_RefNannySetupContext("__unify", 0);
   __Pyx_INCREF(__pyx_v_total_lines);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":233
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":242
+ * 
  *         # Combine and sort the sources
  *         src = np.concatenate((src_r, src_s))             # <<<<<<<<<<<<<<
  *         src = src[np.argsort(src["pivotPrice"])[::-1]]
- *
+ * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_concatenate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 233, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_concatenate); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_src_r);
   __Pyx_GIVEREF(__pyx_v_src_r);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_src_r)) __PYX_ERR(0, 233, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_src_r)) __PYX_ERR(0, 242, __pyx_L1_error);
   __Pyx_INCREF(__pyx_v_src_s);
   __Pyx_GIVEREF(__pyx_v_src_s);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_v_src_s)) __PYX_ERR(0, 233, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_v_src_s)) __PYX_ERR(0, 242, __pyx_L1_error);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
   #if CYTHON_UNPACK_METHODS
@@ -6536,26 +6593,26 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 233, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
   __pyx_v_src = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":234
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":243
  *         # Combine and sort the sources
  *         src = np.concatenate((src_r, src_s))
  *         src = src[np.argsort(src["pivotPrice"])[::-1]]             # <<<<<<<<<<<<<<
- *
+ * 
  *         for curr_src in src:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_argsort); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_argsort); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -6576,22 +6633,22 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 234, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   }
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_slice__12); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_slice__12); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_src, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_src, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF_SET(__pyx_v_src, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":236
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":245
  *         src = src[np.argsort(src["pivotPrice"])[::-1]]
- *
+ * 
  *         for curr_src in src:             # <<<<<<<<<<<<<<
  *             push = True
  *             idx_update = None
@@ -6601,9 +6658,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_6 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_src); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 236, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_src); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 236, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 245, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_7)) {
@@ -6611,28 +6668,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         {
           Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_1);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 236, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 245, __pyx_L1_error)
           #endif
           if (__pyx_t_6 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 236, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 245, __pyx_L1_error)
         #else
-        __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 236, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 245, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         {
           Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_1);
           #if !CYTHON_ASSUME_SAFE_MACROS
-          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 236, __pyx_L1_error)
+          if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 245, __pyx_L1_error)
           #endif
           if (__pyx_t_6 >= __pyx_temp) break;
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 236, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 245, __pyx_L1_error)
         #else
-        __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 236, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 245, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -6642,7 +6699,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 236, __pyx_L1_error)
+          else __PYX_ERR(0, 245, __pyx_L1_error)
         }
         break;
       }
@@ -6651,174 +6708,174 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __Pyx_XDECREF_SET(__pyx_v_curr_src, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":237
- *
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":246
+ * 
  *         for curr_src in src:
  *             push = True             # <<<<<<<<<<<<<<
  *             idx_update = None
- *
+ * 
  */
     __pyx_v_push = 1;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":238
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":247
  *         for curr_src in src:
  *             push = True
  *             idx_update = None             # <<<<<<<<<<<<<<
- *
+ * 
  *             if total_lines.size == 0:
  */
     __Pyx_INCREF(Py_None);
     __Pyx_XDECREF_SET(__pyx_v_idx_update, Py_None);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":240
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":249
  *             idx_update = None
- *
+ * 
  *             if total_lines.size == 0:             # <<<<<<<<<<<<<<
  *                 new_line = np.array(
  *                     [
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_total_lines, __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 240, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_total_lines, __pyx_n_s_size); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 249, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_2, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 240, __pyx_L1_error)
+    __pyx_t_8 = (__Pyx_PyInt_BoolEqObjC(__pyx_t_2, __pyx_int_0, 0, 0)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 249, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (__pyx_t_8) {
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":241
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":250
+ * 
  *             if total_lines.size == 0:
  *                 new_line = np.array(             # <<<<<<<<<<<<<<
  *                     [
  *                         (
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":244
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":253
  *                     [
  *                         (
  *                             curr_src["pivotPrice"],             # <<<<<<<<<<<<<<
  *                             curr_src["limitsUp"],
  *                             curr_src["limitsDown"],
  */
-      __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 244, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 253, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":245
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":254
  *                         (
  *                             curr_src["pivotPrice"],
  *                             curr_src["limitsUp"],             # <<<<<<<<<<<<<<
  *                             curr_src["limitsDown"],
  *                             curr_src["score"],
  */
-      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 245, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 254, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":246
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":255
  *                             curr_src["pivotPrice"],
  *                             curr_src["limitsUp"],
  *                             curr_src["limitsDown"],             # <<<<<<<<<<<<<<
  *                             curr_src["score"],
  *                             curr_src["accumulatedVolume"],
  */
-      __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 246, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 255, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":247
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":256
  *                             curr_src["limitsUp"],
  *                             curr_src["limitsDown"],
  *                             curr_src["score"],             # <<<<<<<<<<<<<<
  *                             curr_src["accumulatedVolume"],
  *                         )
  */
-      __pyx_t_10 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_score); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_score); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 256, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":248
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":257
  *                             curr_src["limitsDown"],
  *                             curr_src["score"],
  *                             curr_src["accumulatedVolume"],             # <<<<<<<<<<<<<<
  *                         )
  *                     ],
  */
-      __pyx_t_11 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 248, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 257, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":244
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":253
  *                     [
  *                         (
  *                             curr_src["pivotPrice"],             # <<<<<<<<<<<<<<
  *                             curr_src["limitsUp"],
  *                             curr_src["limitsDown"],
  */
-      __pyx_t_12 = PyTuple_New(5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 244, __pyx_L1_error)
+      __pyx_t_12 = PyTuple_New(5); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 253, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_GIVEREF(__pyx_t_2);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_2)) __PYX_ERR(0, 244, __pyx_L1_error);
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_2)) __PYX_ERR(0, 253, __pyx_L1_error);
       __Pyx_GIVEREF(__pyx_t_4);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 1, __pyx_t_4)) __PYX_ERR(0, 244, __pyx_L1_error);
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 1, __pyx_t_4)) __PYX_ERR(0, 253, __pyx_L1_error);
       __Pyx_GIVEREF(__pyx_t_9);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 2, __pyx_t_9)) __PYX_ERR(0, 244, __pyx_L1_error);
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 2, __pyx_t_9)) __PYX_ERR(0, 253, __pyx_L1_error);
       __Pyx_GIVEREF(__pyx_t_10);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 3, __pyx_t_10)) __PYX_ERR(0, 244, __pyx_L1_error);
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 3, __pyx_t_10)) __PYX_ERR(0, 253, __pyx_L1_error);
       __Pyx_GIVEREF(__pyx_t_11);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 4, __pyx_t_11)) __PYX_ERR(0, 244, __pyx_L1_error);
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 4, __pyx_t_11)) __PYX_ERR(0, 253, __pyx_L1_error);
       __pyx_t_2 = 0;
       __pyx_t_4 = 0;
       __pyx_t_9 = 0;
       __pyx_t_10 = 0;
       __pyx_t_11 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":242
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":251
  *             if total_lines.size == 0:
  *                 new_line = np.array(
  *                     [             # <<<<<<<<<<<<<<
  *                         (
  *                             curr_src["pivotPrice"],
  */
-      __pyx_t_11 = PyList_New(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 242, __pyx_L1_error)
+      __pyx_t_11 = PyList_New(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 251, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_GIVEREF(__pyx_t_12);
-      if (__Pyx_PyList_SET_ITEM(__pyx_t_11, 0, __pyx_t_12)) __PYX_ERR(0, 242, __pyx_L1_error);
+      if (__Pyx_PyList_SET_ITEM(__pyx_t_11, 0, __pyx_t_12)) __PYX_ERR(0, 251, __pyx_L1_error);
       __pyx_t_12 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":241
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":250
+ * 
  *             if total_lines.size == 0:
  *                 new_line = np.array(             # <<<<<<<<<<<<<<
  *                     [
  *                         (
  */
-      __pyx_t_12 = PyTuple_New(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 241, __pyx_L1_error)
+      __pyx_t_12 = PyTuple_New(1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_GIVEREF(__pyx_t_11);
-      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_11)) __PYX_ERR(0, 241, __pyx_L1_error);
+      if (__Pyx_PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_11)) __PYX_ERR(0, 250, __pyx_L1_error);
       __pyx_t_11 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":251
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":260
  *                         )
  *                     ],
  *                     dtype=total_lines.dtype,             # <<<<<<<<<<<<<<
  *                 )
  *                 total_lines = np.append(total_lines, new_line)
  */
-      __pyx_t_11 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 251, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 260, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_total_lines, __pyx_n_s_dtype); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 251, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_total_lines, __pyx_n_s_dtype); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 260, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_dtype, __pyx_t_10) < 0) __PYX_ERR(0, 251, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_dtype, __pyx_t_10) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":241
- *
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":250
+ * 
  *             if total_lines.size == 0:
  *                 new_line = np.array(             # <<<<<<<<<<<<<<
  *                     [
  *                         (
  */
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_12, __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 241, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_12, __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -6826,16 +6883,16 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __Pyx_XDECREF_SET(__pyx_v_new_line, __pyx_t_10);
       __pyx_t_10 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":253
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":262
  *                     dtype=total_lines.dtype,
  *                 )
  *                 total_lines = np.append(total_lines, new_line)             # <<<<<<<<<<<<<<
  *             else:
  *                 for idx, curr_total_line in enumerate(total_lines):
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 253, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 262, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_append); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 253, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_append); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 262, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __pyx_t_11 = NULL;
@@ -6856,16 +6913,16 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         PyObject *__pyx_callargs[3] = {__pyx_t_11, __pyx_v_total_lines, __pyx_v_new_line};
         __pyx_t_10 = __Pyx_PyObject_FastCall(__pyx_t_12, __pyx_callargs+1-__pyx_t_5, 2+__pyx_t_5);
         __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-        if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 253, __pyx_L1_error)
+        if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 262, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       }
       __Pyx_DECREF_SET(__pyx_v_total_lines, __pyx_t_10);
       __pyx_t_10 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":240
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":249
  *             idx_update = None
- *
+ * 
  *             if total_lines.size == 0:             # <<<<<<<<<<<<<<
  *                 new_line = np.array(
  *                     [
@@ -6873,7 +6930,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       goto __pyx_L5;
     }
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":255
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":264
  *                 total_lines = np.append(total_lines, new_line)
  *             else:
  *                 for idx, curr_total_line in enumerate(total_lines):             # <<<<<<<<<<<<<<
@@ -6888,9 +6945,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __pyx_t_13 = 0;
         __pyx_t_14 = NULL;
       } else {
-        __pyx_t_13 = -1; __pyx_t_12 = PyObject_GetIter(__pyx_v_total_lines); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 255, __pyx_L1_error)
+        __pyx_t_13 = -1; __pyx_t_12 = PyObject_GetIter(__pyx_v_total_lines); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 264, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
-        __pyx_t_14 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_12); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 255, __pyx_L1_error)
+        __pyx_t_14 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_12); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 264, __pyx_L1_error)
       }
       for (;;) {
         if (likely(!__pyx_t_14)) {
@@ -6898,28 +6955,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
             {
               Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_12);
               #if !CYTHON_ASSUME_SAFE_MACROS
-              if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+              if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 264, __pyx_L1_error)
               #endif
               if (__pyx_t_13 >= __pyx_temp) break;
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_11 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_13); __Pyx_INCREF(__pyx_t_11); __pyx_t_13++; if (unlikely((0 < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+            __pyx_t_11 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_13); __Pyx_INCREF(__pyx_t_11); __pyx_t_13++; if (unlikely((0 < 0))) __PYX_ERR(0, 264, __pyx_L1_error)
             #else
-            __pyx_t_11 = __Pyx_PySequence_ITEM(__pyx_t_12, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 255, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PySequence_ITEM(__pyx_t_12, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 264, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
             #endif
           } else {
             {
               Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_12);
               #if !CYTHON_ASSUME_SAFE_MACROS
-              if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+              if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 264, __pyx_L1_error)
               #endif
               if (__pyx_t_13 >= __pyx_temp) break;
             }
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_11 = PyTuple_GET_ITEM(__pyx_t_12, __pyx_t_13); __Pyx_INCREF(__pyx_t_11); __pyx_t_13++; if (unlikely((0 < 0))) __PYX_ERR(0, 255, __pyx_L1_error)
+            __pyx_t_11 = PyTuple_GET_ITEM(__pyx_t_12, __pyx_t_13); __Pyx_INCREF(__pyx_t_11); __pyx_t_13++; if (unlikely((0 < 0))) __PYX_ERR(0, 264, __pyx_L1_error)
             #else
-            __pyx_t_11 = __Pyx_PySequence_ITEM(__pyx_t_12, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 255, __pyx_L1_error)
+            __pyx_t_11 = __Pyx_PySequence_ITEM(__pyx_t_12, __pyx_t_13); __pyx_t_13++; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 264, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_11);
             #endif
           }
@@ -6929,7 +6986,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 255, __pyx_L1_error)
+              else __PYX_ERR(0, 264, __pyx_L1_error)
             }
             break;
           }
@@ -6939,83 +6996,83 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __pyx_t_11 = 0;
         __Pyx_INCREF(__pyx_t_10);
         __Pyx_XDECREF_SET(__pyx_v_idx, __pyx_t_10);
-        __pyx_t_11 = __Pyx_PyInt_AddObjC(__pyx_t_10, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 255, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_PyInt_AddObjC(__pyx_t_10, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 264, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_10);
         __pyx_t_10 = __pyx_t_11;
         __pyx_t_11 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":258
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":267
  *                     dif = abs(
  *                         (
  *                             (curr_src["pivotPrice"] - curr_total_line["pivotPrice"])             # <<<<<<<<<<<<<<
  *                             / curr_src["pivotPrice"]  # noqa: W503
  *                         )
  */
-        __pyx_t_11 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 258, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 267, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_total_line, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 258, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_total_line, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 267, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_9 = PyNumber_Subtract(__pyx_t_11, __pyx_t_3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 258, __pyx_L1_error)
+        __pyx_t_9 = PyNumber_Subtract(__pyx_t_11, __pyx_t_3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 267, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":259
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":268
  *                         (
  *                             (curr_src["pivotPrice"] - curr_total_line["pivotPrice"])
  *                             / curr_src["pivotPrice"]  # noqa: W503             # <<<<<<<<<<<<<<
  *                         )
  *                         * 100  # noqa: W503
  */
-        __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 259, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 268, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_11 = __Pyx_PyNumber_Divide(__pyx_t_9, __pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 259, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_PyNumber_Divide(__pyx_t_9, __pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 268, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":261
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":270
  *                             / curr_src["pivotPrice"]  # noqa: W503
  *                         )
  *                         * 100  # noqa: W503             # <<<<<<<<<<<<<<
  *                     )
- *
+ * 
  */
-        __pyx_t_3 = __Pyx_PyInt_MultiplyObjC(__pyx_t_11, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 261, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyInt_MultiplyObjC(__pyx_t_11, __pyx_int_100, 0x64, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 270, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":256
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":265
  *             else:
  *                 for idx, curr_total_line in enumerate(total_lines):
  *                     dif = abs(             # <<<<<<<<<<<<<<
  *                         (
  *                             (curr_src["pivotPrice"] - curr_total_line["pivotPrice"])
  */
-        __pyx_t_11 = __Pyx_PyNumber_Absolute(__pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 256, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_PyNumber_Absolute(__pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 265, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_XDECREF_SET(__pyx_v_dif, __pyx_t_11);
         __pyx_t_11 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":264
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":273
  *                     )
- *
+ * 
  *                     if dif <= threshold:  # update             # <<<<<<<<<<<<<<
  *                         push = False
  *                         idx_update = idx
  */
-        __pyx_t_11 = PyFloat_FromDouble(__pyx_v_threshold); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 264, __pyx_L1_error)
+        __pyx_t_11 = PyFloat_FromDouble(__pyx_v_threshold); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 273, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_3 = PyObject_RichCompare(__pyx_v_dif, __pyx_t_11, Py_LE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 264, __pyx_L1_error)
+        __pyx_t_3 = PyObject_RichCompare(__pyx_v_dif, __pyx_t_11, Py_LE); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 273, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 264, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 273, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         if (__pyx_t_8) {
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":265
- *
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":274
+ * 
  *                     if dif <= threshold:  # update
  *                         push = False             # <<<<<<<<<<<<<<
  *                         idx_update = idx
@@ -7023,35 +7080,35 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
  */
           __pyx_v_push = 0;
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":266
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":275
  *                     if dif <= threshold:  # update
  *                         push = False
  *                         idx_update = idx             # <<<<<<<<<<<<<<
  *                         break
- *
+ * 
  */
           __Pyx_INCREF(__pyx_v_idx);
           __Pyx_DECREF_SET(__pyx_v_idx_update, __pyx_v_idx);
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":267
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":276
  *                         push = False
  *                         idx_update = idx
  *                         break             # <<<<<<<<<<<<<<
- *
+ * 
  *                 if push:  # push
  */
           goto __pyx_L7_break;
 
-          /* "pkg_support_resistance/vanilla/vanilla_algo.py":264
+          /* "pkg_support_resistance/vanilla/vanilla_algo.py":273
  *                     )
- *
+ * 
  *                     if dif <= threshold:  # update             # <<<<<<<<<<<<<<
  *                         push = False
  *                         idx_update = idx
  */
         }
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":255
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":264
  *                 total_lines = np.append(total_lines, new_line)
  *             else:
  *                 for idx, curr_total_line in enumerate(total_lines):             # <<<<<<<<<<<<<<
@@ -7067,151 +7124,151 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __pyx_L9_for_end:;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":269
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":278
  *                         break
- *
+ * 
  *                 if push:  # push             # <<<<<<<<<<<<<<
  *                     new_line = np.array(
  *                         [
  */
       if (__pyx_v_push) {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":270
- *
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":279
+ * 
  *                 if push:  # push
  *                     new_line = np.array(             # <<<<<<<<<<<<<<
  *                         [
  *                             (
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 279, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_array); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 279, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":273
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":282
  *                         [
  *                             (
  *                                 curr_src["pivotPrice"],             # <<<<<<<<<<<<<<
  *                                 curr_src["limitsUp"],
  *                                 curr_src["limitsDown"],
  */
-        __pyx_t_10 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 273, __pyx_L1_error)
+        __pyx_t_10 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 282, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":274
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":283
  *                             (
  *                                 curr_src["pivotPrice"],
  *                                 curr_src["limitsUp"],             # <<<<<<<<<<<<<<
  *                                 curr_src["limitsDown"],
  *                                 curr_src["score"],
  */
-        __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 274, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 283, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":275
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":284
  *                                 curr_src["pivotPrice"],
  *                                 curr_src["limitsUp"],
  *                                 curr_src["limitsDown"],             # <<<<<<<<<<<<<<
  *                                 curr_src["score"],
  *                                 curr_src["accumulatedVolume"],
  */
-        __pyx_t_11 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 275, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 284, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":276
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":285
  *                                 curr_src["limitsUp"],
  *                                 curr_src["limitsDown"],
  *                                 curr_src["score"],             # <<<<<<<<<<<<<<
  *                                 curr_src["accumulatedVolume"],
  *                             )
  */
-        __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_score); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_score); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 285, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":277
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":286
  *                                 curr_src["limitsDown"],
  *                                 curr_src["score"],
  *                                 curr_src["accumulatedVolume"],             # <<<<<<<<<<<<<<
  *                             )
  *                         ],
  */
-        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":273
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":282
  *                         [
  *                             (
  *                                 curr_src["pivotPrice"],             # <<<<<<<<<<<<<<
  *                                 curr_src["limitsUp"],
  *                                 curr_src["limitsDown"],
  */
-        __pyx_t_2 = PyTuple_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 282, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_GIVEREF(__pyx_t_10);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_10)) __PYX_ERR(0, 273, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_10)) __PYX_ERR(0, 282, __pyx_L1_error);
         __Pyx_GIVEREF(__pyx_t_3);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 273, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_3)) __PYX_ERR(0, 282, __pyx_L1_error);
         __Pyx_GIVEREF(__pyx_t_11);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_11)) __PYX_ERR(0, 273, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 2, __pyx_t_11)) __PYX_ERR(0, 282, __pyx_L1_error);
         __Pyx_GIVEREF(__pyx_t_9);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_t_9)) __PYX_ERR(0, 273, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 3, __pyx_t_9)) __PYX_ERR(0, 282, __pyx_L1_error);
         __Pyx_GIVEREF(__pyx_t_4);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 4, __pyx_t_4)) __PYX_ERR(0, 282, __pyx_L1_error);
         __pyx_t_10 = 0;
         __pyx_t_3 = 0;
         __pyx_t_11 = 0;
         __pyx_t_9 = 0;
         __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":271
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":280
  *                 if push:  # push
  *                     new_line = np.array(
  *                         [             # <<<<<<<<<<<<<<
  *                             (
  *                                 curr_src["pivotPrice"],
  */
-        __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 271, __pyx_L1_error)
+        __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 280, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_GIVEREF(__pyx_t_2);
-        if (__Pyx_PyList_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error);
+        if (__Pyx_PyList_SET_ITEM(__pyx_t_4, 0, __pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error);
         __pyx_t_2 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":270
- *
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":279
+ * 
  *                 if push:  # push
  *                     new_line = np.array(             # <<<<<<<<<<<<<<
  *                         [
  *                             (
  */
-        __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_GIVEREF(__pyx_t_4);
-        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4)) __PYX_ERR(0, 270, __pyx_L1_error);
+        if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4)) __PYX_ERR(0, 279, __pyx_L1_error);
         __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":280
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":289
  *                             )
  *                         ],
  *                         dtype=total_lines.dtype,             # <<<<<<<<<<<<<<
  *                     )
  *                     total_lines = np.append(total_lines, new_line)
  */
-        __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 280, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_total_lines, __pyx_n_s_dtype); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 280, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_total_lines, __pyx_n_s_dtype); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 289, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_t_9) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":270
- *
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":279
+ * 
  *                 if push:  # push
  *                     new_line = np.array(             # <<<<<<<<<<<<<<
  *                         [
  *                             (
  */
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 270, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 279, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -7219,16 +7276,16 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_XDECREF_SET(__pyx_v_new_line, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":282
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":291
  *                         dtype=total_lines.dtype,
  *                     )
  *                     total_lines = np.append(total_lines, new_line)             # <<<<<<<<<<<<<<
  *                 else:  # update
  *                     total_lines[idx_update]["pivotPrice"] = max(
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 282, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_append); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 282, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_append); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 291, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_t_4 = NULL;
@@ -7249,16 +7306,16 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           PyObject *__pyx_callargs[3] = {__pyx_t_4, __pyx_v_total_lines, __pyx_v_new_line};
           __pyx_t_9 = __Pyx_PyObject_FastCall(__pyx_t_2, __pyx_callargs+1-__pyx_t_5, 2+__pyx_t_5);
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 282, __pyx_L1_error)
+          if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 291, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         }
         __Pyx_DECREF_SET(__pyx_v_total_lines, __pyx_t_9);
         __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":269
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":278
  *                         break
- *
+ * 
  *                 if push:  # push             # <<<<<<<<<<<<<<
  *                     new_line = np.array(
  *                         [
@@ -7266,7 +7323,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         goto __pyx_L10;
       }
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":284
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":293
  *                     total_lines = np.append(total_lines, new_line)
  *                 else:  # update
  *                     total_lines[idx_update]["pivotPrice"] = max(             # <<<<<<<<<<<<<<
@@ -7275,22 +7332,22 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
  */
       /*else*/ {
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":285
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":294
  *                 else:  # update
  *                     total_lines[idx_update]["pivotPrice"] = max(
  *                         curr_src["pivotPrice"], total_lines[idx_update]["pivotPrice"]             # <<<<<<<<<<<<<<
  *                     )
  *                     total_lines[idx_update]["limitsUp"] = max(
  */
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 285, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 294, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_9, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_9, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 294, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 285, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 294, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_12 = PyObject_RichCompare(__pyx_t_2, __pyx_t_9, Py_GT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 285, __pyx_L1_error)
-        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 285, __pyx_L1_error)
+        __pyx_t_12 = PyObject_RichCompare(__pyx_t_2, __pyx_t_9, Py_GT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 294, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 294, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         if (__pyx_t_8) {
           __Pyx_INCREF(__pyx_t_2);
@@ -7305,35 +7362,35 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_INCREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":284
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":293
  *                     total_lines = np.append(total_lines, new_line)
  *                 else:  # update
  *                     total_lines[idx_update]["pivotPrice"] = max(             # <<<<<<<<<<<<<<
  *                         curr_src["pivotPrice"], total_lines[idx_update]["pivotPrice"]
  *                     )
  */
-        __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 284, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 293, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        if (unlikely((PyObject_SetItem(__pyx_t_4, __pyx_n_s_pivotPrice, __pyx_t_2) < 0))) __PYX_ERR(0, 284, __pyx_L1_error)
+        if (unlikely((PyObject_SetItem(__pyx_t_4, __pyx_n_s_pivotPrice, __pyx_t_2) < 0))) __PYX_ERR(0, 293, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":288
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":297
  *                     )
  *                     total_lines[idx_update]["limitsUp"] = max(
  *                         curr_src["limitsUp"], total_lines[idx_update]["limitsUp"]             # <<<<<<<<<<<<<<
  *                     )
  *                     total_lines[idx_update]["limitsDown"] = min(
  */
-        __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 297, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_t_2, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 288, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_t_2, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 297, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 297, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_12 = PyObject_RichCompare(__pyx_t_4, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 288, __pyx_L1_error)
-        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 288, __pyx_L1_error)
+        __pyx_t_12 = PyObject_RichCompare(__pyx_t_4, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 297, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 297, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         if (__pyx_t_8) {
           __Pyx_INCREF(__pyx_t_4);
@@ -7348,35 +7405,35 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_INCREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":287
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":296
  *                         curr_src["pivotPrice"], total_lines[idx_update]["pivotPrice"]
  *                     )
  *                     total_lines[idx_update]["limitsUp"] = max(             # <<<<<<<<<<<<<<
  *                         curr_src["limitsUp"], total_lines[idx_update]["limitsUp"]
  *                     )
  */
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 287, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 296, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        if (unlikely((PyObject_SetItem(__pyx_t_9, __pyx_n_s_limitsUp, __pyx_t_4) < 0))) __PYX_ERR(0, 287, __pyx_L1_error)
+        if (unlikely((PyObject_SetItem(__pyx_t_9, __pyx_n_s_limitsUp, __pyx_t_4) < 0))) __PYX_ERR(0, 296, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":291
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":300
  *                     )
  *                     total_lines[idx_update]["limitsDown"] = min(
  *                         curr_src["limitsDown"], total_lines[idx_update]["limitsDown"]             # <<<<<<<<<<<<<<
  *                     )
  *                     total_lines[idx_update]["score"] += curr_src["score"]
  */
-        __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_t_4, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 291, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Dict_GetItem(__pyx_t_4, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 300, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_12 = PyObject_RichCompare(__pyx_t_9, __pyx_t_4, Py_LT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 291, __pyx_L1_error)
-        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 291, __pyx_L1_error)
+        __pyx_t_12 = PyObject_RichCompare(__pyx_t_9, __pyx_t_4, Py_LT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 300, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         if (__pyx_t_8) {
           __Pyx_INCREF(__pyx_t_9);
@@ -7391,63 +7448,63 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
         __Pyx_INCREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":290
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":299
  *                         curr_src["limitsUp"], total_lines[idx_update]["limitsUp"]
  *                     )
  *                     total_lines[idx_update]["limitsDown"] = min(             # <<<<<<<<<<<<<<
  *                         curr_src["limitsDown"], total_lines[idx_update]["limitsDown"]
  *                     )
  */
-        __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 290, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 299, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        if (unlikely((PyObject_SetItem(__pyx_t_2, __pyx_n_s_limitsDown, __pyx_t_9) < 0))) __PYX_ERR(0, 290, __pyx_L1_error)
+        if (unlikely((PyObject_SetItem(__pyx_t_2, __pyx_n_s_limitsDown, __pyx_t_9) < 0))) __PYX_ERR(0, 299, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":293
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":302
  *                         curr_src["limitsDown"], total_lines[idx_update]["limitsDown"]
  *                     )
  *                     total_lines[idx_update]["score"] += curr_src["score"]             # <<<<<<<<<<<<<<
  *                     total_lines[idx_update]["accumulatedVolume"] += curr_src[
  *                         "accumulatedVolume"
  */
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 293, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 302, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_INCREF(__pyx_n_s_score);
         __pyx_t_15 = __pyx_n_s_score;
-        __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_9, __pyx_t_15); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 293, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Dict_GetItem(__pyx_t_9, __pyx_t_15); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 302, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
-        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_score); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 293, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_score); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 302, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_12 = PyNumber_InPlaceAdd(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 293, __pyx_L1_error)
+        __pyx_t_12 = PyNumber_InPlaceAdd(__pyx_t_2, __pyx_t_4); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 302, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely((PyObject_SetItem(__pyx_t_9, __pyx_t_15, __pyx_t_12) < 0))) __PYX_ERR(0, 293, __pyx_L1_error)
+        if (unlikely((PyObject_SetItem(__pyx_t_9, __pyx_t_15, __pyx_t_12) < 0))) __PYX_ERR(0, 302, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-        /* "pkg_support_resistance/vanilla/vanilla_algo.py":294
+        /* "pkg_support_resistance/vanilla/vanilla_algo.py":303
  *                     )
  *                     total_lines[idx_update]["score"] += curr_src["score"]
  *                     total_lines[idx_update]["accumulatedVolume"] += curr_src[             # <<<<<<<<<<<<<<
  *                         "accumulatedVolume"
  *                     ]
  */
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 294, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_total_lines, __pyx_v_idx_update); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 303, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_INCREF(__pyx_n_s_accumulatedVolume);
         __pyx_t_15 = __pyx_n_s_accumulatedVolume;
-        __pyx_t_12 = __Pyx_PyObject_Dict_GetItem(__pyx_t_9, __pyx_t_15); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 294, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyObject_Dict_GetItem(__pyx_t_9, __pyx_t_15); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 303, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
-        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 294, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_v_curr_src, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 303, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_2 = PyNumber_InPlaceAdd(__pyx_t_12, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 294, __pyx_L1_error)
+        __pyx_t_2 = PyNumber_InPlaceAdd(__pyx_t_12, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 303, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        if (unlikely((PyObject_SetItem(__pyx_t_9, __pyx_t_15, __pyx_t_2) < 0))) __PYX_ERR(0, 294, __pyx_L1_error)
+        if (unlikely((PyObject_SetItem(__pyx_t_9, __pyx_t_15, __pyx_t_2) < 0))) __PYX_ERR(0, 303, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -7456,9 +7513,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     }
     __pyx_L5:;
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":236
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":245
  *         src = src[np.argsort(src["pivotPrice"])[::-1]]
- *
+ * 
  *         for curr_src in src:             # <<<<<<<<<<<<<<
  *             push = True
  *             idx_update = None
@@ -7466,11 +7523,11 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":298
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":307
  *                     ]
- *
+ * 
  *         return total_lines             # <<<<<<<<<<<<<<
- *
+ * 
  *     @classmethod
  */
   __Pyx_XDECREF(__pyx_r);
@@ -7478,9 +7535,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __pyx_r = __pyx_v_total_lines;
   goto __pyx_L0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":209
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":218
  *         return np.sort(lines_np, order="pivotPrice")[::-1]
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __unify(
  *         cls,
@@ -7513,9 +7570,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   return __pyx_r;
 }
 
-/* "pkg_support_resistance/vanilla/vanilla_algo.py":300
+/* "pkg_support_resistance/vanilla/vanilla_algo.py":309
  *         return total_lines
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def exec_pipeline(  # pylint: disable=dangerous-default-value
  *         cls,
@@ -7531,21 +7588,21 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_2__de
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__defaults__", 1);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(((PyObject*)__pyx_float_1_0));
   __Pyx_GIVEREF(((PyObject*)__pyx_float_1_0));
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject*)__pyx_float_1_0))) __PYX_ERR(0, 300, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 0, ((PyObject*)__pyx_float_1_0))) __PYX_ERR(0, 309, __pyx_L1_error);
   __Pyx_INCREF(__Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_self)->__pyx_arg_previous_sr);
   __Pyx_GIVEREF(__Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_self)->__pyx_arg_previous_sr);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 1, __Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_self)->__pyx_arg_previous_sr)) __PYX_ERR(0, 300, __pyx_L1_error);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 1, __Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_self)->__pyx_arg_previous_sr)) __PYX_ERR(0, 309, __pyx_L1_error);
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1)) __PYX_ERR(0, 309, __pyx_L1_error);
   __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(Py_None);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, Py_None)) __PYX_ERR(0, 300, __pyx_L1_error);
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_2, 1, Py_None)) __PYX_ERR(0, 309, __pyx_L1_error);
   __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -7564,16 +7621,16 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_2__de
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9exec_pipeline(PyObject *__pyx_self,
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_11exec_pipeline(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8exec_pipeline, "\n        Calculate support/resistance process pipeline.\n        Return: list[dict[str, Union[int, float]]]. Support/Resistance calculated data. I.e.: [\n            {'pivotPrice': 48184.0, 'limitsUp': 48495.0, 'limitsDown': 47347.53, 'score': 67, 'accumulatedVolume': 44687.15635},\n            {'pivotPrice': 47534.34, 'limitsUp': 47874.98, 'limitsDown': 46763.68, 'score': 41, 'accumulatedVolume': 23864.294279999995},\n            {'pivotPrice': 45000.0, 'limitsUp': 45000.0, 'limitsDown': 44700.0, 'score': 8, 'accumulatedVolume': 6010.54166},\n            {'pivotPrice': 43996.5, 'limitsUp': 44141.37, 'limitsDown': 43100.0, 'score': 40, 'accumulatedVolume': 17909.42211},\n            {'pivotPrice': 43473.45, 'limitsUp': 43580.0, 'limitsDown': 42697.01, 'score': 37, 'accumulatedVolume': 18501.36496},\n            {'pivotPrice': 42819.86, 'limitsUp': 42850.0, 'limitsDown': 42041.7, 'score': 15, 'accumulatedVolume': 6355.429050000001},\n            {'pivotPrice': 42259.58, 'limitsUp': 42787.38, 'limitsDown': 42017.33, 'score': 24, 'accumulatedVolume': 12506.830009999998},\n            {'pivotPrice': 41619.99, 'limitsUp': 42365.48, 'limitsDown': 41115.0, 'score': 91, 'accumulatedVolume': 42944.990900000004},\n            {'pivotPrice': 41071.29, 'limitsUp': 41157.26, 'limitsDown': 40753.88, 'score': 8, 'accumulatedVolume': 4474.11918}\n        ]\n        ");
-static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9exec_pipeline = {"exec_pipeline", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9exec_pipeline, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8exec_pipeline};
-static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9exec_pipeline(PyObject *__pyx_self,
+PyDoc_STRVAR(__pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_10exec_pipeline, "\n        Calculate support/resistance process pipeline.\n        Return: list[dict[str, Union[int, float]]]. Support/Resistance calculated data. I.e.: [\n            {'pivotPrice': 48184.0, 'limitsUp': 48495.0, 'limitsDown': 47347.53, 'score': 67, 'accumulatedVolume': 44687.15635},\n            {'pivotPrice': 47534.34, 'limitsUp': 47874.98, 'limitsDown': 46763.68, 'score': 41, 'accumulatedVolume': 23864.294279999995},\n            {'pivotPrice': 45000.0, 'limitsUp': 45000.0, 'limitsDown': 44700.0, 'score': 8, 'accumulatedVolume': 6010.54166},\n            {'pivotPrice': 43996.5, 'limitsUp': 44141.37, 'limitsDown': 43100.0, 'score': 40, 'accumulatedVolume': 17909.42211},\n            {'pivotPrice': 43473.45, 'limitsUp': 43580.0, 'limitsDown': 42697.01, 'score': 37, 'accumulatedVolume': 18501.36496},\n            {'pivotPrice': 42819.86, 'limitsUp': 42850.0, 'limitsDown': 42041.7, 'score': 15, 'accumulatedVolume': 6355.429050000001},\n            {'pivotPrice': 42259.58, 'limitsUp': 42787.38, 'limitsDown': 42017.33, 'score': 24, 'accumulatedVolume': 12506.830009999998},\n            {'pivotPrice': 41619.99, 'limitsUp': 42365.48, 'limitsDown': 41115.0, 'score': 91, 'accumulatedVolume': 42944.990900000004},\n            {'pivotPrice': 41071.29, 'limitsUp': 41157.26, 'limitsDown': 40753.88, 'score': 8, 'accumulatedVolume': 4474.11918}\n        ]\n        ");
+static PyMethodDef __pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_11exec_pipeline = {"exec_pipeline", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_11exec_pipeline, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_10exec_pipeline};
+static PyObject *__pyx_pw_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_11exec_pipeline(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -7629,7 +7686,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 309, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -7637,28 +7694,28 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 309, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("exec_pipeline", 0, 2, 4, 1); __PYX_ERR(0, 300, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("exec_pipeline", 0, 2, 4, 1); __PYX_ERR(0, 309, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_cluster_threshold);
           if (value) { values[2] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 309, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (kw_args > 0) {
           PyObject* value = __Pyx_GetKwValue_FASTCALL(__pyx_kwds, __pyx_kwvalues, __pyx_n_s_previous_sr);
           if (value) { values[3] = __Pyx_Arg_NewRef_FASTCALL(value); kw_args--; }
-          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 300, __pyx_L3_error)
+          else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 309, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "exec_pipeline") < 0)) __PYX_ERR(0, 300, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "exec_pipeline") < 0)) __PYX_ERR(0, 309, __pyx_L3_error)
       }
     } else {
       switch (__pyx_nargs) {
@@ -7679,7 +7736,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("exec_pipeline", 0, 2, 4, __pyx_nargs); __PYX_ERR(0, 300, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("exec_pipeline", 0, 2, 4, __pyx_nargs); __PYX_ERR(0, 309, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -7693,8 +7750,8 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_input_data), (&PyDict_Type), 0, "input_data", 1))) __PYX_ERR(0, 303, __pyx_L1_error)
-  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8exec_pipeline(__pyx_self, __pyx_v_cls, __pyx_v_input_data, __pyx_v_cluster_threshold, __pyx_v_previous_sr);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_input_data), (&PyDict_Type), 0, "input_data", 1))) __PYX_ERR(0, 312, __pyx_L1_error)
+  __pyx_r = __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_10exec_pipeline(__pyx_self, __pyx_v_cls, __pyx_v_input_data, __pyx_v_cluster_threshold, __pyx_v_previous_sr);
 
   /* function exit code */
   goto __pyx_L0;
@@ -7711,7 +7768,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_8exec_pipeline(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls, PyObject *__pyx_v_input_data, PyObject *__pyx_v_cluster_threshold, PyObject *__pyx_v_previous_sr) {
+static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_10exec_pipeline(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_cls, PyObject *__pyx_v_input_data, PyObject *__pyx_v_cluster_threshold, PyObject *__pyx_v_previous_sr) {
   PyObject *__pyx_v_data_np = NULL;
   PyObject *__pyx_v_dtype = NULL;
   PyObject *__pyx_v_max_point = NULL;
@@ -7738,21 +7795,21 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __Pyx_RefNannySetupContext("exec_pipeline", 0);
   __Pyx_INCREF(__pyx_v_previous_sr);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":322
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":331
  *         """
- *
+ * 
  *         data_np = np.array(list(input_data.values())).T             # <<<<<<<<<<<<<<
- *
+ * 
  *         # Previous lines (empty)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 322, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 322, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_array); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_Values(__pyx_v_input_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 322, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_Values(__pyx_v_input_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PySequence_ListKeepNew(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 322, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PySequence_ListKeepNew(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -7774,64 +7831,64 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
     __pyx_t_1 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 1+__pyx_t_5);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 322, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 331, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   }
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_T); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 322, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_T); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 331, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_data_np = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":325
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":334
+ * 
  *         # Previous lines (empty)
  *         dtype = [             # <<<<<<<<<<<<<<
  *             ("pivotPrice", "f8"),
  *             ("limitsUp", "f8"),
  */
-  __pyx_t_3 = PyList_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 325, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 334, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_tuple__7)) __PYX_ERR(0, 325, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_tuple__7)) __PYX_ERR(0, 334, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 1, __pyx_tuple__8)) __PYX_ERR(0, 325, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 1, __pyx_tuple__8)) __PYX_ERR(0, 334, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 2, __pyx_tuple__9)) __PYX_ERR(0, 325, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 2, __pyx_tuple__9)) __PYX_ERR(0, 334, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 3, __pyx_tuple__10)) __PYX_ERR(0, 325, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 3, __pyx_tuple__10)) __PYX_ERR(0, 334, __pyx_L1_error);
   __Pyx_INCREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 4, __pyx_tuple__11)) __PYX_ERR(0, 325, __pyx_L1_error);
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 4, __pyx_tuple__11)) __PYX_ERR(0, 334, __pyx_L1_error);
   __pyx_v_dtype = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":332
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":341
  *             ("accumulatedVolume", "f8"),
  *         ]
  *         previous_sr = np.array(previous_sr, dtype=dtype)             # <<<<<<<<<<<<<<
- *
+ * 
  *         max_point: np.ndarray[np.ndarray] = cls.__calc_points(
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 332, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 341, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 332, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 341, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 332, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 341, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_previous_sr);
   __Pyx_GIVEREF(__pyx_v_previous_sr);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_previous_sr)) __PYX_ERR(0, 332, __pyx_L1_error);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 332, __pyx_L1_error)
+  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_previous_sr)) __PYX_ERR(0, 341, __pyx_L1_error);
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 341, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_v_dtype) < 0) __PYX_ERR(0, 332, __pyx_L1_error)
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 332, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dtype, __pyx_v_dtype) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 341, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -7839,298 +7896,298 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __Pyx_DECREF_SET(__pyx_v_previous_sr, __pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":334
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":343
  *         previous_sr = np.array(previous_sr, dtype=dtype)
- *
+ * 
  *         max_point: np.ndarray[np.ndarray] = cls.__calc_points(             # <<<<<<<<<<<<<<
  *             data=data_np, extreme="max"
  *         )
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__calc); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 334, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__calc); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 343, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":335
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":344
+ * 
  *         max_point: np.ndarray[np.ndarray] = cls.__calc_points(
  *             data=data_np, extreme="max"             # <<<<<<<<<<<<<<
  *         )
  *         min_point: np.ndarray[np.ndarray] = cls.__calc_points(
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 335, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 344, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_data_np) < 0) __PYX_ERR(0, 335, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_extreme, __pyx_n_s_max) < 0) __PYX_ERR(0, 335, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_data_np) < 0) __PYX_ERR(0, 344, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_extreme, __pyx_n_s_max) < 0) __PYX_ERR(0, 344, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":334
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":343
  *         previous_sr = np.array(previous_sr, dtype=dtype)
- *
+ * 
  *         max_point: np.ndarray[np.ndarray] = cls.__calc_points(             # <<<<<<<<<<<<<<
  *             data=data_np, extreme="max"
  *         )
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 334, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 343, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_max_point = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":337
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":346
  *             data=data_np, extreme="max"
  *         )
  *         min_point: np.ndarray[np.ndarray] = cls.__calc_points(             # <<<<<<<<<<<<<<
  *             data=data_np, extreme="min"
  *         )
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__calc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 337, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__calc); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 346, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":338
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":347
  *         )
  *         min_point: np.ndarray[np.ndarray] = cls.__calc_points(
  *             data=data_np, extreme="min"             # <<<<<<<<<<<<<<
  *         )
  *         clusters_r: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 338, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 347, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_data_np) < 0) __PYX_ERR(0, 338, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_extreme, __pyx_n_s_min) < 0) __PYX_ERR(0, 338, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_data_np) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_extreme, __pyx_n_s_min) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":337
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":346
  *             data=data_np, extreme="max"
  *         )
  *         min_point: np.ndarray[np.ndarray] = cls.__calc_points(             # <<<<<<<<<<<<<<
  *             data=data_np, extreme="min"
  *         )
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 337, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 346, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_min_point = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":340
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":349
  *             data=data_np, extreme="min"
  *         )
  *         clusters_r: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(             # <<<<<<<<<<<<<<
  *             data=max_point, threshold=cluster_threshold, direction="resistance"
  *         )
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__clust); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 340, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__clust); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 349, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":341
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":350
  *         )
  *         clusters_r: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(
  *             data=max_point, threshold=cluster_threshold, direction="resistance"             # <<<<<<<<<<<<<<
  *         )
  *         clusters_s: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 341, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 350, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_max_point) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_v_cluster_threshold) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_resistance) < 0) __PYX_ERR(0, 341, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_max_point) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_v_cluster_threshold) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_resistance) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":340
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":349
  *             data=data_np, extreme="min"
  *         )
  *         clusters_r: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(             # <<<<<<<<<<<<<<
  *             data=max_point, threshold=cluster_threshold, direction="resistance"
  *         )
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 340, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 349, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_clusters_r = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":343
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":352
  *             data=max_point, threshold=cluster_threshold, direction="resistance"
  *         )
  *         clusters_s: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(             # <<<<<<<<<<<<<<
  *             data=min_point, threshold=cluster_threshold, direction="support"
  *         )
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__clust); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 343, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__clust); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 352, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":344
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":353
  *         )
  *         clusters_s: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(
  *             data=min_point, threshold=cluster_threshold, direction="support"             # <<<<<<<<<<<<<<
  *         )
  *         recovery_line_r: np.ndarray = cls.__recovery_line(
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 344, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 353, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_min_point) < 0) __PYX_ERR(0, 344, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_v_cluster_threshold) < 0) __PYX_ERR(0, 344, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_support) < 0) __PYX_ERR(0, 344, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_v_min_point) < 0) __PYX_ERR(0, 353, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_v_cluster_threshold) < 0) __PYX_ERR(0, 353, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_support) < 0) __PYX_ERR(0, 353, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":343
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":352
  *             data=max_point, threshold=cluster_threshold, direction="resistance"
  *         )
  *         clusters_s: np.ndarray[np.ndarray[np.ndarray]] = cls.__clustering(             # <<<<<<<<<<<<<<
  *             data=min_point, threshold=cluster_threshold, direction="support"
  *         )
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 343, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 352, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_clusters_s = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":346
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":355
  *             data=min_point, threshold=cluster_threshold, direction="support"
  *         )
  *         recovery_line_r: np.ndarray = cls.__recovery_line(             # <<<<<<<<<<<<<<
  *             clusters=clusters_r, direction="resistance"
  *         )
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__recov); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__recov); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 355, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":347
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":356
  *         )
  *         recovery_line_r: np.ndarray = cls.__recovery_line(
  *             clusters=clusters_r, direction="resistance"             # <<<<<<<<<<<<<<
  *         )
  *         recovery_line_s: np.ndarray = cls.__recovery_line(
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 347, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 356, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_clusters, __pyx_v_clusters_r) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_resistance) < 0) __PYX_ERR(0, 347, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_clusters, __pyx_v_clusters_r) < 0) __PYX_ERR(0, 356, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_resistance) < 0) __PYX_ERR(0, 356, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":346
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":355
  *             data=min_point, threshold=cluster_threshold, direction="support"
  *         )
  *         recovery_line_r: np.ndarray = cls.__recovery_line(             # <<<<<<<<<<<<<<
  *             clusters=clusters_r, direction="resistance"
  *         )
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 346, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 355, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_recovery_line_r = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":349
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":358
  *             clusters=clusters_r, direction="resistance"
  *         )
  *         recovery_line_s: np.ndarray = cls.__recovery_line(             # <<<<<<<<<<<<<<
  *             clusters=clusters_s, direction="support"
  *         )
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__recov); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 349, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__recov); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 358, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":350
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":359
  *         )
  *         recovery_line_s: np.ndarray = cls.__recovery_line(
  *             clusters=clusters_s, direction="support"             # <<<<<<<<<<<<<<
  *         )
  *         s_r_calculated: np.ndarray = cls.__unify(
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 350, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 359, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_clusters, __pyx_v_clusters_s) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_support) < 0) __PYX_ERR(0, 350, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_clusters, __pyx_v_clusters_s) < 0) __PYX_ERR(0, 359, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_support) < 0) __PYX_ERR(0, 359, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":349
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":358
  *             clusters=clusters_r, direction="resistance"
  *         )
  *         recovery_line_s: np.ndarray = cls.__recovery_line(             # <<<<<<<<<<<<<<
  *             clusters=clusters_s, direction="support"
  *         )
  */
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 349, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 358, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_recovery_line_s = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":352
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":361
  *             clusters=clusters_s, direction="support"
  *         )
  *         s_r_calculated: np.ndarray = cls.__unify(             # <<<<<<<<<<<<<<
  *             src_r=recovery_line_r,
  *             src_s=recovery_line_s,
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__unify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 352, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_cls, __pyx_n_s_VanillaSupportResistance__unify); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 361, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":353
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":362
  *         )
  *         s_r_calculated: np.ndarray = cls.__unify(
  *             src_r=recovery_line_r,             # <<<<<<<<<<<<<<
  *             src_s=recovery_line_s,
  *             threshold=cluster_threshold,
  */
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 353, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 362, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_r, __pyx_v_recovery_line_r) < 0) __PYX_ERR(0, 353, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_r, __pyx_v_recovery_line_r) < 0) __PYX_ERR(0, 362, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":354
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":363
  *         s_r_calculated: np.ndarray = cls.__unify(
  *             src_r=recovery_line_r,
  *             src_s=recovery_line_s,             # <<<<<<<<<<<<<<
  *             threshold=cluster_threshold,
  *             total_lines=previous_sr,
  */
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_s, __pyx_v_recovery_line_s) < 0) __PYX_ERR(0, 353, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_s, __pyx_v_recovery_line_s) < 0) __PYX_ERR(0, 362, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":355
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":364
  *             src_r=recovery_line_r,
  *             src_s=recovery_line_s,
  *             threshold=cluster_threshold,             # <<<<<<<<<<<<<<
  *             total_lines=previous_sr,
  *         )
  */
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_v_cluster_threshold) < 0) __PYX_ERR(0, 353, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_v_cluster_threshold) < 0) __PYX_ERR(0, 362, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":356
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":365
  *             src_s=recovery_line_s,
  *             threshold=cluster_threshold,
  *             total_lines=previous_sr,             # <<<<<<<<<<<<<<
  *         )
- *
+ * 
  */
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_total_lines, __pyx_v_previous_sr) < 0) __PYX_ERR(0, 353, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_total_lines, __pyx_v_previous_sr) < 0) __PYX_ERR(0, 362, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":352
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":361
  *             clusters=clusters_s, direction="support"
  *         )
  *         s_r_calculated: np.ndarray = cls.__unify(             # <<<<<<<<<<<<<<
  *             src_r=recovery_line_r,
  *             src_s=recovery_line_s,
  */
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 352, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 361, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_s_r_calculated = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":359
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":368
  *         )
- *
+ * 
  *         s_r_calculated_list: list = [             # <<<<<<<<<<<<<<
  *             {
  *                 "pivotPrice": row["pivotPrice"],
  */
   { /* enter inner scope */
-    __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 359, __pyx_L5_error)
+    __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 368, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_3);
 
-    /* "pkg_support_resistance/vanilla/vanilla_algo.py":367
+    /* "pkg_support_resistance/vanilla/vanilla_algo.py":376
  *                 "accumulatedVolume": row["accumulatedVolume"],
  *             }
  *             for row in s_r_calculated             # <<<<<<<<<<<<<<
@@ -8142,9 +8199,9 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __pyx_t_6 = 0;
       __pyx_t_7 = NULL;
     } else {
-      __pyx_t_6 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_s_r_calculated); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 367, __pyx_L5_error)
+      __pyx_t_6 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_v_s_r_calculated); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 376, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 367, __pyx_L5_error)
+      __pyx_t_7 = __Pyx_PyObject_GetIterNextFunc(__pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 376, __pyx_L5_error)
     }
     for (;;) {
       if (likely(!__pyx_t_7)) {
@@ -8152,28 +8209,28 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           {
             Py_ssize_t __pyx_temp = __Pyx_PyList_GET_SIZE(__pyx_t_4);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 367, __pyx_L5_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 376, __pyx_L5_error)
             #endif
             if (__pyx_t_6 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 367, __pyx_L5_error)
+          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 376, __pyx_L5_error)
           #else
-          __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 367, __pyx_L5_error)
+          __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 376, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         } else {
           {
             Py_ssize_t __pyx_temp = __Pyx_PyTuple_GET_SIZE(__pyx_t_4);
             #if !CYTHON_ASSUME_SAFE_MACROS
-            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 367, __pyx_L5_error)
+            if (unlikely((__pyx_temp < 0))) __PYX_ERR(0, 376, __pyx_L5_error)
             #endif
             if (__pyx_t_6 >= __pyx_temp) break;
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 367, __pyx_L5_error)
+          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_6); __Pyx_INCREF(__pyx_t_2); __pyx_t_6++; if (unlikely((0 < 0))) __PYX_ERR(0, 376, __pyx_L5_error)
           #else
-          __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 367, __pyx_L5_error)
+          __pyx_t_2 = __Pyx_PySequence_ITEM(__pyx_t_4, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 376, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         }
@@ -8183,7 +8240,7 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 367, __pyx_L5_error)
+            else __PYX_ERR(0, 376, __pyx_L5_error)
           }
           break;
         }
@@ -8192,71 +8249,71 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
       __Pyx_XDECREF_SET(__pyx_7genexpr__pyx_v_row, __pyx_t_2);
       __pyx_t_2 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":361
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":370
  *         s_r_calculated_list: list = [
  *             {
  *                 "pivotPrice": row["pivotPrice"],             # <<<<<<<<<<<<<<
  *                 "limitsUp": row["limitsUp"],
  *                 "limitsDown": row["limitsDown"],
  */
-      __pyx_t_2 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 361, __pyx_L5_error)
+      __pyx_t_2 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 370, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 361, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_pivotPrice); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 370, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_pivotPrice, __pyx_t_1) < 0) __PYX_ERR(0, 361, __pyx_L5_error)
+      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_pivotPrice, __pyx_t_1) < 0) __PYX_ERR(0, 370, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":362
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":371
  *             {
  *                 "pivotPrice": row["pivotPrice"],
  *                 "limitsUp": row["limitsUp"],             # <<<<<<<<<<<<<<
  *                 "limitsDown": row["limitsDown"],
  *                 "score": row["score"],
  */
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 362, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_limitsUp); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 371, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_limitsUp, __pyx_t_1) < 0) __PYX_ERR(0, 361, __pyx_L5_error)
+      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_limitsUp, __pyx_t_1) < 0) __PYX_ERR(0, 370, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":363
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":372
  *                 "pivotPrice": row["pivotPrice"],
  *                 "limitsUp": row["limitsUp"],
  *                 "limitsDown": row["limitsDown"],             # <<<<<<<<<<<<<<
  *                 "score": row["score"],
  *                 "accumulatedVolume": row["accumulatedVolume"],
  */
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 363, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_limitsDown); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 372, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_limitsDown, __pyx_t_1) < 0) __PYX_ERR(0, 361, __pyx_L5_error)
+      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_limitsDown, __pyx_t_1) < 0) __PYX_ERR(0, 370, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":364
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":373
  *                 "limitsUp": row["limitsUp"],
  *                 "limitsDown": row["limitsDown"],
  *                 "score": row["score"],             # <<<<<<<<<<<<<<
  *                 "accumulatedVolume": row["accumulatedVolume"],
  *             }
  */
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_score); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 364, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_score); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 373, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_score, __pyx_t_1) < 0) __PYX_ERR(0, 361, __pyx_L5_error)
+      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_score, __pyx_t_1) < 0) __PYX_ERR(0, 370, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":365
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":374
  *                 "limitsDown": row["limitsDown"],
  *                 "score": row["score"],
  *                 "accumulatedVolume": row["accumulatedVolume"],             # <<<<<<<<<<<<<<
  *             }
  *             for row in s_r_calculated
  */
-      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 365, __pyx_L5_error)
+      __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_7genexpr__pyx_v_row, __pyx_n_s_accumulatedVolume); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 374, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_accumulatedVolume, __pyx_t_1) < 0) __PYX_ERR(0, 361, __pyx_L5_error)
+      if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_accumulatedVolume, __pyx_t_1) < 0) __PYX_ERR(0, 370, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 359, __pyx_L5_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_t_2))) __PYX_ERR(0, 368, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-      /* "pkg_support_resistance/vanilla/vanilla_algo.py":367
+      /* "pkg_support_resistance/vanilla/vanilla_algo.py":376
  *                 "accumulatedVolume": row["accumulatedVolume"],
  *             }
  *             for row in s_r_calculated             # <<<<<<<<<<<<<<
@@ -8275,21 +8332,19 @@ static PyObject *__pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_24Van
   __pyx_v_s_r_calculated_list = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":369
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":378
  *             for row in s_r_calculated
  *         ]
  *         return s_r_calculated_list             # <<<<<<<<<<<<<<
- *
- *
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_s_r_calculated_list);
   __pyx_r = __pyx_v_s_r_calculated_list;
   goto __pyx_L0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":300
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":309
  *         return total_lines
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def exec_pipeline(  # pylint: disable=dangerous-default-value
  *         cls,
@@ -8354,10 +8409,11 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_VanillaSupportResistance__recov, __pyx_k_VanillaSupportResistance__recov, sizeof(__pyx_k_VanillaSupportResistance__recov), 0, 0, 1, 1},
     {&__pyx_n_s_VanillaSupportResistance__unify, __pyx_k_VanillaSupportResistance__unify, sizeof(__pyx_k_VanillaSupportResistance__unify), 0, 0, 1, 1},
     {&__pyx_n_s_VanillaSupportResistance_exec_pi, __pyx_k_VanillaSupportResistance_exec_pi, sizeof(__pyx_k_VanillaSupportResistance_exec_pi), 0, 0, 1, 1},
+    {&__pyx_n_s_VanillaSupportResistance_is_cyth, __pyx_k_VanillaSupportResistance_is_cyth, sizeof(__pyx_k_VanillaSupportResistance_is_cyth), 0, 0, 1, 1},
     {&__pyx_kp_s_Vanilla_Clustering_Support_Resis, __pyx_k_Vanilla_Clustering_Support_Resis, sizeof(__pyx_k_Vanilla_Clustering_Support_Resis), 0, 0, 1, 0},
     {&__pyx_kp_u__13, __pyx_k__13, sizeof(__pyx_k__13), 0, 1, 0, 0},
     {&__pyx_n_s__14, __pyx_k__14, sizeof(__pyx_k__14), 0, 0, 1, 1},
-    {&__pyx_n_s__25, __pyx_k__25, sizeof(__pyx_k__25), 0, 0, 1, 1},
+    {&__pyx_n_s__26, __pyx_k__26, sizeof(__pyx_k__26), 0, 0, 1, 1},
     {&__pyx_n_s_accumulatedVolume, __pyx_k_accumulatedVolume, sizeof(__pyx_k_accumulatedVolume), 0, 0, 1, 1},
     {&__pyx_n_s_accumulated_volume, __pyx_k_accumulated_volume, sizeof(__pyx_k_accumulated_volume), 0, 0, 1, 1},
     {&__pyx_n_s_append, __pyx_k_append, sizeof(__pyx_k_append), 0, 0, 1, 1},
@@ -8416,6 +8472,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_initializing, __pyx_k_initializing, sizeof(__pyx_k_initializing), 0, 0, 1, 1},
     {&__pyx_n_s_input_data, __pyx_k_input_data, sizeof(__pyx_k_input_data), 0, 0, 1, 1},
     {&__pyx_n_s_is_coroutine, __pyx_k_is_coroutine, sizeof(__pyx_k_is_coroutine), 0, 0, 1, 1},
+    {&__pyx_n_s_is_cythonized, __pyx_k_is_cythonized, sizeof(__pyx_k_is_cythonized), 0, 0, 1, 1},
     {&__pyx_n_s_left, __pyx_k_left, sizeof(__pyx_k_left), 0, 0, 1, 1},
     {&__pyx_n_s_limitsDown, __pyx_k_limitsDown, sizeof(__pyx_k_limitsDown), 0, 0, 1, 1},
     {&__pyx_n_s_limitsUp, __pyx_k_limitsUp, sizeof(__pyx_k_limitsUp), 0, 0, 1, 1},
@@ -8446,12 +8503,10 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_order, __pyx_k_order, sizeof(__pyx_k_order), 0, 0, 1, 1},
     {&__pyx_n_s_pivotPrice, __pyx_k_pivotPrice, sizeof(__pyx_k_pivotPrice), 0, 0, 1, 1},
     {&__pyx_n_s_pivot_price, __pyx_k_pivot_price, sizeof(__pyx_k_pivot_price), 0, 0, 1, 1},
-    {&__pyx_n_s_pkg_support_resistance_data_set, __pyx_k_pkg_support_resistance_data_set, sizeof(__pyx_k_pkg_support_resistance_data_set), 0, 0, 1, 1},
     {&__pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_k_pkg_support_resistance_vanilla_v, sizeof(__pyx_k_pkg_support_resistance_vanilla_v), 0, 0, 1, 1},
     {&__pyx_n_s_points, __pyx_k_points, sizeof(__pyx_k_points), 0, 0, 1, 1},
     {&__pyx_n_s_prepare, __pyx_k_prepare, sizeof(__pyx_k_prepare), 0, 0, 1, 1},
     {&__pyx_n_s_previous_sr, __pyx_k_previous_sr, sizeof(__pyx_k_previous_sr), 0, 0, 1, 1},
-    {&__pyx_n_s_print, __pyx_k_print, sizeof(__pyx_k_print), 0, 0, 1, 1},
     {&__pyx_n_s_push, __pyx_k_push, sizeof(__pyx_k_push), 0, 0, 1, 1},
     {&__pyx_n_s_qualname, __pyx_k_qualname, sizeof(__pyx_k_qualname), 0, 0, 1, 1},
     {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
@@ -8469,11 +8524,10 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_size, __pyx_k_size, sizeof(__pyx_k_size), 0, 0, 1, 1},
     {&__pyx_n_s_sort, __pyx_k_sort, sizeof(__pyx_k_sort), 0, 0, 1, 1},
     {&__pyx_n_s_spec, __pyx_k_spec, sizeof(__pyx_k_spec), 0, 0, 1, 1},
-    {&__pyx_n_s_sr_input_example, __pyx_k_sr_input_example, sizeof(__pyx_k_sr_input_example), 0, 0, 1, 1},
-    {&__pyx_n_s_sr_result, __pyx_k_sr_result, sizeof(__pyx_k_sr_result), 0, 0, 1, 1},
     {&__pyx_n_s_src, __pyx_k_src, sizeof(__pyx_k_src), 0, 0, 1, 1},
     {&__pyx_n_s_src_r, __pyx_k_src_r, sizeof(__pyx_k_src_r), 0, 0, 1, 1},
     {&__pyx_n_s_src_s, __pyx_k_src_s, sizeof(__pyx_k_src_s), 0, 0, 1, 1},
+    {&__pyx_n_s_staticmethod, __pyx_k_staticmethod, sizeof(__pyx_k_staticmethod), 0, 0, 1, 1},
     {&__pyx_n_s_str, __pyx_k_str, sizeof(__pyx_k_str), 0, 0, 1, 1},
     {&__pyx_n_s_super, __pyx_k_super, sizeof(__pyx_k_super), 0, 0, 1, 1},
     {&__pyx_n_s_support, __pyx_k_support, sizeof(__pyx_k_support), 0, 0, 1, 1},
@@ -8491,9 +8545,9 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 375, __pyx_L1_error)
-  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 39, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_builtin_staticmethod = __Pyx_GetBuiltinName(__pyx_n_s_staticmethod); if (!__pyx_builtin_staticmethod) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 167, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -8504,181 +8558,190 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":20
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":29
+ * 
  *         points = []
  *         extreme_value = data[:, 2] if extreme == "max" else data[:, 3]             # <<<<<<<<<<<<<<
- *
+ * 
  *         center = extreme_value[1:-1]
  */
-  __pyx_slice_ = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice_)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_slice_ = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice_)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice_);
   __Pyx_GIVEREF(__pyx_slice_);
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_slice_, __pyx_int_2); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_slice_, __pyx_int_2); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
-  __pyx_tuple__3 = PyTuple_Pack(2, __pyx_slice_, __pyx_int_3); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(2, __pyx_slice_, __pyx_int_3); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":22
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":31
  *         extreme_value = data[:, 2] if extreme == "max" else data[:, 3]
- *
+ * 
  *         center = extreme_value[1:-1]             # <<<<<<<<<<<<<<
  *         left = extreme_value[:-2]
  *         right = extreme_value[2:]
  */
-  __pyx_slice__4 = PySlice_New(__pyx_int_1, __pyx_int_neg_1, Py_None); if (unlikely(!__pyx_slice__4)) __PYX_ERR(0, 22, __pyx_L1_error)
+  __pyx_slice__4 = PySlice_New(__pyx_int_1, __pyx_int_neg_1, Py_None); if (unlikely(!__pyx_slice__4)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__4);
   __Pyx_GIVEREF(__pyx_slice__4);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":23
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":32
+ * 
  *         center = extreme_value[1:-1]
  *         left = extreme_value[:-2]             # <<<<<<<<<<<<<<
  *         right = extreme_value[2:]
- *
+ * 
  */
-  __pyx_slice__5 = PySlice_New(Py_None, __pyx_int_neg_2, Py_None); if (unlikely(!__pyx_slice__5)) __PYX_ERR(0, 23, __pyx_L1_error)
+  __pyx_slice__5 = PySlice_New(Py_None, __pyx_int_neg_2, Py_None); if (unlikely(!__pyx_slice__5)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__5);
   __Pyx_GIVEREF(__pyx_slice__5);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":24
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":33
  *         center = extreme_value[1:-1]
  *         left = extreme_value[:-2]
  *         right = extreme_value[2:]             # <<<<<<<<<<<<<<
- *
+ * 
  *         max_condition = (center > left) & (center > right)
  */
-  __pyx_slice__6 = PySlice_New(__pyx_int_2, Py_None, Py_None); if (unlikely(!__pyx_slice__6)) __PYX_ERR(0, 24, __pyx_L1_error)
+  __pyx_slice__6 = PySlice_New(__pyx_int_2, Py_None, Py_None); if (unlikely(!__pyx_slice__6)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__6);
   __Pyx_GIVEREF(__pyx_slice__6);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":140
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":149
  *         dtype = np.dtype(
  *             [
  *                 ("pivotPrice", "f8"),             # <<<<<<<<<<<<<<
  *                 ("limitsUp", "f8"),
  *                 ("limitsDown", "f8"),
  */
-  __pyx_tuple__7 = PyTuple_Pack(2, __pyx_n_s_pivotPrice, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(2, __pyx_n_s_pivotPrice, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 149, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":141
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":150
  *             [
  *                 ("pivotPrice", "f8"),
  *                 ("limitsUp", "f8"),             # <<<<<<<<<<<<<<
  *                 ("limitsDown", "f8"),
  *                 ("score", "i4"),
  */
-  __pyx_tuple__8 = PyTuple_Pack(2, __pyx_n_s_limitsUp, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(2, __pyx_n_s_limitsUp, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":142
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":151
  *                 ("pivotPrice", "f8"),
  *                 ("limitsUp", "f8"),
  *                 ("limitsDown", "f8"),             # <<<<<<<<<<<<<<
  *                 ("score", "i4"),
  *                 ("accumulatedVolume", "f8"),
  */
-  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_limitsDown, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_limitsDown, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":143
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":152
  *                 ("limitsUp", "f8"),
  *                 ("limitsDown", "f8"),
  *                 ("score", "i4"),             # <<<<<<<<<<<<<<
  *                 ("accumulatedVolume", "f8"),
  *             ]
  */
-  __pyx_tuple__10 = PyTuple_Pack(2, __pyx_n_s_score, __pyx_n_s_i4); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(2, __pyx_n_s_score, __pyx_n_s_i4); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 152, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":144
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":153
  *                 ("limitsDown", "f8"),
  *                 ("score", "i4"),
  *                 ("accumulatedVolume", "f8"),             # <<<<<<<<<<<<<<
  *             ]
  *         )
  */
-  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_accumulatedVolume, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_accumulatedVolume, __pyx_n_s_f8); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":207
- *
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":216
+ * 
  *         lines_np = np.array(lines, dtype=dtype)
  *         return np.sort(lines_np, order="pivotPrice")[::-1]             # <<<<<<<<<<<<<<
- *
+ * 
  *     @classmethod
  */
-  __pyx_slice__12 = PySlice_New(Py_None, Py_None, __pyx_int_neg_1); if (unlikely(!__pyx_slice__12)) __PYX_ERR(0, 207, __pyx_L1_error)
+  __pyx_slice__12 = PySlice_New(Py_None, Py_None, __pyx_int_neg_1); if (unlikely(!__pyx_slice__12)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__12);
   __Pyx_GIVEREF(__pyx_slice__12);
 
   /* "pkg_support_resistance/vanilla/vanilla_algo.py":11
  *     """Vanilla Clustering Support Resistance class"""
- *
+ * 
+ *     @staticmethod             # <<<<<<<<<<<<<<
+ *     def is_cythonized():
+ *         """
+ */
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_is_cythonized, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 11, __pyx_L1_error)
+
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":20
+ *         return True
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __calc_points(cls, data: np.ndarray, extreme: str) -> np.ndarray[np.ndarray]:
  *         """
  */
-  __pyx_tuple__15 = PyTuple_Pack(12, __pyx_n_s_cls, __pyx_n_s_data, __pyx_n_s_extreme, __pyx_n_s_points, __pyx_n_s_extreme_value, __pyx_n_s_center, __pyx_n_s_left, __pyx_n_s_right, __pyx_n_s_max_condition, __pyx_n_s_min_condition, __pyx_n_s_idx, __pyx_n_s_i); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 11, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__15);
-  __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_calc_points, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(12, __pyx_n_s_cls, __pyx_n_s_data, __pyx_n_s_extreme, __pyx_n_s_points, __pyx_n_s_extreme_value, __pyx_n_s_center, __pyx_n_s_left, __pyx_n_s_right, __pyx_n_s_max_condition, __pyx_n_s_min_condition, __pyx_n_s_idx, __pyx_n_s_i); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__16);
+  __Pyx_GIVEREF(__pyx_tuple__16);
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_calc_points, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 20, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":51
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":60
  *         return points
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __clustering(  # pylint: disable=too-many-locals, too-many-branches
  *         cls, data: np.ndarray, threshold: float, direction: str
  */
-  __pyx_tuple__17 = PyTuple_Pack(17, __pyx_n_s_cls, __pyx_n_s_data, __pyx_n_s_threshold, __pyx_n_s_direction, __pyx_n_s_clusters, __pyx_n_s_high_index, __pyx_n_s_low_index, __pyx_n_s_curr_first, __pyx_n_s_cluster, __pyx_n_s_h0_first, __pyx_n_s_curr_second, __pyx_n_s_h0_second, __pyx_n_s_dif, __pyx_n_s_push, __pyx_n_s_clust, __pyx_n_s_curr, __pyx_n_s_curr_clust); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__17);
-  __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 17, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_clustering, 51, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(17, __pyx_n_s_cls, __pyx_n_s_data, __pyx_n_s_threshold, __pyx_n_s_direction, __pyx_n_s_clusters, __pyx_n_s_high_index, __pyx_n_s_low_index, __pyx_n_s_curr_first, __pyx_n_s_cluster, __pyx_n_s_h0_first, __pyx_n_s_curr_second, __pyx_n_s_h0_second, __pyx_n_s_dif, __pyx_n_s_push, __pyx_n_s_clust, __pyx_n_s_curr, __pyx_n_s_curr_clust); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__18);
+  __Pyx_GIVEREF(__pyx_tuple__18);
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 17, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_clustering, 60, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 60, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":119
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":128
  *         return clusters
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __recovery_line(  # pylint: disable=too-many-locals
  *         cls, clusters: List[np.ndarray[np.ndarray]], direction: str
  */
-  __pyx_tuple__19 = PyTuple_Pack(18, __pyx_n_s_cls, __pyx_n_s_clusters, __pyx_n_s_direction, __pyx_n_s_dtype, __pyx_n_s_lines, __pyx_n_s_curr_cluster, __pyx_n_s_pivot_price, __pyx_n_s_approach, __pyx_n_s_limits_up, __pyx_n_s_limits_down, __pyx_n_s_accumulated_volume, __pyx_n_s_curr_data_price_line, __pyx_n_s_data_line, __pyx_n_s_idx, __pyx_n_s_line, __pyx_n_s_lines_np, __pyx_n_s_existing_line_idx, __pyx_n_s_idx_update); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 119, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__19);
-  __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_recovery_line, 119, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(18, __pyx_n_s_cls, __pyx_n_s_clusters, __pyx_n_s_direction, __pyx_n_s_dtype, __pyx_n_s_lines, __pyx_n_s_curr_cluster, __pyx_n_s_pivot_price, __pyx_n_s_approach, __pyx_n_s_limits_up, __pyx_n_s_limits_down, __pyx_n_s_accumulated_volume, __pyx_n_s_curr_data_price_line, __pyx_n_s_data_line, __pyx_n_s_idx, __pyx_n_s_line, __pyx_n_s_lines_np, __pyx_n_s_existing_line_idx, __pyx_n_s_idx_update); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__20);
+  __Pyx_GIVEREF(__pyx_tuple__20);
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_recovery_line, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 128, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":209
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":218
  *         return np.sort(lines_np, order="pivotPrice")[::-1]
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __unify(
  *         cls,
  */
-  __pyx_tuple__21 = PyTuple_Pack(13, __pyx_n_s_cls, __pyx_n_s_src_r, __pyx_n_s_src_s, __pyx_n_s_threshold, __pyx_n_s_total_lines, __pyx_n_s_src, __pyx_n_s_curr_src, __pyx_n_s_push, __pyx_n_s_idx_update, __pyx_n_s_new_line, __pyx_n_s_idx, __pyx_n_s_curr_total_line, __pyx_n_s_dif); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 209, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__21);
-  __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_unify, 209, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(13, __pyx_n_s_cls, __pyx_n_s_src_r, __pyx_n_s_src_s, __pyx_n_s_threshold, __pyx_n_s_total_lines, __pyx_n_s_src, __pyx_n_s_curr_src, __pyx_n_s_push, __pyx_n_s_idx_update, __pyx_n_s_new_line, __pyx_n_s_idx, __pyx_n_s_curr_total_line, __pyx_n_s_dif); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__22);
+  __Pyx_GIVEREF(__pyx_tuple__22);
+  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(5, 0, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_unify, 218, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 218, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":300
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":309
  *         return total_lines
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def exec_pipeline(  # pylint: disable=dangerous-default-value
  *         cls,
  */
-  __pyx_tuple__23 = PyTuple_Pack(15, __pyx_n_s_cls, __pyx_n_s_input_data, __pyx_n_s_cluster_threshold, __pyx_n_s_previous_sr, __pyx_n_s_data_np, __pyx_n_s_dtype, __pyx_n_s_max_point, __pyx_n_s_min_point, __pyx_n_s_clusters_r, __pyx_n_s_clusters_s, __pyx_n_s_recovery_line_r, __pyx_n_s_recovery_line_s, __pyx_n_s_s_r_calculated, __pyx_n_s_s_r_calculated_list, __pyx_n_s_row); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 300, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__23);
-  __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_exec_pipeline, 300, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(15, __pyx_n_s_cls, __pyx_n_s_input_data, __pyx_n_s_cluster_threshold, __pyx_n_s_previous_sr, __pyx_n_s_data_np, __pyx_n_s_dtype, __pyx_n_s_max_point, __pyx_n_s_min_point, __pyx_n_s_clusters_r, __pyx_n_s_clusters_s, __pyx_n_s_recovery_line_r, __pyx_n_s_recovery_line_s, __pyx_n_s_s_r_calculated, __pyx_n_s_s_r_calculated_list, __pyx_n_s_row); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 309, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_vanilla_algo_py, __pyx_n_s_exec_pipeline, 309, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -8944,7 +9007,6 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_vanilla_algo(PyObject *__pyx_pyini
   PyObject *__pyx_t_4 = NULL;
   PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
-  Py_ssize_t __pyx_t_7;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -9062,9 +9124,9 @@ if (!__Pyx_RefNanny) {
 
   /* "pkg_support_resistance/vanilla/vanilla_algo.py":3
  * """Vanilla algorithms module"""
- *
+ * 
  * from typing import Dict, List, Union             # <<<<<<<<<<<<<<
- *
+ * 
  * import numpy as np
  */
   __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 3, __pyx_L1_error)
@@ -9097,10 +9159,10 @@ if (!__Pyx_RefNanny) {
 
   /* "pkg_support_resistance/vanilla/vanilla_algo.py":5
  * from typing import Dict, List, Union
- *
+ * 
  * import numpy as np             # <<<<<<<<<<<<<<
- *
- *
+ * 
+ * 
  */
   __pyx_t_3 = __Pyx_ImportDottedModule(__pyx_n_s_numpy, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
@@ -9108,272 +9170,215 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /* "pkg_support_resistance/vanilla/vanilla_algo.py":8
- *
- *
+ * 
+ * 
  * class VanillaSupportResistance:             # <<<<<<<<<<<<<<
  *     """Vanilla Clustering Support Resistance class"""
- *
+ * 
  */
   __pyx_t_3 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_VanillaSupportResistance, __pyx_n_s_VanillaSupportResistance, (PyObject *) NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_kp_s_Vanilla_Clustering_Support_Resis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
 
   /* "pkg_support_resistance/vanilla/vanilla_algo.py":11
  *     """Vanilla Clustering Support Resistance class"""
- *
+ * 
+ *     @staticmethod             # <<<<<<<<<<<<<<
+ *     def is_cythonized():
+ *         """
+ */
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1is_cythonized, __Pyx_CYFUNCTION_STATICMETHOD, __pyx_n_s_VanillaSupportResistance_is_cyth, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_staticmethod, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_is_cythonized, __pyx_t_4) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":20
+ *         return True
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __calc_points(cls, data: np.ndarray, extreme: str) -> np.ndarray[np.ndarray]:
  *         """
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_data, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_extreme, __pyx_n_s_str) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, __pyx_kp_s_np_ndarray_np_ndarray) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_1__calc_points, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___calc, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_4, __pyx_t_2);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_Method_ClassMethod(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_extreme, __pyx_n_s_str) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_return, __pyx_kp_s_np_ndarray_np_ndarray) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__calc_points, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___calc, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_2, __pyx_t_4);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__calc, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Method_ClassMethod(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__calc, __pyx_t_4) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":51
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":60
  *         return points
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __clustering(  # pylint: disable=too-many-locals, too-many-branches
  *         cls, data: np.ndarray, threshold: float, direction: str
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_data, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_threshold, __pyx_n_s_float) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_direction, __pyx_n_s_str) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, __pyx_kp_s_List_np_ndarray_np_ndarray) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_3__clustering, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___clust, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_4, __pyx_t_2);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_Method_ClassMethod(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_data, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_n_s_float) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_str) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_return, __pyx_kp_s_List_np_ndarray_np_ndarray) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__clustering, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___clust, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_2, __pyx_t_4);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__clust, __pyx_t_2) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Method_ClassMethod(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__clust, __pyx_t_4) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":119
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":128
  *         return clusters
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __recovery_line(  # pylint: disable=too-many-locals
  *         cls, clusters: List[np.ndarray[np.ndarray]], direction: str
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_clusters, __pyx_kp_s_List_np_ndarray_np_ndarray) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_direction, __pyx_n_s_str) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_5__recovery_line, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___recov, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_4, __pyx_t_2);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_Method_ClassMethod(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_clusters, __pyx_kp_s_List_np_ndarray_np_ndarray) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_direction, __pyx_n_s_str) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_return, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__recovery_line, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___recov, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_2, __pyx_t_4);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__recov, __pyx_t_2) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Method_ClassMethod(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__recov, __pyx_t_4) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":209
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":218
  *         return np.sort(lines_np, order="pivotPrice")[::-1]
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __unify(
  *         cls,
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_src_r, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_src_s, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_threshold, __pyx_n_s_float) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_total_lines, __pyx_kp_s_np_ndarray_None) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_7__unify, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___unify, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 218, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_4, sizeof(__pyx_defaults), 1)) __PYX_ERR(0, 209, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_r, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_src_s, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_threshold, __pyx_n_s_float) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_total_lines, __pyx_kp_s_np_ndarray_None) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_return, __pyx_kp_s_np_ndarray) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9__unify, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance___unify, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_2, sizeof(__pyx_defaults), 1)) __PYX_ERR(0, 218, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":215
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":224
  *         src_s: np.ndarray,
  *         threshold: float,
  *         total_lines: np.ndarray | None = np.ndarray,             # <<<<<<<<<<<<<<
  *     ) -> np.ndarray:
  *         """
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndarray); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 215, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndarray); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_4)->__pyx_arg_total_lines = __pyx_t_6;
+  __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_2)->__pyx_arg_total_lines = __pyx_t_6;
   __Pyx_GIVEREF(__pyx_t_6);
   __pyx_t_6 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_4, __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo___defaults__);
-  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_4, __pyx_t_2);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_2, __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo___defaults__);
+  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_2, __pyx_t_4);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":209
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":218
  *         return np.sort(lines_np, order="pivotPrice")[::-1]
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def __unify(
  *         cls,
  */
-  __pyx_t_2 = __Pyx_Method_ClassMethod(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__unify, __pyx_t_2) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Method_ClassMethod(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 218, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_VanillaSupportResistance__unify, __pyx_t_4) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":300
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":309
  *         return total_lines
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def exec_pipeline(  # pylint: disable=dangerous-default-value
  *         cls,
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 300, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_input_data, __pyx_kp_s_Dict_str_List_Union_float_int) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_cluster_threshold, __pyx_kp_s_float_None) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_previous_sr, __pyx_kp_s_list_None) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_return, __pyx_kp_s_List_Dict_str_Union_int_float) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_9exec_pipeline, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance_exec_pi, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 309, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_4, sizeof(__pyx_defaults1), 1)) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_input_data, __pyx_kp_s_Dict_str_List_Union_float_int) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cluster_threshold, __pyx_kp_s_float_None) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_previous_sr, __pyx_kp_s_list_None) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_return, __pyx_kp_s_List_Dict_str_Union_int_float) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_22pkg_support_resistance_7vanilla_12vanilla_algo_24VanillaSupportResistance_11exec_pipeline, __Pyx_CYFUNCTION_CLASSMETHOD, __pyx_n_s_VanillaSupportResistance_exec_pi, NULL, __pyx_n_s_pkg_support_resistance_vanilla_v, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 309, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_2, sizeof(__pyx_defaults1), 1)) __PYX_ERR(0, 309, __pyx_L1_error)
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":305
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":314
  *         input_data: Dict[str, List[Union[float, int]]],
  *         cluster_threshold: float | None = 1.0,
  *         previous_sr: list | None = [],             # <<<<<<<<<<<<<<
  *     ) -> List[Dict[str, Union[int, float]]]:
  *         """
  */
-  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 305, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_t_4)->__pyx_arg_previous_sr = __pyx_t_6;
+  __Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_t_2)->__pyx_arg_previous_sr = __pyx_t_6;
   __Pyx_GIVEREF(__pyx_t_6);
   __pyx_t_6 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_4, __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_2__defaults__);
-  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_4, __pyx_t_2);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_2, __pyx_pf_22pkg_support_resistance_7vanilla_12vanilla_algo_2__defaults__);
+  __Pyx_CyFunction_SetAnnotationsDict(__pyx_t_2, __pyx_t_4);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":300
+  /* "pkg_support_resistance/vanilla/vanilla_algo.py":309
  *         return total_lines
- *
+ * 
  *     @classmethod             # <<<<<<<<<<<<<<
  *     def exec_pipeline(  # pylint: disable=dangerous-default-value
  *         cls,
  */
-  __pyx_t_2 = __Pyx_Method_ClassMethod(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 300, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_exec_pipeline, __pyx_t_2) < 0) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Method_ClassMethod(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 309, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  if (__Pyx_SetNameInClass(__pyx_t_3, __pyx_n_s_exec_pipeline, __pyx_t_4) < 0) __PYX_ERR(0, 309, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
   /* "pkg_support_resistance/vanilla/vanilla_algo.py":8
- *
- *
+ * 
+ * 
  * class VanillaSupportResistance:             # <<<<<<<<<<<<<<
  *     """Vanilla Clustering Support Resistance class"""
- *
+ * 
  */
-  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&PyType_Type), __pyx_n_s_VanillaSupportResistance, __pyx_empty_tuple, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_VanillaSupportResistance, __pyx_t_2) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":372
- *
- *
- * from pkg_support_resistance.data_set.data_extraction import sr_input_example             # <<<<<<<<<<<<<<
- * # Vanilla algorithms:
- * sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(input_data=sr_input_example, cluster_threshold=1)
- */
-  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 372, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_INCREF(__pyx_n_s_sr_input_example);
-  __Pyx_GIVEREF(__pyx_n_s_sr_input_example);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_3, 0, __pyx_n_s_sr_input_example)) __PYX_ERR(0, 372, __pyx_L1_error);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pkg_support_resistance_data_set, __pyx_t_3, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 372, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_sr_input_example); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 372, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sr_input_example, __pyx_t_3) < 0) __PYX_ERR(0, 372, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":374
- * from pkg_support_resistance.data_set.data_extraction import sr_input_example
- * # Vanilla algorithms:
- * sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(input_data=sr_input_example, cluster_threshold=1)             # <<<<<<<<<<<<<<
- * print(sr_result, len(sr_result))
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_VanillaSupportResistance); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 374, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_exec_pipeline); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 374, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 374, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sr_input_example); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 374, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Py3ClassCreate(((PyObject*)&PyType_Type), __pyx_n_s_VanillaSupportResistance, __pyx_empty_tuple, __pyx_t_3, NULL, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_input_data, __pyx_t_4) < 0) __PYX_ERR(0, 374, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_VanillaSupportResistance, __pyx_t_4) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_cluster_threshold, __pyx_int_1) < 0) __PYX_ERR(0, 374, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 374, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sr_result, __pyx_t_4) < 0) __PYX_ERR(0, 374, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-
-  /* "pkg_support_resistance/vanilla/vanilla_algo.py":375
- * # Vanilla algorithms:
- * sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(input_data=sr_input_example, cluster_threshold=1)
- * print(sr_result, len(sr_result))             # <<<<<<<<<<<<<<
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_sr_result); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 375, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_sr_result); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = PyObject_Length(__pyx_t_2); if (unlikely(__pyx_t_7 == ((Py_ssize_t)-1))) __PYX_ERR(0, 375, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 375, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GIVEREF(__pyx_t_4);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4)) __PYX_ERR(0, 375, __pyx_L1_error);
-  __Pyx_GIVEREF(__pyx_t_2);
-  if (__Pyx_PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error);
-  __pyx_t_4 = 0;
-  __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 375, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "pkg_support_resistance/vanilla/vanilla_algo.py":1
  * """Vanilla algorithms module"""             # <<<<<<<<<<<<<<
- *
+ * 
  * from typing import Dict, List, Union
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_3) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
   /*--- Wrapped vars code ---*/
 
@@ -10571,7 +10576,7 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, long intval, 
         const long b = intval;
         long x;
         long a = PyInt_AS_LONG(op1);
-
+        
             x = (long)((unsigned long)a + (unsigned long)b);
             if (likely((x^a) >= 0 || (x^b) >= 0))
                 return PyInt_FromLong(x);
@@ -10671,8 +10676,8 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, long intval, 
                 llx = lla + llb;
             return PyLong_FromLongLong(llx);
 #endif
-
-
+        
+        
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -10683,7 +10688,7 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, long intval, 
         double a = PyFloat_AS_DOUBLE(op1);
 #endif
             double result;
-
+            
             PyFPE_START_PROTECT("add", return NULL)
             result = ((double)a) + (double)b;
             PyFPE_END_PROTECT(result)
@@ -10950,7 +10955,7 @@ static PyObject* __Pyx_PyInt_MultiplyObjC(PyObject *op1, PyObject *op2, long int
     if (likely(PyInt_CheckExact(op1))) {
         const long b = intval;
         long a = PyInt_AS_LONG(op1);
-
+        
 #ifdef HAVE_LONG_LONG
             if (sizeof(PY_LONG_LONG) > sizeof(long)) {
                 PY_LONG_LONG result = (PY_LONG_LONG)a * (PY_LONG_LONG)b;
@@ -11065,8 +11070,8 @@ static PyObject* __Pyx_PyInt_MultiplyObjC(PyObject *op1, PyObject *op2, long int
                 llx = lla * llb;
             return PyLong_FromLongLong(llx);
 #endif
-
-
+        
+        
     }
     #endif
     if (PyFloat_CheckExact(op1)) {
@@ -11077,7 +11082,7 @@ static PyObject* __Pyx_PyInt_MultiplyObjC(PyObject *op1, PyObject *op2, long int
         double a = PyFloat_AS_DOUBLE(op1);
 #endif
             double result;
-
+            
             PyFPE_START_PROTECT("multiply", return NULL)
             result = ((double)a) * (double)b;
             PyFPE_END_PROTECT(result)
@@ -11499,47 +11504,6 @@ static PyObject *__Pyx_ImportDottedModule(PyObject *name, PyObject *parts_tuple)
     }
 #endif
     return __Pyx__ImportDottedModule(name, parts_tuple);
-}
-
-/* ClassMethod */
-static PyObject* __Pyx_Method_ClassMethod(PyObject *method) {
-#if CYTHON_COMPILING_IN_PYPY && PYPY_VERSION_NUM <= 0x05080000
-    if (PyObject_TypeCheck(method, &PyWrapperDescr_Type)) {
-        return PyClassMethod_New(method);
-    }
-#else
-#if CYTHON_COMPILING_IN_PYPY
-    if (PyMethodDescr_Check(method))
-#else
-    #if PY_MAJOR_VERSION == 2
-    static PyTypeObject *methoddescr_type = NULL;
-    if (unlikely(methoddescr_type == NULL)) {
-       PyObject *meth = PyObject_GetAttrString((PyObject*)&PyList_Type, "append");
-       if (unlikely(!meth)) return NULL;
-       methoddescr_type = Py_TYPE(meth);
-       Py_DECREF(meth);
-    }
-    #else
-    PyTypeObject *methoddescr_type = &PyMethodDescr_Type;
-    #endif
-    if (__Pyx_TypeCheck(method, methoddescr_type))
-#endif
-    {
-        PyMethodDescrObject *descr = (PyMethodDescrObject *)method;
-        #if PY_VERSION_HEX < 0x03020000
-        PyTypeObject *d_type = descr->d_type;
-        #else
-        PyTypeObject *d_type = descr->d_common.d_type;
-        #endif
-        return PyDescr_NewClassMethod(d_type, descr->d_method);
-    }
-#endif
-    else if (PyMethod_Check(method)) {
-        return PyClassMethod_New(PyMethod_GET_FUNCTION(method));
-    }
-    else {
-        return PyClassMethod_New(method);
-    }
 }
 
 /* FixUpExtensionType */
@@ -12792,6 +12756,47 @@ static PyObject *__Pyx_CyFunction_New(PyMethodDef *ml, int flags, PyObject* qual
     return op;
 }
 
+/* ClassMethod */
+static PyObject* __Pyx_Method_ClassMethod(PyObject *method) {
+#if CYTHON_COMPILING_IN_PYPY && PYPY_VERSION_NUM <= 0x05080000
+    if (PyObject_TypeCheck(method, &PyWrapperDescr_Type)) {
+        return PyClassMethod_New(method);
+    }
+#else
+#if CYTHON_COMPILING_IN_PYPY
+    if (PyMethodDescr_Check(method))
+#else
+    #if PY_MAJOR_VERSION == 2
+    static PyTypeObject *methoddescr_type = NULL;
+    if (unlikely(methoddescr_type == NULL)) {
+       PyObject *meth = PyObject_GetAttrString((PyObject*)&PyList_Type, "append");
+       if (unlikely(!meth)) return NULL;
+       methoddescr_type = Py_TYPE(meth);
+       Py_DECREF(meth);
+    }
+    #else
+    PyTypeObject *methoddescr_type = &PyMethodDescr_Type;
+    #endif
+    if (__Pyx_TypeCheck(method, methoddescr_type))
+#endif
+    {
+        PyMethodDescrObject *descr = (PyMethodDescrObject *)method;
+        #if PY_VERSION_HEX < 0x03020000
+        PyTypeObject *d_type = descr->d_type;
+        #else
+        PyTypeObject *d_type = descr->d_common.d_type;
+        #endif
+        return PyDescr_NewClassMethod(d_type, descr->d_method);
+    }
+#endif
+    else if (PyMethod_Check(method)) {
+        return PyClassMethod_New(PyMethod_GET_FUNCTION(method));
+    }
+    else {
+        return PyClassMethod_New(method);
+    }
+}
+
 /* CalculateMetaclass */
 static PyObject *__Pyx_CalculateMetaclass(PyTypeObject *metaclass, PyObject *bases) {
     Py_ssize_t i, nbases;
@@ -13464,7 +13469,7 @@ __Pyx_PyType_GetName(PyTypeObject* tp)
     if (unlikely(name == NULL) || unlikely(!PyUnicode_Check(name))) {
         PyErr_Clear();
         Py_XDECREF(name);
-        name = __Pyx_NewRef(__pyx_n_s__25);
+        name = __Pyx_NewRef(__pyx_n_s__26);
     }
     return name;
 }

@@ -1,4 +1,10 @@
-from setuptools import setup
-from Cython.Build import cythonize
+"""Setup module"""
 
-setup(ext_modules=cythonize("vanilla_algo.py"))
+from setuptools import setup, Extension
+
+ext_modules = [Extension("vanilla_algo", sources=["vanilla_algo.c"])]
+
+setup(
+    name="vanilla_algo",
+    ext_modules=ext_modules,
+)

@@ -8,6 +8,15 @@ import numpy as np
 class VanillaSupportResistance:
     """Vanilla Clustering Support Resistance class"""
 
+    @staticmethod
+    def is_cythonized():
+        """
+        Check if the module is cytotonized?
+        The cythonized model represents a performance improvement of %13.05.
+        """
+
+        return False
+
     @classmethod
     def __calc_points(cls, data: np.ndarray, extreme: str) -> np.ndarray[np.ndarray]:
         """
@@ -367,12 +376,3 @@ class VanillaSupportResistance:
             for row in s_r_calculated
         ]
         return s_r_calculated_list
-
-
-from pkg_support_resistance.data_set.data_extraction import sr_input_example
-
-# Vanilla algorithms:
-sr_result: list[dict] = VanillaSupportResistance.exec_pipeline(
-    input_data=sr_input_example, cluster_threshold=1
-)
-print(sr_result, len(sr_result))

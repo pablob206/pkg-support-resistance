@@ -9,6 +9,16 @@ from sklearn.cluster import KMeans
 class KMeansSupportResistance:
     """KMeans Clustering Support Resistance (unsupervised algorithms) class"""
 
+    @staticmethod
+    def is_cythonized():
+        """
+        Check if the module is cytotonized?
+        The cytonized model does not represent a significant performance improvement,
+        because sklear is already optimized.
+        """
+
+        return False
+
     @classmethod
     def __preprocess_data(
         cls, input_data: Dict[str, List[Union[float, int]]]
