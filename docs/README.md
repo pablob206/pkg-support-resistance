@@ -36,7 +36,12 @@ pdm remove scipy
 
 # Update pdm version
 pdm self update
+
+# Cython
+cythonize --inplace vanilla_algo.py
+python setup.py build_ext --inplace
 ```
+
 
 ### Tag push
 ```bash

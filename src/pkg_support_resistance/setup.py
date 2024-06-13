@@ -13,15 +13,15 @@ import numpy as np
 
 ext_modules = [
     Extension(
-        "src.pkg_support_resistance.vanilla.vanilla_algo",
+        "vanilla.vanilla_algo",
         sources=["src/pkg_support_resistance/vanilla/vanilla_algo.c"],
     ),
     Extension(
-        "src.pkg_support_resistance.kmeans.kmeans_algo",
+        "kmeans.kmeans_algo",
         sources=["src/pkg_support_resistance/kmeans/kmeans_algo.c"],
     ),
     Extension(
-        "src.pkg_support_resistance.dbscan.dbscan_algo",
+        "dbscan.dbscan_algo",
         sources=["src/pkg_support_resistance/dbscan/dbscan_algo.c"],
     ),
 ]
